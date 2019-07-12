@@ -22,8 +22,9 @@ discover = unittest.defaultTestLoader.discover(test_dir, pattern='*.py')
 
 if __name__ == "__main__":
     # test_data.init_data()  # 初始化接口测试数据
-    now = time.strftime("%Y-%m-%d %H_%M_%S")
-    filename = "F:\/QSJ/report/" + now + '_result.html'
+    # now = time.strftime("%Y-%m-%d %H_%M_%S")
+    # filename = "F:\/QSJ/report/" + now + '_result.html'
+    filename = "F:\/QSJ/report/" + 'TestReport.html'
     fp = open(filename, 'wb')
     runner = HTMLTestRunner(stream=fp,
                             title='四海接口测试报告',
