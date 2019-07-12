@@ -21,7 +21,7 @@ if __name__ == "__main__":
     filename = "F:\/QSJ/report/" + now + '_result.html'
     fp = open(filename, 'wb')
     runner = HTMLTestRunner(stream=fp,
-                            title='钱咖接口测试报告',
-                            description='Implementation Example with: 钱咖接口接口测试报告')
+                            title='四海接口测试报告',
+                            description='Implementation Example with: 四海接口接口测试报告')
     runner.run(discover)
     fp.close()
