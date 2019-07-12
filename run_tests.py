@@ -9,6 +9,7 @@ sys.path.append(rootPath)
 sys.path.append('./interface/')
 sys.path.append('./db_fixture')
 sys.path.append('./Global_bse')
+sys.path.append('./report')
 
 # 指定测试用例为当前文件夹下的 interface 目录
 # test_dir = 'F:\/auto\qsjInterface\interface\'
