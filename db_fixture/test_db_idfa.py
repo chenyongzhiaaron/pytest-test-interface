@@ -45,8 +45,8 @@ class T_DB():
         connection.close()
         return str(idfa)
 
-test = T_DB()
-print(test.t_db2())
-idfa = test.t_db2()
-# print("api/user/address/" + str(address_id))
-print(idfa)
+# test = T_DB()
+# print(test.t_db2())
+# idfa = test.t_db2()
+# # print("api/user/address/" + str(address_id))
+# print(idfa)
