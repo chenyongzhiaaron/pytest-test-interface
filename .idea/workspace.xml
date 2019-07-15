@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c6f9c80-bfa5-40cc-9e84-39cc42d46577" name="Default" comment="update all">
-      <change beforePath="$PROJECT_DIR$/run_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +63,7 @@
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_update_address.coverage" NAME="Unittests in update address Coverage Results" MODIFIED="1543489940498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_update_default_address_py.coverage" NAME="Unittests in update default address.py Coverage Results" MODIFIED="1545187222166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
     <SUITE FILE_PATH="coverage/Funcl$subscribe.coverage" NAME="subscribe Coverage Results" MODIFIED="1540961190413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Newsletter" />
-    <SUITE FILE_PATH="coverage/QSJ$run_tests.coverage" NAME="run_tests Coverage Results" MODIFIED="1562937223528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QSJ$run_tests.coverage" NAME="run_tests Coverage Results" MODIFIED="1563161497823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_order_getList_test_py.coverage" NAME="Unittests in order_getList_test.py Coverage Results" MODIFIED="1545297756510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/OrderManagement" />
     <SUITE FILE_PATH="coverage/Funcl$auth_captcha.coverage" NAME="auth_captcha Coverage Results" MODIFIED="1538278537887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Administrator" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_auth_captcha_py.coverage" NAME="Unittests in auth_captcha.py Coverage Results" MODIFIED="1545034566190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Administrator" />
@@ -154,16 +154,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="226">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/report/TestReport.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -178,14 +192,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/path.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -209,11 +220,6 @@
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/qianka/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -291,10 +297,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="152" />
-    <option name="y" value="103" />
-    <option name="width" value="1545" />
-    <option name="height" value="786" />
+    <option name="x" value="294" />
+    <option name="width" value="1632" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -310,6 +315,46 @@
               <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="QSJ" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QSJ" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QSJ" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="Administrator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QSJ" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="Business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QSJ" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="qianka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QSJ" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="qsj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QSJ" type="462c0819:PsiDirectoryNode" />
+              <item name="interface" type="462c0819:PsiDirectoryNode" />
+              <item name="route" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QSJ" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -319,7 +364,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../auto/interfaceTest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterfaceTest" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -690,7 +735,7 @@
       <workItem from="1562666874675" duration="299000" />
       <workItem from="1562754151192" duration="3502000" />
       <workItem from="1562824201083" duration="1346000" />
-      <workItem from="1562929951740" duration="5796000" />
+      <workItem from="1562929951740" duration="9331000" />
     </task>
     <task id="LOCAL-00001" summary="first commmit">
       <created>1538289967373</created>
@@ -818,7 +863,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562937895829</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="update all">
+      <created>1562938638175</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1562938638175</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -854,7 +906,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217662000" />
+    <option name="totallyTimeSpent" value="221197000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -874,13 +926,13 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36550975" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36550975" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39479393" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50316167" side_tool="true" weight="0.32880434" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Python Console" order="8" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.324295" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4968383" weight="0.3264642" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -966,13 +1018,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update all" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/configparser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="695" selection-start-line="695" selection-end-line="695" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Global_base/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1218,9 +1263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/report/2019-07-09 14_26_27_result.html" />
     <entry file="file://$PROJECT_DIR$/report/2019-07-09 14_48_55_result.html">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1276,23 +1318,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/path.py">
+    <entry file="file://$PROJECT_DIR$/report/TestReport.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="285">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_tests.py">
+    <entry file="file://$PROJECT_DIR$/path.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
