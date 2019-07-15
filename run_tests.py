@@ -1,8 +1,6 @@
 import sys, os
 import time
 import unittest
-import pymysql
-
 from HTMLTestRunner import HTMLTestRunner
 
 curPath = os.path.abspath(os.path.dirname(__file__))
