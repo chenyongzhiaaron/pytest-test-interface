@@ -13,7 +13,7 @@ class ClickNotify(unittest.TestCase):
         print(self.result)
 
     @parameterized.expand([
-        ("参数正确，点击成功", "1467866510", "auto_test_init08", "10101", "192.168.130.116", "1562234911895",
+        ("参数正确，点击成功", "1467866510", "auto_test_init09", "10101", "192.168.130.116", "1562234911895",
          "https://baidu.com/", "ok", 200),
         (
         "appid为空", "", "auto_test_init09", "10101", "192.168.130.116", "1562234911895", "https://baidu.com/", "appid错误",

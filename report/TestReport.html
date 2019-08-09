@@ -219,9 +219,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>四海接口测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-07-15 11:31:38</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:03.946480</p>
-<p class='attribute'><strong>Status:</strong> Pass 28</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-07-21 18:32:09</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:02.328791</p>
+<p class='attribute'><strong>Status:</strong> Pass 12 Error 1</p>
 
 <p class='description'>Implementation Example with: 四海接口接口测试报告</p>
 </div>
@@ -262,406 +262,42 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
-    <td>clickNotify.ClickNotify</td>
-    <td>16</td>
-    <td>16</td>
+<tr class='errorClass'>
+    <td>unittest.loader._FailedTest</td>
+    <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',16)">Detail</a></td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_00__: 点击下载接口测试 [with case='参数正确，点击成功', appid='1467866510', idfa='auto_test_init08', channel='10101', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='ok', code=200]</div></td>
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>clickNotify</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
 
-    <div id='div_pt1.1' class="popup_window">
+    <div id='div_ft1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.1: {'msg': 'ok', 'code': 200, 'timestamp': '20190716113138'}
+ft1.1: ImportError: Failed to import test module: clickNotify
+Traceback (most recent call last):
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "F:\QSJ\interface\qianka\clickNotify.py", line 5, in &lt;module&gt;
+    from db_fixture import test_db_idfa
+  File "C:\Program Files (x86)\Jenkins\workspace\interface_test\db_fixture\test_db_idfa.py", line 3, in &lt;module&gt;
+    import pymysql.cursors
+ModuleNotFoundError: No module named 'pymysql'
 
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_01_appid_: 点击下载接口测试 [with case='appid为空', appid='', idfa='auto_test_init09', channel='10101', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='appid错误', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-        pass</a>
-
-    <div id='div_pt1.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.2: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190716113139'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_02_idfa_: 点击下载接口测试 [with case='idfa为空', appid='1467866510', idfa='', channel='10101', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='idfa错误', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
-        pass</a>
-
-    <div id='div_pt1.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.3: {'msg': 'idfa错误', 'code': 100002, 'timestamp': '20190716113139'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_03_channel_: 点击下载接口测试 [with case='channel为空', appid='1467866510', idfa='auto_test_init09', channel='', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='channel错误', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
-        pass</a>
-
-    <div id='div_pt1.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.4: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190716113139'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.5' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_04_ip_: 点击下载接口测试 [with case='ip为空', appid='1467866510', idfa='auto_test_init09', channel='10101', ip='', timestamp='1562234911895', callback='https://baidu.com/', msg='不符合IP规则', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
-        pass</a>
-
-    <div id='div_pt1.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.5: {'msg': '不符合IP规则', 'code': 100002, 'timestamp': '20190716113139'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.6' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_05_appid_: 点击下载接口测试 [with case='appid错误', appid='1467866510tesj发', idfa='auto_test_init09', channel='10101', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='无效的appid', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
-        pass</a>
-
-    <div id='div_pt1.6' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.6').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.6: {'msg': '无效的appid', 'code': 100002, 'timestamp': '20190716113139'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.7' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_06_appid_null: 点击下载接口测试 [with case='appid传null', appid='null', idfa='auto_test_init09', channel='10101', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='appid错误', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.7')" >
-        pass</a>
-
-    <div id='div_pt1.7' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.7').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.7: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190716113139'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.8' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_07_appid_5: 点击下载接口测试 [with case='appid小于5', appid='1234', idfa='auto_test_init09', channel='10101', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='appid错误', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.8')" >
-        pass</a>
-
-    <div id='div_pt1.8' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.8').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.8: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190716113139'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.9' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_08_appid_32: 点击下载接口测试 [with case='appid大于32', appid='123456789012345678901234567890123', idfa='auto_test_init09', channel='10101', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='appid错误', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.9')" >
-        pass</a>
-
-    <div id='div_pt1.9' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.9').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.9: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190716113139'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.10' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_09_idfa_5: 点击下载接口测试 [with case='idfa小于5', appid='1467866510', idfa='1234', channel='10101', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='idfa错误', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.10')" >
-        pass</a>
-
-    <div id='div_pt1.10' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.10').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.10: {'msg': 'idfa错误', 'code': 100002, 'timestamp': '20190716113140'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.11' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_10_idfa_50: 点击下载接口测试 [with case='idfa大于50', appid='1467866510', idfa='123456789012345678901234567890123456789012345678901', channel='10101', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='idfa错误', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.11')" >
-        pass</a>
-
-    <div id='div_pt1.11' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.11').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.11: {'msg': 'idfa错误', 'code': 100002, 'timestamp': '20190716113140'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.12' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_11_channel_: 点击下载接口测试 [with case='channel错误', appid='1467866510', idfa='auto_test_init09', channel='10101UUU', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='渠道错误', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.12')" >
-        pass</a>
-
-    <div id='div_pt1.12' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.12').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.12: {'msg': '渠道错误', 'code': 100002, 'timestamp': '20190716113140'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.13' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_12_channel_5: 点击下载接口测试 [with case='channel小于5', appid='1467866510', idfa='auto_test_init09', channel='aaaa', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='channel错误', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.13')" >
-        pass</a>
-
-    <div id='div_pt1.13' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.13').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.13: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190716113140'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.14' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_13_channel_20: 点击下载接口测试 [with case='channel大于20', appid='1467866510', idfa='auto_test_init09', channel='123456789012345678901', ip='192.168.130.116', timestamp='1562234911895', callback='https://baidu.com/', msg='channel错误', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.14')" >
-        pass</a>
-
-    <div id='div_pt1.14' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.14').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.14: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190716113140'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.15' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_14_ip_: 点击下载接口测试 [with case='ip错误', appid='1467866510', idfa='auto_test_init09', channel='10101', ip='192168130116', timestamp='1562234911895', callback='https://baidu.com/', msg='不符合IP规则', code=100002]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.15')" >
-        pass</a>
-
-    <div id='div_pt1.15' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.15').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.15: {'msg': '不符合IP规则', 'code': 100002, 'timestamp': '20190716113140'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt1.16' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_clickNotify_15_callback_: 点击下载接口测试 [with case='callback为空', appid='1467866510', idfa='auto_test_init09', channel='10101', ip='192.168.130.1', timestamp='1562234911895', callback='', msg='ok', code=200]</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.16')" >
-        pass</a>
-
-    <div id='div_pt1.16' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.16').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.16: {'msg': 'ok', 'code': 200, 'timestamp': '20190716113140'}
 
 
         </pre>
@@ -695,7 +331,7 @@ pt1.16: {'msg': 'ok', 'code': 200, 'timestamp': '20190716113140'}
         </div>
         <pre>
         
-pt2.1: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190716113140'}
+pt2.1: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190722183210'}
 
 
         </pre>
@@ -720,7 +356,7 @@ pt2.1: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190716113140'}
         </div>
         <pre>
         
-pt2.2: {'msg': 'idfa错误', 'code': 100002, 'timestamp': '20190716113140'}
+pt2.2: {'msg': 'idfa错误', 'code': 100002, 'timestamp': '20190722183210'}
 
 
         </pre>
@@ -745,7 +381,7 @@ pt2.2: {'msg': 'idfa错误', 'code': 100002, 'timestamp': '20190716113140'}
         </div>
         <pre>
         
-pt2.3: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190716113140'}
+pt2.3: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190722183210'}
 
 
         </pre>
@@ -770,7 +406,7 @@ pt2.3: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190716113140'}
         </div>
         <pre>
         
-pt2.4: {'msg': '无效的appid', 'code': 100002, 'timestamp': '20190716113140'}
+pt2.4: {'msg': '无效的appid', 'code': 100002, 'timestamp': '20190722183210'}
 
 
         </pre>
@@ -795,7 +431,7 @@ pt2.4: {'msg': '无效的appid', 'code': 100002, 'timestamp': '20190716113140'}
         </div>
         <pre>
         
-pt2.5: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190716113140'}
+pt2.5: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190722183210'}
 
 
         </pre>
@@ -820,7 +456,7 @@ pt2.5: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190716113140'}
         </div>
         <pre>
         
-pt2.6: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190716113140'}
+pt2.6: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190722183210'}
 
 
         </pre>
@@ -845,7 +481,7 @@ pt2.6: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190716113140'}
         </div>
         <pre>
         
-pt2.7: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190716113140'}
+pt2.7: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190722183210'}
 
 
         </pre>
@@ -870,7 +506,7 @@ pt2.7: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190716113140'}
         </div>
         <pre>
         
-pt2.8: {'msg': '渠道错误', 'code': 100002, 'timestamp': '20190716113140'}
+pt2.8: {'msg': '渠道错误', 'code': 100002, 'timestamp': '20190722183210'}
 
 
         </pre>
@@ -895,7 +531,7 @@ pt2.8: {'msg': '渠道错误', 'code': 100002, 'timestamp': '20190716113140'}
         </div>
         <pre>
         
-pt2.9: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190716113140'}
+pt2.9: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190722183210'}
 
 
         </pre>
@@ -920,7 +556,7 @@ pt2.9: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190716113140'}
         </div>
         <pre>
         
-pt2.10: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190716113140'}
+pt2.10: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190722183210'}
 
 
         </pre>
@@ -982,10 +618,10 @@ pt2.12: {'auto_test_005': 0, 'auto_test_002': 0, 'auto_test_001': 0, 'auto_test_
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>28</td>
-    <td class="text text-success">28</td>
+    <td>13</td>
+    <td class="text text-success">12</td>
     <td class="text text-danger">0</td>
-    <td class="text text-warning">0</td>
+    <td class="text text-warning">1</td>
     <td>&nbsp;</td>
 </tr>
 </table>
@@ -995,7 +631,7 @@ pt2.12: {'auto_test_005': 0, 'auto_test_002': 0, 'auto_test_001': 0, 'auto_test_
     <script type="text/javascript">
 var data = [
 	{
-		value: 0,
+		value: 1,
 		color: "#ebccd1",
 		label: "Error",
 		labelColor: 'white',
@@ -1009,7 +645,7 @@ var data = [
 		labelFontSize: '16'
 	},
 	{
-		value : 28,
+		value : 12,
 		color : "#d6e9c6",
 		label : "Pass",
 		labelColor: 'white',
