@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>四海接口测试报告</title>
+    <title>接口测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -218,12 +218,12 @@ function showOutput(id, name) {
 --></script>
 
 <div class='heading'>
-<h1>四海接口测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-07-21 18:32:09</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:02.328791</p>
-<p class='attribute'><strong>Status:</strong> Pass 12 Error 1</p>
+<h1>接口测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2019-08-14 21:17:06</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.289228</p>
+<p class='attribute'><strong>Status:</strong> Error 13</p>
 
-<p class='description'>Implementation Example with: 四海接口接口测试报告</p>
+<p class='description'>Implementation Example with: 接口接口测试报告</p>
 </div>
 
 <div style="float:left; margin-left: 10px;">
@@ -263,16 +263,16 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='errorClass'>
-    <td>unittest.loader._FailedTest</td>
-    <td>1</td>
+    <td>find_pass_by_code_test.SendPhoneCode</td>
+    <td>2</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
 </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>clickNotify</div></td>
+    <td class='errorCase'><div class='testcase'>test_send_phone_code_0__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -286,18 +286,52 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-ft1.1: ImportError: Failed to import test module: clickNotify
+ft1.1: Traceback (most recent call last):
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 594, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 805, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connection.py", line 344, in connect
+    ssl_context=context)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\util\ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 412, in wrap_socket
+    session=session
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 853, in _create
+    self.do_handshake()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
-  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
-    __import__(name)
-  File "F:\QSJ\interface\qianka\clickNotify.py", line 5, in &lt;module&gt;
-    from db_fixture import test_db_idfa
-  File "C:\Program Files (x86)\Jenkins\workspace\interface_test\db_fixture\test_db_idfa.py", line 3, in &lt;module&gt;
-    import pymysql.cursors
-ModuleNotFoundError: No module named 'pymysql'
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/findPassByCode (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
 
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\parameterized\parameterized.py", line 504, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "F:\QSJ\interface\app-interface\find_pass_by_code_test.py", line 28, in test_send_phone_code
+    self.result = requests.post(url=self.url, data=params).json()
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/findPassByCode (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
 
 
         </pre>
@@ -307,31 +341,63 @@ ModuleNotFoundError: No module named 'pymysql'
     </td>
 </tr>
 
-<tr class='passClass'>
-    <td>idfa_query.IdfaQuery</td>
-    <td>12</td>
-    <td>12</td>
+<tr id='ft1.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_send_phone_code_0__</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        error</a>
+
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: Traceback (most recent call last):
+  File "F:\QSJ\interface\app-interface\find_pass_by_code_test.py", line 13, in tearDown
+    print(self.result)
+AttributeError: 'SendPhoneCode' object has no attribute 'result'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>get_home_product_listV3_test.IndexInterface</td>
+    <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',12)">Detail</a></td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
 </tr>
 
-<tr id='pt2.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_idfaQuery_fault_0_appid_: 查询接口测试 [with case='appid为空', appid='', idfa='test', channel='10101', timestamp='1562234911895', msg='appid错误', code=100002]</div></td>
+<tr id='ft2.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_index_interfacec_0__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
+        error</a>
 
-    <div id='div_pt2.1' class="popup_window">
+    <div id='div_ft2.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.1: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190722183210'}
+ft2.1: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /app/loan/getHomeProductListV3.do (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+Traceback (most recent call last):
+  File "F:\QSJ\interface\app-interface\get_home_product_listV3_test.py", line 31, in tearDown
+    print(self.result)
+AttributeError: 'IndexInterface' object has no attribute 'result'
 
 
         </pre>
@@ -341,22 +407,76 @@ pt2.1: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190722183210'}
     </td>
 </tr>
 
-<tr id='pt2.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_idfaQuery_fault_1_idfa_: 查询接口测试 [with case='idfa为空', appid='1467866510', idfa='', channel='10101', timestamp='1562234911895', msg='idfa错误', code=100002]</div></td>
+<tr class='errorClass'>
+    <td>get_me_Info_test.GetMeInfo</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c3',2)">Detail</a></td>
+</tr>
+
+<tr id='ft3.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_getMeInfo_0__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
+        error</a>
 
-    <div id='div_pt2.2' class="popup_window">
+    <div id='div_ft3.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.2: {'msg': 'idfa错误', 'code': 100002, 'timestamp': '20190722183210'}
+ft3.1: Traceback (most recent call last):
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 594, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 805, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connection.py", line 344, in connect
+    ssl_context=context)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\util\ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 412, in wrap_socket
+    session=session
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 853, in _create
+    self.do_handshake()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /app/profile/getMeInfo.do (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\parameterized\parameterized.py", line 504, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "F:\QSJ\interface\app-interface\get_me_Info_test.py", line 27, in test_getMeInfo
+    self.result = requests.post(url=self.url, data=params).json()
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /app/profile/getMeInfo.do (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
 
 
         </pre>
@@ -366,22 +486,25 @@ pt2.2: {'msg': 'idfa错误', 'code': 100002, 'timestamp': '20190722183210'}
     </td>
 </tr>
 
-<tr id='pt2.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_idfaQuery_fault_2_channel_: 查询接口测试 [with case='channel为空', appid='1467866510', idfa='test', channel='', timestamp='1562234911895', msg='channel错误', code=100002]</div></td>
+<tr id='ft3.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_getMeInfo_0__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.3')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.2')" >
+        error</a>
 
-    <div id='div_pt2.3' class="popup_window">
+    <div id='div_ft3.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.3: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190722183210'}
+ft3.2: Traceback (most recent call last):
+  File "F:\QSJ\interface\app-interface\get_me_Info_test.py", line 12, in tearDown
+    print(self.result)
+AttributeError: 'GetMeInfo' object has no attribute 'result'
 
 
         </pre>
@@ -391,22 +514,35 @@ pt2.3: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190722183210'}
     </td>
 </tr>
 
-<tr id='pt2.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_idfaQuery_fault_3_appid_: 查询接口测试 [with case='appid错误', appid='1467866510tesj发', idfa='test', channel='10101', timestamp='1562234911895', msg='无效的appid', code=100002]</div></td>
+<tr class='errorClass'>
+    <td>get_module_read_status_test.GetModuleReadStatus</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
+</tr>
+
+<tr id='ft4.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_get_module_read_status_0__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.4')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.1')" >
+        error</a>
 
-    <div id='div_pt2.4' class="popup_window">
+    <div id='div_ft4.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.4').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.4: {'msg': '无效的appid', 'code': 100002, 'timestamp': '20190722183210'}
+ft4.1: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /app/loan/getHomeProductListV3.do (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+Traceback (most recent call last):
+  File "F:\QSJ\interface\app-interface\get_module_read_status_test.py", line 12, in tearDown
+    print(self.result)
+AttributeError: 'GetModuleReadStatus' object has no attribute 'result'
 
 
         </pre>
@@ -416,22 +552,35 @@ pt2.4: {'msg': '无效的appid', 'code': 100002, 'timestamp': '20190722183210'}
     </td>
 </tr>
 
-<tr id='pt2.5' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_idfaQuery_fault_4_appid_null: 查询接口测试 [with case='appid传null', appid='null', idfa='test', channel='10101', timestamp='1562234911895', msg='appid错误', code=100002]</div></td>
+<tr class='errorClass'>
+    <td>init_test_test.Init</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c5',1)">Detail</a></td>
+</tr>
+
+<tr id='ft5.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_init_0__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.5')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.1')" >
+        error</a>
 
-    <div id='div_pt2.5' class="popup_window">
+    <div id='div_ft5.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.5').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.5: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190722183210'}
+ft5.1: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/init (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+Traceback (most recent call last):
+  File "F:\QSJ\interface\app-interface\init_test_test.py", line 35, in tearDown
+    print(self.result)
+AttributeError: 'Init' object has no attribute 'result'
 
 
         </pre>
@@ -441,22 +590,37 @@ pt2.5: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190722183210'}
     </td>
 </tr>
 
-<tr id='pt2.6' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_idfaQuery_fault_5_appid_5: 查询接口测试 [with case='appid小于5', appid='1234', idfa='test', channel='10101', timestamp='1562234911895', msg='appid错误', code=100002]</div></td>
+<tr class='errorClass'>
+    <td>login_by_pass_test.Init</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c6',2)">Detail</a></td>
+</tr>
+
+<tr id='ft6.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_init_0__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.6')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.1')" >
+        error</a>
 
-    <div id='div_pt2.6' class="popup_window">
+    <div id='div_ft6.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.6').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.6: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190722183210'}
+ft6.1: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/loginByPass (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+Traceback (most recent call last):
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\parameterized\parameterized.py", line 504, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "F:\QSJ\interface\app-interface\login_by_pass_test.py", line 32, in test_init
+    accountid = self.result['data']['accountid']
+AttributeError: 'Init' object has no attribute 'result'
 
 
         </pre>
@@ -466,22 +630,26 @@ pt2.6: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190722183210'}
     </td>
 </tr>
 
-<tr id='pt2.7' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_idfaQuery_fault_6_appid_32: 查询接口测试 [with case='appid大于32', appid='123456789012345678901234567890123', idfa='test', channel='10101', timestamp='1562234911895', msg='appid错误', code=100002]</div></td>
+<tr id='ft6.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_init_0__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.7')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.2')" >
+        error</a>
 
-    <div id='div_pt2.7' class="popup_window">
+    <div id='div_ft6.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.7').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.7: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190722183210'}
+ft6.2: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/loginByPass (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+Traceback (most recent call last):
+  File "F:\QSJ\interface\app-interface\login_by_pass_test.py", line 37, in tearDown
+    print(self.result)
+AttributeError: 'Init' object has no attribute 'result'
 
 
         </pre>
@@ -491,22 +659,36 @@ pt2.7: {'msg': 'appid错误', 'code': 100002, 'timestamp': '20190722183210'}
     </td>
 </tr>
 
-<tr id='pt2.8' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_idfaQuery_fault_7_channel_: 查询接口测试 [with case='channel错误', appid='1467866510', idfa='test001', channel='10101UUU', timestamp='1562234911895', msg='渠道错误', code=100002]</div></td>
+<tr class='errorClass'>
+    <td>record_add_test.RecordAdd</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c7',2)">Detail</a></td>
+</tr>
+
+<tr id='ft7.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_record_add_0__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.8')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft7.1')" >
+        error</a>
 
-    <div id='div_pt2.8' class="popup_window">
+    <div id='div_ft7.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.8').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft7.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.8: {'msg': '渠道错误', 'code': 100002, 'timestamp': '20190722183210'}
+ft7.1: Traceback (most recent call last):
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\parameterized\parameterized.py", line 504, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "F:\QSJ\interface\app-interface\record_add_test.py", line 21, in test_record_add
+    values = login.Login.test_login(self,18888888888)
+AttributeError: module 'Global_base.login' has no attribute 'Login'
 
 
         </pre>
@@ -516,22 +698,25 @@ pt2.8: {'msg': '渠道错误', 'code': 100002, 'timestamp': '20190722183210'}
     </td>
 </tr>
 
-<tr id='pt2.9' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_idfaQuery_fault_8_channel_5: 查询接口测试 [with case='channel小于5', appid='1467866510', idfa='test001', channel='aaaa', timestamp='1562234911895', msg='channel错误', code=100002]</div></td>
+<tr id='ft7.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_record_add_0__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.9')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft7.2')" >
+        error</a>
 
-    <div id='div_pt2.9' class="popup_window">
+    <div id='div_ft7.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.9').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft7.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.9: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190722183210'}
+ft7.2: Traceback (most recent call last):
+  File "F:\QSJ\interface\app-interface\record_add_test.py", line 13, in tearDown
+    print(self.result)
+AttributeError: 'RecordAdd' object has no attribute 'result'
 
 
         </pre>
@@ -541,22 +726,76 @@ pt2.9: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190722183210'}
     </td>
 </tr>
 
-<tr id='pt2.10' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_idfaQuery_fault_9_channel_20: 查询接口测试 [with case='channel大于20', appid='1467866510', idfa='test001', channel='123456789012345678901', timestamp='1562234911895', msg='channel错误', code=100002]</div></td>
+<tr class='errorClass'>
+    <td>send_phone_code_test.SendPhoneCode</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c8',2)">Detail</a></td>
+</tr>
+
+<tr id='ft8.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_send_phone_code_0__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.10')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft8.1')" >
+        error</a>
 
-    <div id='div_pt2.10' class="popup_window">
+    <div id='div_ft8.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.10').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft8.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.10: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190722183210'}
+ft8.1: Traceback (most recent call last):
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 594, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 805, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connection.py", line 344, in connect
+    ssl_context=context)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\util\ssl_.py", line 344, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 412, in wrap_socket
+    session=session
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 853, in _create
+    self.do_handshake()
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\util\retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/sendPhoneCode (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\parameterized\parameterized.py", line 504, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "F:\QSJ\interface\app-interface\send_phone_code_test.py", line 28, in test_send_phone_code
+    self.result = requests.post(url=self.url, data=params).json()
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/sendPhoneCode (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
 
 
         </pre>
@@ -566,47 +805,25 @@ pt2.10: {'msg': 'channel错误', 'code': 100002, 'timestamp': '20190722183210'}
     </td>
 </tr>
 
-<tr id='pt2.11' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_idfaQuery_success_0: idfa 不在数据库，返回0;idfa 存在数据库，返回1;{"appid": "1467866510", "idfa": "interfacetest,auto_test_init01", "channel": "10101", "timestamp": "1562234911895"}</div></td>
+<tr id='ft8.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_send_phone_code_0__</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.11')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft8.2')" >
+        error</a>
 
-    <div id='div_pt2.11' class="popup_window">
+    <div id='div_ft8.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.11').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft8.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.11: {'auto_test_init01': 1, 'interfacetest': 0}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt2.12' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_idfaQuery_success_1: 传入多个 idfa，返回多个 idfa 对应值;{"appid": "1467866510", "idfa": "auto_test_001,auto_test_002,auto_test_003,auto_test_004,auto_test_005", "channel": "10101", "timestamp": "1562234911895"}</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.12')" >
-        pass</a>
-
-    <div id='div_pt2.12' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.12').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt2.12: {'auto_test_005': 0, 'auto_test_002': 0, 'auto_test_001': 0, 'auto_test_004': 0, 'auto_test_003': 0}
+ft8.2: Traceback (most recent call last):
+  File "F:\QSJ\interface\app-interface\send_phone_code_test.py", line 13, in tearDown
+    print(self.result)
+AttributeError: 'SendPhoneCode' object has no attribute 'result'
 
 
         </pre>
@@ -619,9 +836,9 @@ pt2.12: {'auto_test_005': 0, 'auto_test_002': 0, 'auto_test_001': 0, 'auto_test_
 <tr id='total_row'>
     <td>Total</td>
     <td>13</td>
-    <td class="text text-success">12</td>
+    <td class="text text-success">0</td>
     <td class="text text-danger">0</td>
-    <td class="text text-warning">1</td>
+    <td class="text text-warning">13</td>
     <td>&nbsp;</td>
 </tr>
 </table>
@@ -631,7 +848,7 @@ pt2.12: {'auto_test_005': 0, 'auto_test_002': 0, 'auto_test_001': 0, 'auto_test_
     <script type="text/javascript">
 var data = [
 	{
-		value: 1,
+		value: 13,
 		color: "#ebccd1",
 		label: "Error",
 		labelColor: 'white',
@@ -645,7 +862,7 @@ var data = [
 		labelFontSize: '16'
 	},
 	{
-		value : 12,
+		value : 0,
 		color : "#d6e9c6",
 		label : "Pass",
 		labelColor: 'white',

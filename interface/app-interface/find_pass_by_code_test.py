@@ -5,7 +5,7 @@ from Global_base import phone_create
 from parameterized import parameterized
 
 
-class SendPhoneCode(unittest.TestCase):
+class FindPassByCode(unittest.TestCase):
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/findPassByCode')
 
@@ -16,7 +16,7 @@ class SendPhoneCode(unittest.TestCase):
         ("找回密码成功", "8ff15b24341602becdf011679ec383c1", "2.6.0", "15", "867910035562539", "1", "1003",
          "sinaif", "ef70fb3178dccde19df9295a68aca0a3", "qsj")
     ])
-    def test_send_phone_code(self, case, password, ver, verno, deviceId, deviceType, productId, channelId,
+    def test_find_pass_by_code(self, case, password, ver, verno, deviceId, deviceType, productId, channelId,
                              deviceToken, mjbname):
         phone_new = "18888888888"
         code = "1234512dd"

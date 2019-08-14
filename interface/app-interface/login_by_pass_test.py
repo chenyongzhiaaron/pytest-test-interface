@@ -4,7 +4,7 @@ from Global_base import global_base
 from parameterized import parameterized
 
 
-class Init(unittest.TestCase):
+class LoginByPassWord(unittest.TestCase):
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/loginByPass')
 
@@ -13,7 +13,7 @@ class Init(unittest.TestCase):
          "ef70fb3178dccde19df9295a68aca0a3",
          "qsj",),
     ])
-    def test_init(self, caase, password, ver, verno, deviceId, deviceType, productId, channelId, deviceToken, mjbname):
+    def test_login_by_password(self, caase, password, ver, verno, deviceId, deviceType, productId, channelId, deviceToken, mjbname):
         username = 18888888888
         pa = {"ver": ver, "password": password,
               "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "productId": productId,
