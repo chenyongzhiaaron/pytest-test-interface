@@ -219,9 +219,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>接口测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-08-14 21:17:06</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.289228</p>
-<p class='attribute'><strong>Status:</strong> Error 13</p>
+<p class='attribute'><strong>Start Time:</strong> 2019-08-14 21:27:09</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.001004</p>
+<p class='attribute'><strong>Status:</strong> Error 8</p>
 
 <p class='description'>Implementation Example with: 接口接口测试报告</p>
 </div>
@@ -263,16 +263,16 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='errorClass'>
-    <td>find_pass_by_code_test.SendPhoneCode</td>
-    <td>2</td>
+    <td>unittest.loader._FailedTest</td>
+    <td>8</td>
     <td>0</td>
     <td>0</td>
-    <td>2</td>
-    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
+    <td>8</td>
+    <td><a href="javascript:showClassDetail('c1',8)">Detail</a></td>
 </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_send_phone_code_0__</div></td>
+    <td class='errorCase'><div class='testcase'>find_pass_by_code_test</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -286,52 +286,18 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-ft1.1: Traceback (most recent call last):
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 594, in urlopen
-    self._prepare_proxy(conn)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 805, in _prepare_proxy
-    conn.connect()
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connection.py", line 344, in connect
-    ssl_context=context)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\util\ssl_.py", line 344, in ssl_wrap_socket
-    return context.wrap_socket(sock, server_hostname=server_hostname)
-  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 412, in wrap_socket
-    session=session
-  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 853, in _create
-    self.do_handshake()
-  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1117, in do_handshake
-    self._sslobj.do_handshake()
-ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)
-
-During handling of the above exception, another exception occurred:
-
+ft1.1: ImportError: Failed to import test module: find_pass_by_code_test
 Traceback (most recent call last):
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\adapters.py", line 449, in send
-    timeout=timeout
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\util\retry.py", line 398, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/findPassByCode (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "F:\QSJ\interface\app-interface\find_pass_by_code_test.py", line 3, in &lt;module&gt;
+    from Global_base import global_base
+  File "C:\Program Files (x86)\Jenkins\workspace\interface_test\Global_base\global_base.py", line 2, in &lt;module&gt;
+    from natsort import natsorted
+ModuleNotFoundError: No module named 'natsort'
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\parameterized\parameterized.py", line 504, in standalone_func
-    return func(*(a + p.args), **p.kwargs)
-  File "F:\QSJ\interface\app-interface\find_pass_by_code_test.py", line 28, in test_send_phone_code
-    self.result = requests.post(url=self.url, data=params).json()
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\api.py", line 116, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\api.py", line 60, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\sessions.py", line 533, in request
-    resp = self.send(prep, **send_kwargs)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\sessions.py", line 646, in send
-    r = adapter.send(request, **kwargs)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\adapters.py", line 514, in send
-    raise SSLError(e, request=request)
-requests.exceptions.SSLError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/findPassByCode (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
 
 
         </pre>
@@ -342,7 +308,7 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn
 </tr>
 
 <tr id='ft1.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_send_phone_code_0__</div></td>
+    <td class='errorCase'><div class='testcase'>get_home_product_listV3_test</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -356,48 +322,18 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn
         </div>
         <pre>
         
-ft1.2: Traceback (most recent call last):
-  File "F:\QSJ\interface\app-interface\find_pass_by_code_test.py", line 13, in tearDown
-    print(self.result)
-AttributeError: 'SendPhoneCode' object has no attribute 'result'
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr class='errorClass'>
-    <td>get_home_product_listV3_test.IndexInterface</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
-</tr>
-
-<tr id='ft2.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_index_interfacec_0__</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
-        error</a>
-
-    <div id='div_ft2.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft2.1: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /app/loan/getHomeProductListV3.do (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+ft1.2: ImportError: Failed to import test module: get_home_product_listV3_test
 Traceback (most recent call last):
-  File "F:\QSJ\interface\app-interface\get_home_product_listV3_test.py", line 31, in tearDown
-    print(self.result)
-AttributeError: 'IndexInterface' object has no attribute 'result'
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "F:\QSJ\interface\app-interface\get_home_product_listV3_test.py", line 3, in &lt;module&gt;
+    from Global_base import global_base
+  File "C:\Program Files (x86)\Jenkins\workspace\interface_test\Global_base\global_base.py", line 2, in &lt;module&gt;
+    from natsort import natsorted
+ModuleNotFoundError: No module named 'natsort'
+
 
 
         </pre>
@@ -407,76 +343,69 @@ AttributeError: 'IndexInterface' object has no attribute 'result'
     </td>
 </tr>
 
-<tr class='errorClass'>
-    <td>get_me_Info_test.GetMeInfo</td>
-    <td>2</td>
-    <td>0</td>
-    <td>0</td>
-    <td>2</td>
-    <td><a href="javascript:showClassDetail('c3',2)">Detail</a></td>
-</tr>
-
-<tr id='ft3.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_getMeInfo_0__</div></td>
+<tr id='ft1.3' class='none'>
+    <td class='errorCase'><div class='testcase'>get_me_Info_test</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
         error</a>
 
-    <div id='div_ft3.1' class="popup_window">
+    <div id='div_ft1.3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft3.1: Traceback (most recent call last):
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 594, in urlopen
-    self._prepare_proxy(conn)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 805, in _prepare_proxy
-    conn.connect()
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connection.py", line 344, in connect
-    ssl_context=context)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\util\ssl_.py", line 344, in ssl_wrap_socket
-    return context.wrap_socket(sock, server_hostname=server_hostname)
-  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 412, in wrap_socket
-    session=session
-  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 853, in _create
-    self.do_handshake()
-  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1117, in do_handshake
-    self._sslobj.do_handshake()
-ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)
-
-During handling of the above exception, another exception occurred:
-
+ft1.3: ImportError: Failed to import test module: get_me_Info_test
 Traceback (most recent call last):
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\adapters.py", line 449, in send
-    timeout=timeout
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\util\retry.py", line 398, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /app/profile/getMeInfo.do (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "F:\QSJ\interface\app-interface\get_me_Info_test.py", line 3, in &lt;module&gt;
+    from Global_base import global_base
+  File "C:\Program Files (x86)\Jenkins\workspace\interface_test\Global_base\global_base.py", line 2, in &lt;module&gt;
+    from natsort import natsorted
+ModuleNotFoundError: No module named 'natsort'
 
-During handling of the above exception, another exception occurred:
 
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.4' class='none'>
+    <td class='errorCase'><div class='testcase'>get_module_read_status_test</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
+        error</a>
+
+    <div id='div_ft1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.4: ImportError: Failed to import test module: get_module_read_status_test
 Traceback (most recent call last):
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\parameterized\parameterized.py", line 504, in standalone_func
-    return func(*(a + p.args), **p.kwargs)
-  File "F:\QSJ\interface\app-interface\get_me_Info_test.py", line 27, in test_getMeInfo
-    self.result = requests.post(url=self.url, data=params).json()
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\api.py", line 116, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\api.py", line 60, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\sessions.py", line 533, in request
-    resp = self.send(prep, **send_kwargs)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\sessions.py", line 646, in send
-    r = adapter.send(request, **kwargs)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\adapters.py", line 514, in send
-    raise SSLError(e, request=request)
-requests.exceptions.SSLError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /app/profile/getMeInfo.do (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "F:\QSJ\interface\app-interface\get_module_read_status_test.py", line 3, in &lt;module&gt;
+    from Global_base import global_base
+  File "C:\Program Files (x86)\Jenkins\workspace\interface_test\Global_base\global_base.py", line 2, in &lt;module&gt;
+    from natsort import natsorted
+ModuleNotFoundError: No module named 'natsort'
+
 
 
         </pre>
@@ -486,63 +415,33 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn
     </td>
 </tr>
 
-<tr id='ft3.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_getMeInfo_0__</div></td>
+<tr id='ft1.5' class='none'>
+    <td class='errorCase'><div class='testcase'>init_test_test</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.2')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5')" >
         error</a>
 
-    <div id='div_ft3.2' class="popup_window">
+    <div id='div_ft1.5' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.5').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft3.2: Traceback (most recent call last):
-  File "F:\QSJ\interface\app-interface\get_me_Info_test.py", line 12, in tearDown
-    print(self.result)
-AttributeError: 'GetMeInfo' object has no attribute 'result'
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr class='errorClass'>
-    <td>get_module_read_status_test.GetModuleReadStatus</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
-</tr>
-
-<tr id='ft4.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_get_module_read_status_0__</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.1')" >
-        error</a>
-
-    <div id='div_ft4.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft4.1: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /app/loan/getHomeProductListV3.do (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+ft1.5: ImportError: Failed to import test module: init_test_test
 Traceback (most recent call last):
-  File "F:\QSJ\interface\app-interface\get_module_read_status_test.py", line 12, in tearDown
-    print(self.result)
-AttributeError: 'GetModuleReadStatus' object has no attribute 'result'
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "F:\QSJ\interface\app-interface\init_test_test.py", line 3, in &lt;module&gt;
+    from Global_base import global_base
+  File "C:\Program Files (x86)\Jenkins\workspace\interface_test\Global_base\global_base.py", line 2, in &lt;module&gt;
+    from natsort import natsorted
+ModuleNotFoundError: No module named 'natsort'
+
 
 
         </pre>
@@ -552,35 +451,33 @@ AttributeError: 'GetModuleReadStatus' object has no attribute 'result'
     </td>
 </tr>
 
-<tr class='errorClass'>
-    <td>init_test_test.Init</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c5',1)">Detail</a></td>
-</tr>
-
-<tr id='ft5.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_init_0__</div></td>
+<tr id='ft1.6' class='none'>
+    <td class='errorCase'><div class='testcase'>login_by_pass_test</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.6')" >
         error</a>
 
-    <div id='div_ft5.1' class="popup_window">
+    <div id='div_ft1.6' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.6').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft5.1: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/init (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+ft1.6: ImportError: Failed to import test module: login_by_pass_test
 Traceback (most recent call last):
-  File "F:\QSJ\interface\app-interface\init_test_test.py", line 35, in tearDown
-    print(self.result)
-AttributeError: 'Init' object has no attribute 'result'
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "F:\QSJ\interface\app-interface\login_by_pass_test.py", line 3, in &lt;module&gt;
+    from Global_base import global_base
+  File "C:\Program Files (x86)\Jenkins\workspace\interface_test\Global_base\global_base.py", line 2, in &lt;module&gt;
+    from natsort import natsorted
+ModuleNotFoundError: No module named 'natsort'
+
 
 
         </pre>
@@ -590,37 +487,33 @@ AttributeError: 'Init' object has no attribute 'result'
     </td>
 </tr>
 
-<tr class='errorClass'>
-    <td>login_by_pass_test.Init</td>
-    <td>2</td>
-    <td>0</td>
-    <td>0</td>
-    <td>2</td>
-    <td><a href="javascript:showClassDetail('c6',2)">Detail</a></td>
-</tr>
-
-<tr id='ft6.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_init_0__</div></td>
+<tr id='ft1.7' class='none'>
+    <td class='errorCase'><div class='testcase'>record_add_test</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.7')" >
         error</a>
 
-    <div id='div_ft6.1' class="popup_window">
+    <div id='div_ft1.7' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.7').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft6.1: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/loginByPass (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+ft1.7: ImportError: Failed to import test module: record_add_test
 Traceback (most recent call last):
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\parameterized\parameterized.py", line 504, in standalone_func
-    return func(*(a + p.args), **p.kwargs)
-  File "F:\QSJ\interface\app-interface\login_by_pass_test.py", line 32, in test_init
-    accountid = self.result['data']['accountid']
-AttributeError: 'Init' object has no attribute 'result'
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "F:\QSJ\interface\app-interface\record_add_test.py", line 3, in &lt;module&gt;
+    from Global_base import global_base
+  File "C:\Program Files (x86)\Jenkins\workspace\interface_test\Global_base\global_base.py", line 2, in &lt;module&gt;
+    from natsort import natsorted
+ModuleNotFoundError: No module named 'natsort'
+
 
 
         </pre>
@@ -630,200 +523,33 @@ AttributeError: 'Init' object has no attribute 'result'
     </td>
 </tr>
 
-<tr id='ft6.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_init_0__</div></td>
+<tr id='ft1.8' class='none'>
+    <td class='errorCase'><div class='testcase'>send_phone_code_test</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.2')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.8')" >
         error</a>
 
-    <div id='div_ft6.2' class="popup_window">
+    <div id='div_ft1.8' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.8').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft6.2: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/loginByPass (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+ft1.8: ImportError: Failed to import test module: send_phone_code_test
 Traceback (most recent call last):
-  File "F:\QSJ\interface\app-interface\login_by_pass_test.py", line 37, in tearDown
-    print(self.result)
-AttributeError: 'Init' object has no attribute 'result'
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
+    __import__(name)
+  File "F:\QSJ\interface\app-interface\send_phone_code_test.py", line 3, in &lt;module&gt;
+    from Global_base import global_base
+  File "C:\Program Files (x86)\Jenkins\workspace\interface_test\Global_base\global_base.py", line 2, in &lt;module&gt;
+    from natsort import natsorted
+ModuleNotFoundError: No module named 'natsort'
 
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr class='errorClass'>
-    <td>record_add_test.RecordAdd</td>
-    <td>2</td>
-    <td>0</td>
-    <td>0</td>
-    <td>2</td>
-    <td><a href="javascript:showClassDetail('c7',2)">Detail</a></td>
-</tr>
-
-<tr id='ft7.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_record_add_0__</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft7.1')" >
-        error</a>
-
-    <div id='div_ft7.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft7.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft7.1: Traceback (most recent call last):
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\parameterized\parameterized.py", line 504, in standalone_func
-    return func(*(a + p.args), **p.kwargs)
-  File "F:\QSJ\interface\app-interface\record_add_test.py", line 21, in test_record_add
-    values = login.Login.test_login(self,18888888888)
-AttributeError: module 'Global_base.login' has no attribute 'Login'
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft7.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_record_add_0__</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft7.2')" >
-        error</a>
-
-    <div id='div_ft7.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft7.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft7.2: Traceback (most recent call last):
-  File "F:\QSJ\interface\app-interface\record_add_test.py", line 13, in tearDown
-    print(self.result)
-AttributeError: 'RecordAdd' object has no attribute 'result'
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr class='errorClass'>
-    <td>send_phone_code_test.SendPhoneCode</td>
-    <td>2</td>
-    <td>0</td>
-    <td>0</td>
-    <td>2</td>
-    <td><a href="javascript:showClassDetail('c8',2)">Detail</a></td>
-</tr>
-
-<tr id='ft8.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_send_phone_code_0__</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft8.1')" >
-        error</a>
-
-    <div id='div_ft8.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft8.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft8.1: Traceback (most recent call last):
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 594, in urlopen
-    self._prepare_proxy(conn)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 805, in _prepare_proxy
-    conn.connect()
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connection.py", line 344, in connect
-    ssl_context=context)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\util\ssl_.py", line 344, in ssl_wrap_socket
-    return context.wrap_socket(sock, server_hostname=server_hostname)
-  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 412, in wrap_socket
-    session=session
-  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 853, in _create
-    self.do_handshake()
-  File "C:\Users\dell\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1117, in do_handshake
-    self._sslobj.do_handshake()
-ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\adapters.py", line 449, in send
-    timeout=timeout
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
-    _stacktrace=sys.exc_info()[2])
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\urllib3\util\retry.py", line 398, in increment
-    raise MaxRetryError(_pool, url, error or ResponseError(cause))
-urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/sendPhoneCode (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\parameterized\parameterized.py", line 504, in standalone_func
-    return func(*(a + p.args), **p.kwargs)
-  File "F:\QSJ\interface\app-interface\send_phone_code_test.py", line 28, in test_send_phone_code
-    self.result = requests.post(url=self.url, data=params).json()
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\api.py", line 116, in post
-    return request('post', url, data=data, json=json, **kwargs)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\api.py", line 60, in request
-    return session.request(method=method, url=url, **kwargs)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\sessions.py", line 533, in request
-    resp = self.send(prep, **send_kwargs)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\sessions.py", line 646, in send
-    r = adapter.send(request, **kwargs)
-  File "C:\Users\dell\PycharmProjects\untitled\venv\lib\site-packages\requests\adapters.py", line 514, in send
-    raise SSLError(e, request=request)
-requests.exceptions.SSLError: HTTPSConnectionPool(host='k8s-qsj-test-jie.iask.cn', port=443): Max retries exceeded with url: /usercenter/sys/sendPhoneCode (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft8.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_send_phone_code_0__</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft8.2')" >
-        error</a>
-
-    <div id='div_ft8.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft8.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft8.2: Traceback (most recent call last):
-  File "F:\QSJ\interface\app-interface\send_phone_code_test.py", line 13, in tearDown
-    print(self.result)
-AttributeError: 'SendPhoneCode' object has no attribute 'result'
 
 
         </pre>
@@ -835,10 +561,10 @@ AttributeError: 'SendPhoneCode' object has no attribute 'result'
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>13</td>
+    <td>8</td>
     <td class="text text-success">0</td>
     <td class="text text-danger">0</td>
-    <td class="text text-warning">13</td>
+    <td class="text text-warning">8</td>
     <td>&nbsp;</td>
 </tr>
 </table>
@@ -848,7 +574,7 @@ AttributeError: 'SendPhoneCode' object has no attribute 'result'
     <script type="text/javascript">
 var data = [
 	{
-		value: 13,
+		value: 8,
 		color: "#ebccd1",
 		label: "Error",
 		labelColor: 'white',
