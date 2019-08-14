@@ -15,7 +15,7 @@ sys.path.append('./report')
 
 # 指定测试用例为当前文件夹下的 interface 目录
 # test_dir = 'F:\/auto\qsjInterface\interface\'
-test_dir = "F:\/QSJ/interface/qianka/"
+test_dir = "F:\/QSJ/interface/app-interface"
 discover = unittest.defaultTestLoader.discover(test_dir, pattern='*.py')
 
 if __name__ == "__main__":
