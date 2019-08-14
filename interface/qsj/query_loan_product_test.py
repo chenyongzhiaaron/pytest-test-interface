@@ -16,7 +16,6 @@ class QueryLoanProduct(unittest.TestCase):
         self.assertEqual(self.result['code'], '200')
         self.assertEqual(self.result['msg'], 'ok')
         self.result = r.text
-        # self.assertIn('精灵口袋', self.result)
 
 
 if __name__ == '__main__':

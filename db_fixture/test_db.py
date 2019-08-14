@@ -67,7 +67,7 @@ class T_DB():
     #   ----------------------------------------------------------我是分割线--------------------------------------------
 
     #   通过数据库获取用户最新的一条验证码
-    def t_db2(self):
+    def t_db2(self, sql, params):
         # 连接MySQL数据库
         connection = pymysql.connect(host=host,
                                      port=int(port),
@@ -79,19 +79,16 @@ class T_DB():
         # 通过cursor创建游标
         cursor = connection.cursor()
         # 创建sql 语句，并执行
-        sqlCaptcha = "select smscode from sinaif_easy.t_app_smsinfo where mobile = 18570000000 order by sendtime desc limit 1"  # 获取最新一条用户验证码
+        # sqlCaptcha = "select smscode from sinaif_easy.t_app_smsinfo where mobile = 18888888888 order by sendtime desc limit 1"  # 获取最新一条用户验证码
+        sqlCaptcha = sql  # 获取最新一条用户验证码
         cursor.execute(sqlCaptcha)
         # 查询单条数据 并将结果返回给 result
         result = cursor.fetchone()
         # 查询多条数据 并将结果返回给 result
         # result = cursor.fetchall()
-        smscode = result['smscode']
+        values = result[params]
         # 关闭数据连接
         connection.close()
-        return smscode
+        return values
 
-test = T_DB()
-print(test.t_db2())
-smscode = test.t_db2()
-# print("api/user/address/" + str(address_id))
-print(smscode)
+

@@ -23,9 +23,9 @@ def create_phone():
     return "1{}{}{}".format(second, third, suffix)
 
 
-# 生成手机号
-phone = create_phone()
-print(phone)
+# # 生成手机号
+# phone = create_phone()
+# print(phone)
 
 
 #
