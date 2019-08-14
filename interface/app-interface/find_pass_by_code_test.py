@@ -13,7 +13,7 @@ class FindPassByCode(unittest.TestCase):
         print(self.result)
 
     @parameterized.expand([
-        ("找回密码成功", "8ff15b24341602becdf011679ec383c1", "2.6.0", "15", "867910035562539", "1", "1003",
+        ("输入错误验证码提示验证码错误", "8ff15b24341602becdf011679ec383c1", "2.6.0", "15", "867910035562539", "1", "1003",
          "sinaif", "ef70fb3178dccde19df9295a68aca0a3", "qsj")
     ])
     def test_find_pass_by_code(self, case, password, ver, verno, deviceId, deviceType, productId, channelId,
@@ -27,8 +27,8 @@ class FindPassByCode(unittest.TestCase):
         params = dict(pa, **sign)
         self.result = requests.post(url=self.url, data=params).json()
         try:
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result['code'], 200)
+            self.assertEqual(self.result["msg"], "验证码错误，请重试")
+            self.assertEqual(self.result['code'], 1100007)
         except AssertionError as  e:
             print(e)
 

@@ -23,7 +23,6 @@ class Init(unittest.TestCase):
         values = global_base.DefTool.sign(self, **pa)
         sign = {"sign": values}
         params = dict(pa, **sign)
-        # print(params)
         try:
             self.result = requests.post(url=self.url, data=params).json()
             self.assertEqual(self.result["msg"], "ok")
@@ -33,7 +32,6 @@ class Init(unittest.TestCase):
 
     def tearDown(self):
         print(self.result)
-        # print(self.url)
 
 
 if __name__ == '__main__':

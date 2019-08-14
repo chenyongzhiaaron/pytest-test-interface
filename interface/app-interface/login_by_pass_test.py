@@ -35,7 +35,6 @@ class LoginByPassWord(unittest.TestCase):
 
     def tearDown(self):
         print(self.result)
-        # print(self.url)
 
 
 if __name__ == '__main__':
