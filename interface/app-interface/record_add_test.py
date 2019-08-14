@@ -16,6 +16,7 @@ class RecordAdd(unittest.TestCase):
         ("浏览记录上报", "867910035562539", "1003", "1", "154907325559300096", "sinaif",
          "1", "2.6.0", "15", "1234")
     ])
+    @unittest.skip("暂时跳过")
     def test_record_add(self, case, deviceId, productId, deviceType, targetId, channelId, actType,
                              versionName, versionNo, actSource):
         values = login.Login.test_login(self,18888888888)
