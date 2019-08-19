@@ -5,7 +5,7 @@ from parameterized import parameterized
 from Global_base import login
 
 
-class GetMainLinkBySublink(unittest.TestCase):
+class MofidyPassByCode(unittest.TestCase):
     "修改密码提交"
 
     def setUp(self):
@@ -19,7 +19,7 @@ class GetMainLinkBySublink(unittest.TestCase):
         "修改密码提交",  "555555", "867910035562539", "2.6.0", "15", "1003",
         "1", "sinaif", "ef70fb3178dccde19df9295a68aca0a3", "qsj")
     ])
-    def test_getMainLinkBySublink(self, case, code, deviceId, ver, verno,
+    def test_mofidyPassByCode(self, case, code, deviceId, ver, verno,
                                   productId, deviceType, channelId, deviceToken, mjbname):
         username = 18127813601
         password = "de8b02de3a4f16ffa1e56ffd30b0349d"
