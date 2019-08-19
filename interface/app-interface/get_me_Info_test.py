@@ -22,8 +22,7 @@ class GetMeInfo(unittest.TestCase):
               "verno": verno, "productId": productId,
               "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
         value = global_base.DefTool.sign(pa)
-        sign = {"sign": value}
-        params = dict(pa, **sign)
+        params = dict(pa, **value)
         self.result = requests.post(url=self.url, data=params).json()
         try:
             self.assertEqual(self.result['msg'], 'ok')

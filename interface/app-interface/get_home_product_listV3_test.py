@@ -15,9 +15,7 @@ class IndexInterface(unittest.TestCase):
         pa = {"clientType": clientType, "productId": productId, "token": token, "recommendSize": recommendSize,
               "dataType": dataType, "channelId": channelId, "deviceId": deviceId}
         sign = global_base.DefTool.sign(self, **pa)
-        sign_new = {"sign": sign}
-        # print(sign_new)
-        params = dict(pa, **sign_new)
+        params = dict(pa, **sign)
         try:
             self.result = requests.post(url=self.url, data=params).json()
             self.assertEqual(self.result["msg"], "ok")

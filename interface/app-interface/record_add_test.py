@@ -16,18 +16,17 @@ class RecordAdd(unittest.TestCase):
         ("浏览记录上报", "867910035562539", "1003", "1", "154907325559300096", "sinaif",
          "1", "2.6.0", "15", "1234")
     ])
-    @unittest.skip("暂时跳过")
+    # @unittest.skip("暂时跳过")
     def test_record_add(self, case, deviceId, productId, deviceType, targetId, channelId, actType,
                              versionName, versionNo, actSource):
-        values = login.Login.test_login(self,18888888888)
-        accountId = values[1]
-        token = values[2]
+        values = login.LoginByPassWord().login_by_password(18127813601)
+        token = values[1]
+        accountId = values[0]
         code = "1234512dd"
         pa = {"targetId": targetId, "code": code, "accountId": accountId, "deviceId": deviceId, "actType": actType, "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "versionName": versionName, "versionNo": versionNo, "actSource": actSource, "token": token}
         value = global_base.DefTool.sign(self, **pa)
-        sign = {"sign": value}
-        params = dict(pa, **sign)
+        params = dict(pa, **value)
         self.result = requests.post(url=self.url, data=params).json()
         try:
             self.assertEqual(self.result["msg"], "ok")

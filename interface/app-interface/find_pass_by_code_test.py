@@ -23,8 +23,7 @@ class FindPassByCode(unittest.TestCase):
         pa = {"username": str(phone_new), "password": password, "code": code, "verno": verno, "deviceId": deviceId, "ver": ver, "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
         value = global_base.DefTool.sign(self, **pa)
-        sign = {"sign": value}
-        params = dict(pa, **sign)
+        params = dict(pa, **value)
         self.result = requests.post(url=self.url, data=params).json()
         try:
             self.assertEqual(self.result["msg"], "验证码错误，请重试")

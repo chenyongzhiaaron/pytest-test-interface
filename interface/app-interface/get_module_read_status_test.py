@@ -18,8 +18,7 @@ class GetModuleReadStatus(unittest.TestCase):
                                     deviceToken, mjbname):
         pa = {"type": type, "ver": ver, "verno": verno, "deviceId": deviceId, "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
-        value = global_base.DefTool.sign(self, **pa)
-        sign = {"sign": value}
+        sign = global_base.DefTool.sign(self, **pa)
         params = dict(pa, **sign)
         # print(params)
         try:

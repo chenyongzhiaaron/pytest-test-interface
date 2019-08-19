@@ -9,18 +9,18 @@ class LoginByPassWord(unittest.TestCase):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/loginByPass')
 
     @parameterized.expand([
-        ('初始成功', "8ff15b24341602becdf011679ec383c1", "2.6.0", "15", "867910035562539", "1", "1003", "sinaif",
+        ('初始成功', "2.6.0", "15", "867910035562539", "1", "1003", "sinaif",
          "ef70fb3178dccde19df9295a68aca0a3",
          "qsj",),
     ])
-    def test_login_by_password(self, caase, password, ver, verno, deviceId, deviceType, productId, channelId, deviceToken, mjbname):
-        username = 18888888888
+    def test_login_by_password(self, caase, ver, verno, deviceId, deviceType, productId, channelId, deviceToken, mjbname):
+        username = 18127813601
+        password = "8ff15b24341602becdf011679ec383c1"
         pa = {"ver": ver, "password": password,
               "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "productId": productId,
               "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname, "username": username}
         values = global_base.DefTool.sign(self, **pa)
-        sign = {"sign": values}
-        params = dict(pa, **sign)
+        params = dict(pa, **values)
         try:
             self.result = requests.post(url=self.url, data=params).json()
             self.assertEqual(self.result["msg"], "ok")
@@ -29,9 +29,6 @@ class LoginByPassWord(unittest.TestCase):
             self.assertEqual(self.result['data']['mobile'], str(username))
         except Exception as e:
             print(e)
-        accountid = self.result['data']['accountid']
-        token = self.result['token']
-        return accountid, token
 
     def tearDown(self):
         print(self.result)
@@ -39,3 +36,4 @@ class LoginByPassWord(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

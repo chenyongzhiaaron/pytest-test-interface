@@ -21,8 +21,7 @@ class Init(unittest.TestCase):
               "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "productId": productId,
               "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
         values = global_base.DefTool.sign(self, **pa)
-        sign = {"sign": values}
-        params = dict(pa, **sign)
+        params = dict(pa, **values)
         try:
             self.result = requests.post(url=self.url, data=params).json()
             self.assertEqual(self.result["msg"], "ok")

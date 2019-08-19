@@ -81,7 +81,8 @@ class DefTool():
         keysorted = argument + ("".join(sort))
         md = hashlib.md5()
         md.update(keysorted.encode(encoding='utf-8'))
-        sign = md.hexdigest()
+        sign_old = md.hexdigest()
+        sign = {"sign":sign_old}
         # print(sign)
         return sign
 

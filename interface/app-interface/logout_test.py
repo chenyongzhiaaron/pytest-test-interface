@@ -1,30 +1,30 @@
 import requests
 import unittest
-from Global_base import global_base
-from Global_base import phone_create
+from Global_base import global_base,login
 from parameterized import parameterized
 
 
-class SendPhoneCode(unittest.TestCase):
+class Logout(unittest.TestCase):
     def setUp(self):
-        self.url = global_base.DefTool.url(self, '/usercenter/sys/sendPhoneCode')
+        self.url = global_base.DefTool.url(self, '/usercenter/sys/logout')
 
     def tearDown(self):
         print(self.result)
 
     @parameterized.expand([
-        ("发送短信验证码成功", "2", "15", "867910035562539", "2.6.0", "1", "1003", "sinaif",
+        ("退出登录", "868777047018746", "2.6.0", "15", "1003", "1","sinaif",
          "ef70fb3178dccde19df9295a68aca0a3", "qsj")
     ])
-    def test_send_phone_code(self, case, type, verno, deviceId, ver, deviceType, productId, channelId, deviceToken,
+    def test_logout(self, case, deviceId, ver, verno, productId, deviceType, channelId, deviceToken,
                              mjbname):
-        phone_new = phone_create.create_phone()
-        pa = {"phone": str(phone_new), "type": type, "verno": verno, "deviceId": deviceId, "ver": ver,
+        pa = {"type": type, "verno": verno, "deviceId": deviceId, "ver": ver,
               "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
         sign = global_base.DefTool.sign(self, **pa)
         params = dict(pa, **sign)
-        self.result = requests.post(url=self.url, data=params).json()
+        token = login.LoginByPassWord().login_by_password(18127813601)[1]
+        header = {"token":token}
+        self.result = requests.post(url=self.url, headers=header, data=params).json()
         try:
             self.assertEqual(self.result["msg"], "ok")
             self.assertEqual(self.result['code'], 200)
