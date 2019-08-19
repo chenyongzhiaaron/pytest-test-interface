@@ -1,11 +1,12 @@
 import unittest
 import requests
-from Global_base import global_base
+from Global_base import global_base, login
 from parameterized import parameterized
 
 
 class GetUserInfo(unittest.TestCase):
     "获取用户信息"
+
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/getUserInfo')
 
@@ -16,10 +17,12 @@ class GetUserInfo(unittest.TestCase):
     def test_getUserInfo(self, case, ver, verno, deviceId, deviceType, productId, channelId, deviceToken, mjbname):
         params = {"ver": ver, "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "productId": productId,
                   "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
+        token = login.LoginByPassWord().login_by_password(18127813601)[1]
+        header = {"token": token}
         sign = global_base.DefTool.sign(self, **params)
         params_new = dict(params, **sign)
         try:
-            self.result = requests.post(url=self.url, data=params_new).json()
+            self.result = requests.post(url=self.url, headers=header, data=params_new).json()
             self.assertEqual(self.result["msg"], "ok")
             self.assertEqual(self.result["code"], 200)
         except Exception as e:
