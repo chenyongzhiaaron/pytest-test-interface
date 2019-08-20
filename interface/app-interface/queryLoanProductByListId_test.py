@@ -5,6 +5,7 @@ from parameterized import parameterized
 
 
 class QueryLoanProductByListId(unittest.TestCase):
+    '''轻松借模块列表接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/app/loan/queryLoanProductByListId.do')
 
@@ -26,11 +27,8 @@ class QueryLoanProductByListId(unittest.TestCase):
         token = "2782e95b1cffcc59026cab695c2e86eb1"
         header = {"token": token}
         self.result = requests.post(url=self.url, headers=header, data=params).json()
-        try:
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result['code'], '200')
-        except Exception as e:
-            print(e)
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result['code'], '200')
 
 
 if __name__ == '__main__':

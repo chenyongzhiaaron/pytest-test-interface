@@ -5,6 +5,7 @@ from parameterized import parameterized
 
 
 class IndexInterface(unittest.TestCase):
+    '''首页接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/app/loan/getHomeProductListV3.do')
 

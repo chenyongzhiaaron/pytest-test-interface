@@ -5,7 +5,7 @@ from parameterized import parameterized
 
 
 class GetModelInfoByStrategy(unittest.TestCase):
-
+    '''查询路由模板信息接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, "/usercenter/sys/h5/getModelInfoByStrategy")
         self.channelId = 'mdwdk001'
@@ -22,12 +22,9 @@ class GetModelInfoByStrategy(unittest.TestCase):
     def test_getModelInfoByStrategy(self, case, productId, abconfigsid, type, deviceType):
         ''''''
         params = {"productId": productId, "abconfigsid": abconfigsid, "type": type, "deviceType": deviceType}
-        try:
-            self.result = requests.get(url=self.url, params=params).json()
-            self.assertEqual(self.result['msg'], self.msg)
-            self.assertEqual(self.result['code'], self.code)
-        except Exception as e:
-            print(e)
+        self.result = requests.get(url=self.url, params=params).json()
+        self.assertEqual(self.result['msg'], self.msg)
+        self.assertEqual(self.result['code'], self.code)
 
 
 if __name__ == "__mani__":

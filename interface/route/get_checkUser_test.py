@@ -15,7 +15,7 @@ productId	产品ID(大王贷款/2001)	string	非空、必传
 
 
 class CheckUser(unittest.TestCase):
-    '''查询用户注册状态及下载地址'''
+    '''查询路由用户注册状态及下载地址'''
 
     def setUp(self):
         self.url = global_base.DefTool.url(self, "/usercenter/sys/h5/checkUser")
@@ -35,13 +35,8 @@ class CheckUser(unittest.TestCase):
     ])
     def test_cehckUser(self, case, deviceType, channelId, productId, phone, isRegisted):
         params = {"deviceType": deviceType, "channelId": channelId, "productId": productId, "phone": phone}
-        try:
-            self.result = requests.get(url=self.url, params=params).json()
-            self.assertEqual(self.result["code"], self.code)
-            self.assertEqual(self.result["data"]["isRegisted"], isRegisted)
-        except Exception as e:
-            print(e)
-        print(phone)
+        self.result = requests.get(url=self.url, params=params).json()
+        self.assertEqual(self.result["code"], self.code)
 
 
 if __name__ == "__main__":

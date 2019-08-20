@@ -6,7 +6,6 @@ from parameterized import parameterized
 
 class LoginByPassWord(unittest.TestCase):
     '''密码登陆接口'''
-
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/loginByPass')
 

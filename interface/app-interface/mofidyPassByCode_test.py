@@ -26,7 +26,7 @@ class MofidyPassByCode(unittest.TestCase):
     ])
     def test_mofidyPassByCode(self, name, deviceId, ver, verno,
                               productId, deviceType, channelId, deviceToken, mjbname, newpassword):
-        phone = 18607997979
+        phone = 18655557777
         value = send_code.SendPhoneCode().send_phone_code_token(phone)
         token = value[0]
         print("2-------------" + token)

@@ -35,12 +35,10 @@ class GetYkdHomePageInfo(unittest.TestCase):
     def test_getYkdHomePageInfo(self, name, cfgId, cfgType, clientType, listType, productId, searchmaps):
         params = {"cfgId": cfgId, "cfgType": cfgType, "clientType": clientType, "listType": listType,
                   "productId": productId, "searchmaps": searchmaps}
-        try:
-            self.result = requests.get(url=self.url, params=params).json()
-            self.assertEqual(self.result['code'], '200')
-            self.assertEqual(self.result['msg'], 'ok')
-        except Exception as e:
-            print(e)
+        self.result = requests.get(url=self.url, params=params).json()
+        self.assertEqual(self.result['code'], '200')
+        self.assertEqual(self.result['msg'], 'ok')
+
 
 
 if __name__ == '__main__':

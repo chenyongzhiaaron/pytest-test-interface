@@ -5,8 +5,7 @@ from parameterized import parameterized
 
 
 class UpdateUserInfo(unittest.TestCase):
-    "更新身份证"
-
+    '''更新用户信息接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/updateUserInfo')
 

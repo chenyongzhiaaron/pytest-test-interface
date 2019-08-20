@@ -7,7 +7,6 @@ from Global_base import login
 
 class QueryLoanProductByListIdV2(unittest.TestCase):
     "贷款大全"
-
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/app/loan/queryLoanProductByListIdV2.do')
 

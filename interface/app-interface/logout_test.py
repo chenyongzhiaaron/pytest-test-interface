@@ -5,6 +5,7 @@ from parameterized import parameterized
 
 
 class Logout(unittest.TestCase):
+    '''退出登陆接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/logout')
 

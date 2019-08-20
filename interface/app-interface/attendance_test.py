@@ -6,13 +6,13 @@ from parameterized import parameterized
 
 
 class Attendance(unittest.TestCase):
-    "获取消息状态"
+    "签到接口"
 
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/user/getMsgReadStatus')
 
     @parameterized.expand([
-        ('获取最新口子列表成功', "1", "867910035562539"),
+        ('参数正确，签到成功', "1", "867910035562539"),
     ])
     def test_attendance(self, case, deviceType, deviceId):
         value = login.LoginByPassWord()

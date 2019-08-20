@@ -27,7 +27,3 @@ def create_phone():
 # phone = create_phone()
 # print(phone)
 
-
-#
-# mun = random.randint(1,2)
-# print(mun)

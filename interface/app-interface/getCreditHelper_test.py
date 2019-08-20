@@ -6,7 +6,7 @@ from Global_base import login
 
 
 class RecordAdd(unittest.TestCase):
-    "助贷工具"
+    "助贷工具接口"
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/app/credit/getCreditHelper.do')
 

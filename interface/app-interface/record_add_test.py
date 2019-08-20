@@ -6,6 +6,7 @@ from Global_base import login
 
 
 class RecordAdd(unittest.TestCase):
+    '''排重接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/userrecord/record/add.do')
 
@@ -16,7 +17,6 @@ class RecordAdd(unittest.TestCase):
         ("浏览记录上报", "867910035562539", "1003", "1", "154907325559300096", "sinaif",
          "1", "2.6.0", "15", "1234")
     ])
-    # @unittest.skip("暂时跳过")
     def test_record_add(self, case, deviceId, productId, deviceType, targetId, channelId, actType,
                              versionName, versionNo, actSource):
         values = login.LoginByPassWord().login_by_password(18127813601)

@@ -5,8 +5,7 @@ from parameterized import parameterized
 
 
 class GetUserInfo(unittest.TestCase):
-    "获取用户信息"
-
+    "获取用户信息接口"
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/getUserInfo')
 

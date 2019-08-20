@@ -5,6 +5,7 @@ from parameterized import parameterized
 
 
 class SaveGps(unittest.TestCase):
+    '''保存GPS接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/credit/saveGps')
 

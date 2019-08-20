@@ -31,21 +31,18 @@ class GetYkdHomePageInfo(unittest.TestCase):
     def test_getYkdHomePageInfo(self, name, cfgId, cfgType, clientType, listType, productId):
         params = {"cfgId": cfgId, "cfgType": cfgType, "clientType": clientType, "listType": listType,
                   "productId": productId}
-        try:
-            self.result = requests.get(url=self.url, params=params).json()
-            self.assertEqual(self.result['code'], '200')
-            self.assertEqual(self.result['msg'], 'ok')
-            if productId == 1001:
-                self.assertEqual(self.result['data']['morePageUrl'],
-                                 'http://k8s-qsj-test-jie.iask.cn/pg/qsj/modular/index.html?cfgId=NPL62420190509175804100&productId=1005')
-            elif productId == 1002:
-                self.assertEqual(self.result['data']['morePageUrl'],
-                                 'http://k8s-qsj-test-jie.iask.cn/pg/yjAppV3/all.html?cfgId=NPL52220190520102424100&productId=1001')
-            elif productId == 1005:
-                self.assertEqual(self.result['data']['morePageUrl'],
-                                 'http://k8s-qsj-test-jie.iask.cn/pg/yjAppV3/all.html?cfgId=NPL52220190520102424100&productId=1001')
-        except Exception as e:
-            print(e)
+        self.result = requests.get(url=self.url, params=params).json()
+        self.assertEqual(self.result['code'], '200')
+        self.assertEqual(self.result['msg'], 'ok')
+        if productId == 1001:
+            self.assertEqual(self.result['data']['morePageUrl'],
+                             'http://k8s-qsj-test-jie.iask.cn/pg/qsj/modular/index.html?cfgId=NPL62420190509175804100&productId=1005')
+        elif productId == 1002:
+            self.assertEqual(self.result['data']['morePageUrl'],
+                             'http://k8s-qsj-test-jie.iask.cn/pg/yjAppV3/all.html?cfgId=NPL52220190520102424100&productId=1001')
+        elif productId == 1005:
+            self.assertEqual(self.result['data']['morePageUrl'],
+                             'http://k8s-qsj-test-jie.iask.cn/pg/yjAppV3/all.html?cfgId=NPL52220190520102424100&productId=1001')
 
 
 if __name__ == '__main__':

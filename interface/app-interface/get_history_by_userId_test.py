@@ -6,6 +6,7 @@ from parameterized import parameterized
 
 
 class HistoryByUserId(unittest.TestCase):
+    '''查询历史纪录接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/app/productRecord/getHistoryByUserId.do')
 

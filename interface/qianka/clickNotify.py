@@ -6,6 +6,7 @@ from db_fixture import test_db_idfa
 
 
 class ClickNotify(unittest.TestCase):
+    ''' 对接信息流点击下载接口测试 '''
     def setUp(self):
         self.url = "http://k8s-qsj-test-jie.iask.cn/spread/idfa/clickNotify"
 
@@ -13,7 +14,7 @@ class ClickNotify(unittest.TestCase):
         print(self.result)
 
     @parameterized.expand([
-        ("参数正确，点击成功", "1467866510", "auto_test_init09", "10101", "192.168.130.116", "1562234911895",
+        ("参数正确，点击成功", "1467866510", "03E8CBC9-D034-4E2F-BF3E-0A61A53765B4", "10101", "192.168.130.116", "1562234911895",
          "https://baidu.com/", "ok", 200),
         (
         "appid为空", "", "auto_test_init09", "10101", "192.168.130.116", "1562234911895", "https://baidu.com/", "appid错误",
@@ -49,23 +50,19 @@ class ClickNotify(unittest.TestCase):
 
     ])
     def test_clickNotify(self, case, appid, idfa, channel, ip, timestamp, callback, msg, code):
-        ''' 点击下载接口测试 '''
         data = {"appid": appid, "idfa": idfa, "channel": channel, "ip": ip, "timestamp": timestamp,
                 "callback": callback}
         self.result = requests.post(url=self.url, data=data).json()
-        try:
-            if case == '参数正确，点击成功':
-                sql = "select idfa from t_spread_general_idfainfo where appid = 1467866510 order by infoid desc limit 1"
-                db_idfa = test_db_idfa.T_DB().t_db2(sql,idfa)
-                self.assertEqual(idfa, str(db_idfa))
-                self.assertEqual(self.result["msg"], msg)
-            elif case == 'callback为空':
-                self.assertEqual(self.result["msg"], msg)
-                self.assertEqual(self.result["code"], code)
-            else:
-                self.assertEqual(self.result["msg"], msg)
-        except Exception as  e:
-            print(e)
+        if case == '参数正确，点击成功':
+            sql = ("select '{}' from t_spread_general_idfainfo where appid = 1467866510 order by infoid desc limit 0,1;".format(str(idfa)))
+            db_idfa = test_db_idfa.T_DB().t_db2(sql, idfa)
+            self.assertEqual(idfa, str(db_idfa))
+            self.assertEqual(self.result["msg"], msg)
+        elif case == 'callback为空':
+            self.assertEqual(self.result["msg"], msg)
+            self.assertEqual(self.result["code"], code)
+        else:
+            self.assertEqual(self.result["msg"], msg)
 
 
 if __name__ == "__main__":

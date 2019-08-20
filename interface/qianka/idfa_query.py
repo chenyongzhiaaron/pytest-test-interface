@@ -5,6 +5,7 @@ from parameterized import parameterized
 
 
 class IdfaQuery(unittest.TestCase):
+    ''' 对接信息流查询接口 '''
     def setUp(self):
         self.url = "http://k8s-qsj-test-jie.iask.cn/spread/idfa/query"
 
@@ -25,40 +26,31 @@ class IdfaQuery(unittest.TestCase):
 
     ])
     def test_idfaQuery_fault(self, case, appid, idfa, channel, timestamp, msg, code):
-        '''
-        查询接口测试
-        '''
         data = {"appid": appid, "idfa": idfa, "channel": channel, "timestamp": timestamp}
-        try:
-            self.result = requests.post(url=self.url, data=data).json()
-            self.assertEqual(self.result["msg"], msg)
-        except Exception as e:
-            print(e)
+        self.result = requests.post(url=self.url, data=data).json()
+        self.assertEqual(self.result["msg"], msg)
+        self.assertEqual(self.result['code'], code)
+
 
     def test_idfaQuery_success_0(self):
         '''idfa 不在数据库，返回0;idfa 存在数据库，返回1;{"appid": "1467866510", "idfa": "interfacetest,auto_test_init01", "channel": "10101", "timestamp": "1562234911895"}'''
         _data = {"appid": "1467866510", "idfa": "interfacetest,auto_test_init01", "channel": "10101",
                  "timestamp": "1562234911895"}
-        try:
-            self.result = requests.post(url=self.url, data=_data).json()
-            self.assertEqual(self.result["interfacetest"], 0)
-            self.assertEqual(self.result["auto_test_init01"], 1)
-        except Exception as e:
-            print(e)
+        self.result = requests.post(url=self.url, data=_data).json()
+        self.assertEqual(self.result["interfacetest"], 0)
+        self.assertEqual(self.result["auto_test_init01"], 1)
+
 
     def test_idfaQuery_success_1(self):
         ''' 传入多个 idfa，返回多个 idfa 对应值;{"appid": "1467866510", "idfa": "auto_test_001,auto_test_002,auto_test_003,auto_test_004,auto_test_005", "channel": "10101", "timestamp": "1562234911895"} '''
         data = {"appid": "1467866510", "idfa": "auto_test_001,auto_test_002,auto_test_003,auto_test_004,auto_test_005",
                 "channel": "10101", "timestamp": "1562234911895"}
-        try:
-            self.result = requests.post(url=self.url, data=data).json()
-            self.assertEqual(self.result["auto_test_001"], 0)
-            self.assertEqual(self.result["auto_test_002"], 0)
-            self.assertEqual(self.result["auto_test_003"], 0)
-            self.assertEqual(self.result["auto_test_004"], 0)
-            self.assertEqual(self.result["auto_test_005"], 0)
-        except Exception as e:
-            print(e)
+        self.result = requests.post(url=self.url, data=data).json()
+        self.assertEqual(self.result["auto_test_001"], 0)
+        self.assertEqual(self.result["auto_test_002"], 0)
+        self.assertEqual(self.result["auto_test_003"], 0)
+        self.assertEqual(self.result["auto_test_004"], 0)
+        self.assertEqual(self.result["auto_test_005"], 0)
 
 
 if __name__ == "__main__":

@@ -5,6 +5,7 @@ from parameterized import parameterized
 
 
 class PlistProductList(unittest.TestCase):
+    '''查询有借卡贷列表接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, "/app/plist/productList")
 

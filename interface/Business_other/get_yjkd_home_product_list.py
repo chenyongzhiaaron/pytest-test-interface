@@ -5,6 +5,7 @@ from parameterized import parameterized
 
 
 class GetHomeProdcutList(unittest.TestCase):
+    '''查询有借卡贷TAB1首页接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, "/app/loan/getHomeProductList.do")
 
@@ -18,13 +19,10 @@ class GetHomeProdcutList(unittest.TestCase):
         pamras = {"name": name, "productId": productId, "clientType": clientType, "id": id, }
         r = requests.get(url=self.url, params=pamras)
         self.result = r.json()
-        try:
-            self.assertEqual(self.result['code'], '200')
-            self.assertEqual(self.result['msg'], "ok")
-            self.result = r.text
-            self.assertIn("新浪有借", self.result)
-        except Exception as e:
-            print(e)
+        self.assertEqual(self.result['code'], '200')
+        self.assertEqual(self.result['msg'], "ok")
+        self.result = r.text
+        self.assertIn("新浪有借", self.result)
 
 
 if __name__ == "__main__":

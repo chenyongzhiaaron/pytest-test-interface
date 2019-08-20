@@ -5,7 +5,7 @@ from parameterized import parameterized
 
 
 class NewLoanProduct(unittest.TestCase):
-    "最新口子"
+    "最新口子接口"
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/app/loan/getNewLoanProduct.do')
 

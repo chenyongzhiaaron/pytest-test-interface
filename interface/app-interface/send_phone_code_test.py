@@ -6,6 +6,7 @@ from parameterized import parameterized
 
 
 class SendPhoneCode(unittest.TestCase):
+    '''发送登陆验证码接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/sendPhoneCode')
 
