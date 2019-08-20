@@ -18,13 +18,10 @@ class RecordAdd(unittest.TestCase):
     ])
     def test_record_add(self, case, productId, clientType):
         pa = {"productId": productId, "clientType": clientType}
-
         self.result = requests.post(url=self.url, data=pa).json()
-        try:
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result['code'], '200')
-        except AssertionError as e:
-            print(e)
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result['code'], '200')
+
 
 
 if __name__ == '__main__':

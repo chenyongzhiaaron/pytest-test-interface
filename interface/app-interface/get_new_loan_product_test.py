@@ -15,12 +15,9 @@ class NewLoanProduct(unittest.TestCase):
     def test_get_new_loan_product(self, caase, productId, clientType, pageIndex, pageSize,dataType, deviceId):
         token = login.LoginByPassWord().login_by_password(18127813601)[1]
         params = {"deviceId": deviceId, "productId": productId, "token": token, "pageIndex": pageIndex, "pageSize": pageSize, "clientType": clientType}
-        try:
-            self.result = requests.post(url=self.url, data=params).json()
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result["code"], '200')
-        except Exception as e:
-            print(e)
+        self.result = requests.post(url=self.url, data=params).json()
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result["code"], '200')
 
     def tearDown(self):
         print(self.result)

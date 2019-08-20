@@ -14,14 +14,10 @@ class IndexInterface(unittest.TestCase):
     def test_index_interfacec(self, case, clientType, productId, token, recommendSize, dataType, channelId, deviceId):
         pa = {"clientType": clientType, "productId": productId, "token": token, "recommendSize": recommendSize,
               "dataType": dataType, "channelId": channelId, "deviceId": deviceId}
-        sign = global_base.DefTool.sign(self, **pa)
-        params = dict(pa, **sign)
-        try:
-            self.result = requests.post(url=self.url, data=params).json()
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result["code"], "200")
-        except Exception as e:
-            print(e)
+        params = global_base.DefTool().payload(**pa)
+        self.result = requests.post(url=self.url, data=params).json()
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result["code"], "200")
 
     def tearDown(self):
         print(self.result)

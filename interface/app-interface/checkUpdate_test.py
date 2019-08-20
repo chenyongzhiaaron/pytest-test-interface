@@ -5,6 +5,8 @@ from parameterized import parameterized
 
 
 class CheckUpdate(unittest.TestCase):
+    '''检查更新版本'''
+
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/checkUpdate')
 
@@ -20,14 +22,10 @@ class CheckUpdate(unittest.TestCase):
         pa = {"source": source, "channelId": channelId,
               "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "ver": ver, "productId": productId,
               "timestamp": timestamp, "deviceToken": deviceToken, "mjbname": mjbname}
-        sign = global_base.DefTool.sign(self, **pa)
-        params = dict(pa, **sign)
+        params = global_base.DefTool().payload(**pa)
         self.result = requests.post(url=self.url, data=params).json()
-        try:
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result['code'], 200)
-        except Exception as e:
-            print(e)
+        self.assertEqual(self.result["msg"], "当前已是最新版本")
+        self.assertEqual(self.result['code'], 1000013)
 
 
 if __name__ == '__main__':

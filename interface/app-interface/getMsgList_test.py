@@ -6,6 +6,7 @@ from parameterized import parameterized
 
 
 class GetMsgList(unittest.TestCase):
+    '''消息接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/user/getMsgList.do')
 
@@ -21,17 +22,13 @@ class GetMsgList(unittest.TestCase):
         pa = {"callbackName": callbackName, "type": type, "verno": verno, "deviceId": deviceId, "ver": ver,
               "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
-        sign = global_base.DefTool.sign(self, **pa)
-        params = dict(pa, **sign)
+        params = global_base.DefTool().payload(**pa)
         values = login.LoginByPassWord().login_by_password(18127813601)
         token = values[1]
-        header = {"token":token}
+        header = {"token": token}
         self.result = requests.post(url=self.url, headers=header, data=params).json()
-        try:
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result['code'], 200)
-        except Exception as e:
-            print(e)
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result['code'], 200)
 
 
 if __name__ == '__main__':

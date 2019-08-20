@@ -7,7 +7,6 @@ from Global_base import login
 
 class GetMainLinkBySublink(unittest.TestCase):
     "获取子链接"
-
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/app/sublink/getMainLinkBySublink.do')
 
@@ -22,14 +21,10 @@ class GetMainLinkBySublink(unittest.TestCase):
 
         pa = {"subLink": subLink, "mobileSystem": mobileSystem, "appVersion": appVersion, "referUrl": referUrl, "linkName": linkName,
               "deviceId": deviceId, "random": random, "out": out, "s":s}
-        sign = global_base.DefTool.sign(self, **pa)
-        params = dict(pa, **sign)
+        params = global_base.DefTool().payload(**pa)
         self.result = requests.post(url=self.url, data=params).json()
-        try:
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result['code'], '200')
-        except AssertionError as e:
-            print(e)
+        self.assertEqual(self.result["msg"], "未找到主链")
+        self.assertEqual(self.result['code'], 300)
 
 
 if __name__ == '__main__':

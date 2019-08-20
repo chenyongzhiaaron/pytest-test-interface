@@ -5,6 +5,7 @@ from parameterized import parameterized
 
 
 class BatchInsertVisitInfoByQsj(unittest.TestCase):
+    '''曝光埋点'''
     def setUp(self):
         self.url = "https://api.sinawallent.com/statistics/static/logs/batchInsertVisitInfoByQsj"
 
@@ -12,7 +13,6 @@ class BatchInsertVisitInfoByQsj(unittest.TestCase):
         print(self.result)
 
     def test_batchInsertVisitInfoByQsj(self):
-        '''曝光埋点'''
         params = {"productId": "1003",
                   "timeStr": "Mon Aug 12 2019 16:29:45 GMT+0800 (中国标准时间)",
                   "ostype": "2",
@@ -34,13 +34,11 @@ class BatchInsertVisitInfoByQsj(unittest.TestCase):
                             "sourceEventParams": "{\"forClient\":\"qsj\",\"cfgId\":\"\",\"batch\":\"\"}"}]}
         header = {"Content-Type": "application/x-www-form-urlencoded",
                   "User-Agent":"Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",
-                  "Accept":"application/json, text/plain, */*",}
+                  "Accept":"application/json, text/plain, */*"}
         self.result = requests.post(url=self.url, headers=header, data=params).json()
-        try:
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result['code'], 200)
-        except Exception as e:
-            print(e)
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result['code'], 200)
+
 
 
 if __name__ == '__main__':

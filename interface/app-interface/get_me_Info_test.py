@@ -21,14 +21,10 @@ class GetMeInfo(unittest.TestCase):
               "pageIndex": pageIndex, "json": json, "callbackName": callbackName, "deviceId": deviceId, "ver": ver,
               "verno": verno, "productId": productId,
               "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
-        value = global_base.DefTool.sign(pa)
-        params = dict(pa, **value)
+        params = global_base.DefTool().payload(**pa)
         self.result = requests.post(url=self.url, data=params).json()
-        try:
-            self.assertEqual(self.result['msg'], 'ok')
-            self.assertEqual(self.result["code"], '200')
-        except Exception as e:
-            print(e)
+        self.assertEqual(self.result['msg'], 'ok')
+        self.assertEqual(self.result["code"], '200')
 
 
 if __name__ == "__main__":

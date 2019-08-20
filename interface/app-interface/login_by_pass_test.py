@@ -5,11 +5,13 @@ from parameterized import parameterized
 
 
 class LoginByPassWord(unittest.TestCase):
+    '''密码登陆接口'''
+
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/loginByPass')
 
     @parameterized.expand([
-        ('初始成功', "2.6.0", "15", "867910035562539", "1", "1003", "sinaif",
+        ('手机号密码正确，登陆成功', "2.6.0", "15", "867910035562539", "1", "1003", "sinaif",
          "ef70fb3178dccde19df9295a68aca0a3",
          "qsj",),
     ])
@@ -19,16 +21,12 @@ class LoginByPassWord(unittest.TestCase):
         pa = {"ver": ver, "password": password,
               "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "productId": productId,
               "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname, "username": username}
-        values = global_base.DefTool.sign(self, **pa)
-        params = dict(pa, **values)
-        try:
-            self.result = requests.post(url=self.url, data=params).json()
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result["code"], 200)
-            self.assertEqual(self.result['data']['username'], str(username))
-            self.assertEqual(self.result['data']['mobile'], str(username))
-        except Exception as e:
-            print(e)
+        params = global_base.DefTool().payload(**pa)
+        self.result = requests.post(url=self.url, data=params).json()
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result["code"], 200)
+        self.assertEqual(self.result['data']['username'], str(username))
+        self.assertEqual(self.result['data']['mobile'], str(username))
 
     def tearDown(self):
         print(self.result)

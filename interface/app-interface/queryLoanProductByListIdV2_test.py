@@ -29,22 +29,17 @@ class QueryLoanProductByListIdV2(unittest.TestCase):
             pa = {"productId": productId, "id": id, "clientType": clientType, "channelId": channelId, "deviceId": deviceId,
               "dataType": dataType, "hotProductSize": hotProductSize, "searchKey": searchKey, "token":token_null, "userId": userId_null}
             self.result = requests.post(url=self.url, data=pa).json()
-            try:
-                self.assertEqual(self.result["msg"], "ok")
-                self.assertEqual(self.result['code'], '200')
-            except Exception as e:
-                print(e)
+            self.assertEqual(self.result["msg"], "ok")
+            self.assertEqual(self.result['code'], '200')
+
         elif case == "用户登陆查询贷款大全成功":
             pa = {"productId": productId, "id": id, "clientType": clientType, "channelId": channelId,
                   "deviceId": deviceId,
                   "dataType": dataType, "hotProductSize": hotProductSize, "searchKey": searchKey, "token": userId,
                   "userId": token}
             self.result = requests.post(url=self.url, data=pa).json()
-            try:
-                self.assertEqual(self.result["msg"], "ok")
-                self.assertEqual(self.result['code'], '200')
-            except Exception as e:
-                print(e)
+            self.assertEqual(self.result["msg"], "ok")
+            self.assertEqual(self.result['code'], '200')
 
 
 if __name__ == '__main__':

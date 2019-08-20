@@ -18,12 +18,9 @@ class HistoryByUserId(unittest.TestCase):
         accountId = value[0]
         params = {"deviceId": deviceId, "accountId": accountId, "productId": productId, "deviceType": deviceType,
                   "actType": actType, "token": token, "pageIndex": pageIndex, "pageSize": pageSize}
-        try:
-            self.result = requests.post(url=self.url, data=params).json()
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result["code"], '200')
-        except Exception as e:
-            print(e)
+        self.result = requests.post(url=self.url, data=params).json()
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result["code"], '200')
 
     def tearDown(self):
         print(self.result)

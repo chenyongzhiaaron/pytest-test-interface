@@ -1,10 +1,10 @@
 import unittest
 import requests
 from Global_base import global_base
-from parameterized import  parameterized
+from parameterized import parameterized
 
 
-class GetProductList(unittest.TestCase):
+class PlistProductList(unittest.TestCase):
     def setUp(self):
         self.url = global_base.DefTool.url(self, "/app/plist/productList")
 
@@ -14,9 +14,9 @@ class GetProductList(unittest.TestCase):
     @parameterized.expand([
         ("参数正确，获取有借卡贷列表成功", "NPL94820190117201810100", "101", 2, 1003, 1, ""),
     ])
-    def test_get_product_list_success(self, name, cfgId, listType, cfgType, productId, clientType, userId):
-        '''获取有借卡贷列表成功'''
-        parma = {"cfgId":cfgId, "listType":listType,  "cfgType":cfgType,  "productId":productId,  "clientType":clientType,  "userId":userId}
+    def test_get_plist_product_list(self, name, cfgId, listType, cfgType, productId, clientType, userId):
+        parma = {"cfgId": cfgId, "listType": listType, "cfgType": cfgType, "productId": productId,
+                 "clientType": clientType, "userId": userId}
         r = requests.get(url=self.url, params=parma)
         self.result = r.json()
         self.assertEqual(self.result['code'], '200')

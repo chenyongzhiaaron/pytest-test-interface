@@ -22,14 +22,10 @@ class FindPassByCode(unittest.TestCase):
         code = "1234512dd"
         pa = {"username": str(phone_new), "password": password, "code": code, "verno": verno, "deviceId": deviceId, "ver": ver, "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
-        value = global_base.DefTool.sign(self, **pa)
-        params = dict(pa, **value)
+        params = global_base.DefTool().payload(**pa)
         self.result = requests.post(url=self.url, data=params).json()
-        try:
-            self.assertEqual(self.result["msg"], "验证码错误，请重试")
-            self.assertEqual(self.result['code'], 1100007)
-        except AssertionError as  e:
-            print(e)
+        self.assertEqual(self.result["msg"], "验证码错误，请重试")
+        self.assertEqual(self.result['code'], 1100007)
 
 
 if __name__ == '__main__':

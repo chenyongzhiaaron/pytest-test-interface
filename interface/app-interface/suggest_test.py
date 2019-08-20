@@ -27,14 +27,10 @@ class GetMainLinkBySublink(unittest.TestCase):
         pa = {"suggestcontent": suggestcontent, "contactway": contactway, "deviceId": deviceId, "ver": ver,
               "verno": verno, "productId": productId, "channelId": channelId, "deviceToken": deviceToken,
               "mjbname": mjbname, "deviceType": deviceType}
-        sign = global_base.DefTool.sign(self, **pa)
-        params = dict(pa, **sign)
+        params = global_base.DefTool().payload(**pa)
         self.result = requests.post(url=self.url, headers=header, data=params).json()
-        try:
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result['code'], 200)
-        except AssertionError as e:
-            print(e)
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result['code'], 200)
 
 
 if __name__ == '__main__':

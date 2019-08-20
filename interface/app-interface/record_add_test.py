@@ -25,14 +25,10 @@ class RecordAdd(unittest.TestCase):
         code = "1234512dd"
         pa = {"targetId": targetId, "code": code, "accountId": accountId, "deviceId": deviceId, "actType": actType, "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "versionName": versionName, "versionNo": versionNo, "actSource": actSource, "token": token}
-        value = global_base.DefTool.sign(self, **pa)
-        params = dict(pa, **value)
+        params = global_base.DefTool().payload(**pa)
         self.result = requests.post(url=self.url, data=params).json()
-        try:
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result['code'], 200)
-        except AssertionError as  e:
-            print(e)
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result['code'], 200)
 
 
 if __name__ == '__main__':

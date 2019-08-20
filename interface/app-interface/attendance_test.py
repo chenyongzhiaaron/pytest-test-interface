@@ -20,14 +20,10 @@ class Attendance(unittest.TestCase):
         accountId = values[0]
         token = values[1]
         params = {"accountId": accountId, "deviceType": deviceType, "token": token, "deviceId": deviceId}
-        sign = global_base.DefTool.sign(self, **params)
-        params_new = dict(params, **sign)
-        try:
-            self.result = requests.post(url=self.url, data=params_new).json()
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result["code"], 200)
-        except Exception as e:
-            print(e)
+        params_new = global_base.DefTool.payload(self, **params)
+        self.result = requests.post(url=self.url, data=params_new).json()
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result["code"], 200)
 
     def tearDown(self):
         print(self.result)

@@ -5,6 +5,7 @@ from parameterized import parameterized
 
 
 class GetSmartMatchList(unittest.TestCase):
+    '''智能推荐接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/app/loan/getSmartMatchList.do')
 
@@ -20,11 +21,8 @@ class GetSmartMatchList(unittest.TestCase):
         params = {"id": id, "clientType": clientType,
                   "productId": productId, "accountid": accountid}
         self.result = requests.post(url=self.url, data=params).json()
-        try:
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result['code'], '200')
-        except Exception as e:
-            print(e)
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result['code'], '200')
 
 
 if __name__ == '__main__':

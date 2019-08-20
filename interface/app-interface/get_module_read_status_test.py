@@ -5,6 +5,7 @@ from parameterized import parameterized
 
 
 class GetModuleReadStatus(unittest.TestCase):
+    '''获取模块状态接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/app/loan/getHomeProductListV3.do')
 
@@ -18,15 +19,10 @@ class GetModuleReadStatus(unittest.TestCase):
                                     deviceToken, mjbname):
         pa = {"type": type, "ver": ver, "verno": verno, "deviceId": deviceId, "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
-        sign = global_base.DefTool.sign(self, **pa)
-        params = dict(pa, **sign)
-        # print(params)
-        try:
-            self.result = requests.post(url=self.url, data=params).json()
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result["code"], '200')
-        except Exception as e:
-            print(e)
+        params = global_base.DefTool().payload(**pa)
+        self.result = requests.post(url=self.url, data=params).json()
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result["code"], '200')
 
 
 if __name__ == '__main__':

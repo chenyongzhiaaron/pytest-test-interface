@@ -6,6 +6,7 @@ from parameterized import parameterized
 
 
 class GetProtocol(unittest.TestCase):
+    '''关于我们接口'''
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/h5/getProtocol')
 
@@ -25,15 +26,11 @@ class GetProtocol(unittest.TestCase):
               "type": type, "deviceId": deviceId, "deviceType": auditStatus, "auditStatus": appVersion,
               "appVersion": productId,
               "timestamp": timestamp, "source": source, "mjbname": mjbname, "fromUserId": fromUserId, "token": token}
-        sign = global_base.DefTool.sign(self, **pa)
-        params = dict(pa, **sign)
+        params = global_base.DefTool().payload(**pa)
         self.result = requests.post(url=self.url, data=params).json()
-        try:
-            self.assertEqual(self.result["msg"], "ok")
-            self.assertEqual(self.result['code'], 200)
-            self.assertEqual(self.result['data']['title'], "关于我们")
-        except Exception as e:
-            print(e)
+        self.assertEqual(self.result["msg"], "ok")
+        self.assertEqual(self.result['code'], 200)
+        self.assertEqual(self.result['data']['title'], "关于我们")
 
 
 if __name__ == '__main__':
