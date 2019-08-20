@@ -1,6 +1,7 @@
 import unittest
 import requests
 from Global_base import global_base
+from parameterized import  parameterized
 
 
 class GetProductList(unittest.TestCase):
@@ -10,9 +11,12 @@ class GetProductList(unittest.TestCase):
     def tearDown(self):
         print(self.result)
 
-    def test_get_product_list_success(self):
+    @parameterized.expand([
+        ("参数正确，获取有借卡贷列表成功", "NPL94820190117201810100", "101", 2, 1003, 1, ""),
+    ])
+    def test_get_product_list_success(self, name, cfgId, listType, cfgType, productId, clientType, userId):
         '''获取有借卡贷列表成功'''
-        parma = {"cfgId": "NPL94820190117201810100"}
+        parma = {"cfgId":cfgId, "listType":listType,  "cfgType":cfgType,  "productId":productId,  "clientType":clientType,  "userId":userId}
         r = requests.get(url=self.url, params=parma)
         self.result = r.json()
         self.assertEqual(self.result['code'], '200')

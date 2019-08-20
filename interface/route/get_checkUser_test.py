@@ -15,28 +15,34 @@ productId	产品ID(大王贷款/2001)	string	非空、必传
 
 
 class CheckUser(unittest.TestCase):
+    '''查询用户注册状态及下载地址'''
+
     def setUp(self):
-        self.url = global_base.DefTool.url(self, "usercenter/sys/h5/checkUser")
+        self.url = global_base.DefTool.url(self, "/usercenter/sys/h5/checkUser")
         self.channelId = 'mdwdk001'
         self.code = 200
         self.msg = "ok"
-        # self.defaultDownloadUrl = "https://k8s-qsj-test-jie.iask.cn/pg/qsjRegVTS/iosNav/pages/download/indexAndV2.html?productId=1003"
+
     def tearDown(self):
         print(self.result)
         # print(int(phone_create.create_phone()))
 
     @parameterized.expand([
         ("验证安卓手机号输入正确手机号，有路由结果，返回路由链接", 1, "mdwdk001", 2001, int(phone_create.create_phone()), False),
-        ("验证安卓手机号输入正确手机号，无路由结果，返回默认链接", 1, "mdwdk001", 2001, 18127813600, True),
-        ("验证IOS手机号输入正确手机号，无路由结果，返回默认链接", 2, "mdwdk001", 2001, 18127813600, True),
+        ("验证安卓手机号输入正确手机号，无路由结果，返回默认链接", 1, "mdwdk001", 2001, 18127813600, False),
+        ("验证IOS手机号输入正确手机号，无路由结果，返回默认链接", 2, "mdwdk001", 2001, 18127813600, False),
         ("验证IOS手机号输入正确手机号，有路由结果，返回路由链接", 2, "mdwdk001", 2001, int(phone_create.create_phone()), False),
     ])
     def test_cehckUser(self, case, deviceType, channelId, productId, phone, isRegisted):
         params = {"deviceType": deviceType, "channelId": channelId, "productId": productId, "phone": phone}
-        self.result = requests.get(url=self.url, params=params).json()
-        self.assertEqual(self.result["code"], self.code)
-        self.assertEqual(self.result["data"]["isRegisted"], isRegisted)
+        try:
+            self.result = requests.get(url=self.url, params=params).json()
+            self.assertEqual(self.result["code"], self.code)
+            self.assertEqual(self.result["data"]["isRegisted"], isRegisted)
+        except Exception as e:
+            print(e)
         print(phone)
+
 
 if __name__ == "__main__":
     unittest.main()

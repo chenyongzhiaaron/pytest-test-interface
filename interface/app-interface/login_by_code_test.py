@@ -17,7 +17,6 @@ class LoginByCode(unittest.TestCase):
 
     def test_login_by_code_success(self):
         '''输入正确手机号及验证码，登陆成功'''
-        # 获取验证码
         p1 = {'phone': 18570000000}
         payload = dict(self.parms, **p1)
         print(payload)

@@ -67,7 +67,7 @@ class T_DB():
     #   ----------------------------------------------------------我是分割线--------------------------------------------
 
     #   通过数据库获取用户最新的一条验证码
-    def t_db2(self, sql, params):
+    def t_db2(self, sql, params=None):
         # 连接MySQL数据库
         connection = pymysql.connect(host=host,
                                      port=int(port),

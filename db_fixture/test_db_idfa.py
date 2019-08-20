@@ -21,8 +21,7 @@ password = cf.get("mysqlconf", "password")
 
 
 class T_DB():
-
-    def t_db2(self):
+    def t_db2(self, sql,params):
         # 连接MySQL数据库
         connection = pymysql.connect(host=host,
                                      port=int(port),
@@ -34,19 +33,20 @@ class T_DB():
         # 通过cursor创建游标
         cursor = connection.cursor()
         # 创建sql 语句，并执行
-        sqlCaptcha = "select idfa from t_spread_general_idfainfo where appid = 1467866510 order by infoid desc limit 1"  # 获取最新一条用户验证码
+        sqlCaptcha = sql  # 获取最新一条用户sql语句
         cursor.execute(sqlCaptcha)
         # 查询单条数据 并将结果返回给 result
         result = cursor.fetchone()
         # 查询多条数据 并将结果返回给 result
         # result = cursor.fetchall()
-        idfa = result['idfa']
+        # idfa = result[0]['idfa']
+        value = result[params]
         # 关闭数据连接
         connection.close()
-        return str(idfa)
+        return str(value)
 
-# test = T_DB()
-# print(test.t_db2())
-# idfa = test.t_db2()
-# # print("api/user/address/" + str(address_id))
-# print(idfa)
+test = T_DB()
+sql1 = "select idfa from t_spread_general_idfainfo where appid = 1467866510 order by infoid desc limit 1"
+idfa = test.t_db2(sql1,"idfa")
+# print("api/user/address/" + str(address_id))
+print(idfa)

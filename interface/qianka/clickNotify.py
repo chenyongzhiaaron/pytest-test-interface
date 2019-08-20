@@ -53,15 +53,19 @@ class ClickNotify(unittest.TestCase):
         data = {"appid": appid, "idfa": idfa, "channel": channel, "ip": ip, "timestamp": timestamp,
                 "callback": callback}
         self.result = requests.post(url=self.url, data=data).json()
-        if case == '参数正确，点击成功':
-            db_idfa = test_db_idfa.T_DB().t_db2()
-            self.assertEqual(idfa, str(db_idfa))
-            self.assertEqual(self.result["msg"], msg)
-        elif case == 'callback为空':
-            self.assertEqual(self.result["msg"], msg)
-            self.assertEqual(self.result["code"], code)
-        else:
-            self.assertEqual(self.result["msg"], msg)
+        try:
+            if case == '参数正确，点击成功':
+                sql = "select idfa from t_spread_general_idfainfo where appid = 1467866510 order by infoid desc limit 1"
+                db_idfa = test_db_idfa.T_DB().t_db2(sql,idfa)
+                self.assertEqual(idfa, str(db_idfa))
+                self.assertEqual(self.result["msg"], msg)
+            elif case == 'callback为空':
+                self.assertEqual(self.result["msg"], msg)
+                self.assertEqual(self.result["code"], code)
+            else:
+                self.assertEqual(self.result["msg"], msg)
+        except Exception as  e:
+            print(e)
 
 
 if __name__ == "__main__":

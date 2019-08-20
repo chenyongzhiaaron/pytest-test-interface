@@ -9,21 +9,19 @@ from Global_base import phone_create
 
 class RouteH5DownLoadUrl(unittest.TestCase):
     '''
-    大王贷款接轻松借路由需求
+    大王贷款接轻松借路由需求，查询轻松借路由下载地址
     '''
+
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/route/h5/getDownloadUrl')
         self.msg = "ok"
         self.code = 200
         self.downloadUrlNone = None
         self.phone = phone_create.create_phone()
-        # self.downloadUrlIOS = "https://www.sygj6"
-        # self.downloadUrlAndroid = "https://www.sygj8"
         self.deviceType = random.randint(1, 2)
 
     def tearDown(self):
         print(self.result)
-        print(self.phone)
 
     def test_get_route_h5_downloadUrl_None(self):
         '''手机号正确，没有路由结果返回null'''
@@ -51,8 +49,7 @@ class RouteH5DownLoadUrl(unittest.TestCase):
         self.assertEqual(self.result["code"], self.code)
 
     @parameterized.expand([
-        ("手机号正确，没有路由结果返回null", 18100000000, 2001, ),
-        (),
+        # ("手机号正确，没有路由结果返回null", 18100000000, 2001, ),
         ("手机号 phone 为空，提示参数错误", "", 2001, 1, "qIHgiZmfgM3OxdMnur56Tehk5fW6-LusUYDiFAX7nkc", "请输入手机号码", 100002),
         ("手机号为字符串，提示输入正确手机号", "abc~@#*(中国", 2001, 1, "qIHgiZmfgM3OxdMnur56Tehk5fW6-LusUYDiFAX7nkc", "请输入正确的手机号码",
          1100006),
