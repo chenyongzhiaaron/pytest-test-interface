@@ -12,7 +12,7 @@ class UpdateUserInfo(unittest.TestCase):
     @parameterized.expand([
         ('参数正确，提交成功', "POST", "422201198811260900", "false", "request1565596327350", "赵冰冰",
          "c50e2b0f1b16429da5df10e601790ak3,", "2.6.0", "15", "867910035562539", "1", "1003", "sinaif",
-         "ef70fb3178dccde19df9295a68aca0a3", "qsj", 'ok', 200),
+         "ef70fb3178dccde19df9295a68aca0a3", "qsj", '您填写的身份证号已存在，请重新输入', 2100001),
     ])
     def test_update_user_info(self, case, method, idcard, json, callbackName, username, tags, ver, verno,
                               deviceId, deviceType, productId, channelId, deviceToken, mjbname, msg, code):

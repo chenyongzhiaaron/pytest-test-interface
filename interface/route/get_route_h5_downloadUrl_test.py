@@ -49,7 +49,6 @@ class RouteH5DownLoadUrl(unittest.TestCase):
         self.assertEqual(self.result["code"], self.code)
 
     @parameterized.expand([
-        # ("手机号正确，没有路由结果返回null", 18100000000, 2001, ),
         ("手机号 phone 为空，提示参数错误", "", 2001, 1, "qIHgiZmfgM3OxdMnur56Tehk5fW6-LusUYDiFAX7nkc", "请输入手机号码", 100002),
         ("手机号为字符串，提示输入正确手机号", "abc~@#*(中国", 2001, 1, "qIHgiZmfgM3OxdMnur56Tehk5fW6-LusUYDiFAX7nkc", "请输入正确的手机号码",
          1100006),
