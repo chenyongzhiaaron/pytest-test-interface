@@ -1,6 +1,6 @@
 import unittest
 import requests
-from Global_base import global_base
+from Global_base import global_base,globa_phone
 from Global_base import login
 from parameterized import parameterized
 from db_fixture import test_db
@@ -12,7 +12,8 @@ class Attendance(unittest.TestCase):
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/app/profile/attendance.do')
         value = login.LoginByPassWord()
-        self.phone = 18127813602
+        self.phone = int(globa_phone.phone())
+        # self.phone = 18900000000
         values = value.login_by_password(self.phone)
         self.accountId = values[0]
         self.token = values[1]
@@ -25,7 +26,7 @@ class Attendance(unittest.TestCase):
     def test_attendance(self, name, deviceType, deviceId, msg, code, continueDay):
         params = {"accountId": self.accountId, "deviceType": deviceType, "token": self.token, "deviceId": deviceId}
         sqlDelete = ("DELETE FROM sinaif_easy.t_user_attendance WHERE accountid = {};".format(self.accountId))
-        doSQL = test_db.T_DB.t_db_delete(sqlDelete)
+        doSQL = test_db.T_DB.t_db_delete(self,sqlDelete)
         self.result = requests.post(url=self.url, data=params).json()
         self.assertEqual(self.result["msg"], msg)
         self.assertEqual(self.result["code"], code)

@@ -1,6 +1,6 @@
 import unittest
 import requests
-from Global_base import global_base
+from Global_base import global_base,globa_phone
 from Global_base import login
 from parameterized import parameterized
 
@@ -14,7 +14,7 @@ class HistoryByUserId(unittest.TestCase):
         ('查询历史纪录成功', "867910035562539", "1003", "1", "1", "1", "50"),
     ])
     def test_get_history_by_userId(self, caase, deviceId, productId, deviceType, actType, pageIndex, pageSize):
-        value = login.LoginByPassWord().login_by_password(18127813601)
+        value = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         token = value[1]
         accountId = value[0]
         params = {"deviceId": deviceId, "accountId": accountId, "productId": productId, "deviceType": deviceType,

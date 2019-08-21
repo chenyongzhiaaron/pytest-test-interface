@@ -1,6 +1,6 @@
 import requests
 import unittest
-from Global_base import global_base
+from Global_base import global_base,globa_phone
 from Global_base import login
 from parameterized import parameterized
 
@@ -19,7 +19,7 @@ class GetProtocol(unittest.TestCase):
     ])
     def test_getProtocol(self, case, productId, channelId, type, auditStatus, appVersion, deviceId, source, mjbname,
                          timestamp):
-        values = login.LoginByPassWord().login_by_password(18127813601)
+        values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         fromUserId = values[0]
         token = values[1]
         pa = {"productId": productId, "channelId": channelId,

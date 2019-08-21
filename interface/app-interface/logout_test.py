@@ -1,6 +1,6 @@
 import requests
 import unittest
-from Global_base import global_base, login
+from Global_base import global_base, login,globa_phone
 from parameterized import parameterized
 
 
@@ -22,7 +22,7 @@ class Logout(unittest.TestCase):
               "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
         params = global_base.DefTool().payload(**pa)
-        token = login.LoginByPassWord().login_by_password(18127813601)[1]
+        token = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))[1]
         header = {"token": token}
         self.result = requests.post(url=self.url, headers=header, data=params).json()
         self.assertEqual(self.result["msg"], "ok")

@@ -1,6 +1,6 @@
 import unittest
 import requests
-from Global_base import global_base
+from Global_base import global_base,globa_phone
 from parameterized import parameterized
 
 
@@ -15,7 +15,7 @@ class LoginByPassWord(unittest.TestCase):
          "qsj",),
     ])
     def test_login_by_password(self, caase, ver, verno, deviceId, deviceType, productId, channelId, deviceToken, mjbname):
-        username = 18127813601
+        username = int(globa_phone.phone())
         password = "8ff15b24341602becdf011679ec383c1"
         pa = {"ver": ver, "password": password,
               "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "productId": productId,

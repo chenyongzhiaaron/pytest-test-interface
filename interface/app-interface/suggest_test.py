@@ -1,6 +1,6 @@
 import requests
 import unittest
-from Global_base import global_base
+from Global_base import global_base,globa_phone
 from parameterized import parameterized
 from Global_base import login
 
@@ -20,7 +20,7 @@ class GetMainLinkBySublink(unittest.TestCase):
     ])
     def test_getMainLinkBySublink(self, case, suggestcontent, contactway, deviceId, ver, verno,
                                   productId, deviceType, channelId, deviceToken, mjbname):
-        values = login.LoginByPassWord().login_by_password(18127813601)
+        values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         token = values[1]
         header = {"token": token}
         pa = {"suggestcontent": suggestcontent, "contactway": contactway, "deviceId": deviceId, "ver": ver,

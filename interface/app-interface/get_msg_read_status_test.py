@@ -1,6 +1,6 @@
 import unittest
 import requests
-from Global_base import global_base,login
+from Global_base import global_base,login,globa_phone
 from parameterized import parameterized
 
 
@@ -19,7 +19,7 @@ class MsgReadStatus(unittest.TestCase):
                   "deviceId": deviceId, "deviceType": deviceType, "productId": productId, "channelId": channelId,
                   "deviceToken": deviceToken, "mjbname": mjbname}
         params_new = global_base.DefTool().payload(**params)
-        phone = "18127813602"
+        phone = int(globa_phone.phone())
         value = login.LoginByPassWord().login_by_password(phone)
         token = value[1]
         header = {"token": token}

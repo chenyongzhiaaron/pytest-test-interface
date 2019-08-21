@@ -2,7 +2,7 @@
 import unittest
 import requests
 import random
-from Global_base import global_base
+from Global_base import global_base,globa_phone
 from parameterized import parameterized
 from Global_base import phone_create
 
@@ -25,7 +25,7 @@ class RouteH5DownLoadUrl(unittest.TestCase):
 
     def test_get_route_h5_downloadUrl_None(self):
         '''手机号正确，没有路由结果返回null'''
-        phone = 18100000000
+        phone = int(globa_phone.phone())
         parms = {"phone": phone, "productId": 2001, "deviceType": self.deviceType,
                  "channelId": "qIHgiZmfgM3OxdMnur56Tehk5fW6-LusUYDiFAX7nkc"}
         self.result = requests.get(url=self.url, params=parms).json()

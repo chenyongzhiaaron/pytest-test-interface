@@ -1,6 +1,6 @@
 import requests
 import unittest
-from Global_base import global_base,login
+from Global_base import global_base,login,globa_phone
 from parameterized import parameterized
 
 
@@ -18,7 +18,7 @@ class QueryLoanProductByListId(unittest.TestCase):
     ])
     def test_queryLoanProductByListId(self, case, id, tags, productId, clientType, queryRecProduct, versionName,
                                       queryType, dataType, deviceId):
-        values = login.LoginByPassWord().login_by_password(18127813601)
+        values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         userId = values[0]
         token = values[1]
         pa = {"id": id, "tags": tags, "deviceId": deviceId,

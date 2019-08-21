@@ -1,6 +1,6 @@
 import requests
 import unittest
-from Global_base import global_base,login
+from Global_base import global_base,login,globa_phone
 from parameterized import parameterized
 
 
@@ -16,7 +16,7 @@ class GetSmartMatchList(unittest.TestCase):
         ("智能推荐", "16", "1003", 1)
     ])
     def test_getSmartMatchList(self, case, id, productId, clientType):
-        values = login.LoginByPassWord().login_by_password(18127813601)
+        values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         accountid = values[0]
         params = {"id": id, "clientType": clientType,
                   "productId": productId, "accountid": accountid}

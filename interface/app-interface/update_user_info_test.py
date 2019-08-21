@@ -1,6 +1,6 @@
 import unittest
 import requests
-from Global_base import global_base,login
+from Global_base import global_base,login,globa_phone
 from parameterized import parameterized
 
 
@@ -16,7 +16,7 @@ class UpdateUserInfo(unittest.TestCase):
     ])
     def test_update_user_info(self, case, method, idcard, json, callbackName, username, tags, ver, verno,
                               deviceId, deviceType, productId, channelId, deviceToken, mjbname, msg, code):
-        mobile = 18127813601
+        mobile = int(globa_phone.phone())
         token = login.LoginByPassWord().login_by_password(mobile)[1]
         header = {"token": token}
         params = {"method": method, "idcard": idcard, "mobile": mobile, "json": json, "callbackName": callbackName,

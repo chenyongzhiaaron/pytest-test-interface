@@ -1,6 +1,6 @@
 import requests
 import unittest
-from Global_base import global_base
+from Global_base import global_base,globa_phone
 from Global_base import login
 from parameterized import parameterized
 
@@ -23,7 +23,7 @@ class GetMsgList(unittest.TestCase):
               "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
         params = global_base.DefTool().payload(**pa)
-        values = login.LoginByPassWord().login_by_password(18127813601)
+        values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         token = values[1]
         header = {"token": token}
         self.result = requests.post(url=self.url, headers=header, data=params).json()

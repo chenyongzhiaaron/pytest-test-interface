@@ -1,6 +1,6 @@
 import requests
 import unittest
-from Global_base import global_base
+from Global_base import global_base,globa_phone
 from parameterized import parameterized
 from Global_base import login
 
@@ -21,7 +21,7 @@ class QueryLoanProductByListIdV2(unittest.TestCase):
                                         hotProductSize, searchKey):
         userId_null = ""
         token_null = ""
-        values = login.LoginByPassWord().login_by_password(18127813601)
+        values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         userId = values[0]
         token = values[1]
         if case == "用户未登陆查询贷款大全成功":

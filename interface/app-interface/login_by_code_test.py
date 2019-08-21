@@ -1,7 +1,7 @@
 import time
 import unittest
 import requests
-from Global_base import global_base, send_code
+from Global_base import global_base, send_code,globa_phone
 from parameterized import parameterized
 
 
@@ -17,7 +17,7 @@ class LoginByCode(unittest.TestCase):
     ])
     def test_login_by_code(self, name, productId, channelId, timestamp, deviceToken, deviceId, source, deviceType,
                            mjbname, ver, verno):
-        phone = "18127813602"
+        phone = int(globa_phone.phone())
         code = send_code.SendPhoneCode().send_phone_code(phone)
         payload = {'username': phone, "code": code, "productId": productId, "channelId": channelId,
                    "timestamp": timestamp,

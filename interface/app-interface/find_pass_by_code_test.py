@@ -1,6 +1,6 @@
 import requests
 import unittest
-from Global_base import global_base
+from Global_base import global_base,globa_phone
 from Global_base import phone_create
 from parameterized import parameterized
 
@@ -19,7 +19,7 @@ class FindPassByCode(unittest.TestCase):
     ])
     def test_find_pass_by_code(self, case, password, ver, verno, deviceId, deviceType, productId, channelId,
                              deviceToken, mjbname):
-        phone_new = "18888888888"
+        phone_new = int(globa_phone.phone())
         code = "1234512dd"
         pa = {"username": str(phone_new), "password": password, "code": code, "verno": verno, "deviceId": deviceId, "ver": ver, "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}

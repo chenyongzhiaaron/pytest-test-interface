@@ -1,6 +1,6 @@
 import requests
 import unittest
-from Global_base import global_base,login
+from Global_base import global_base,login,globa_phone
 from parameterized import parameterized
 
 
@@ -22,7 +22,7 @@ class SaveGps(unittest.TestCase):
               "deviceToken": deviceToken,
               "deviceId": deviceId, "source": source, "deviceType": deviceType, "mjbname": mjbname, "ver": ver, "verno": verno}
         params = global_base.DefTool().payload(**pa)
-        values = login.LoginByPassWord().login_by_password(18127813601)
+        values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         token = values[1]
         headers = {"token": token}
         self.result = requests.post(url=self.url, headers=headers, data=params).json()

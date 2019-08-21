@@ -1,6 +1,6 @@
 import requests
 import unittest
-from Global_base import global_base
+from Global_base import global_base,globa_phone
 from parameterized import parameterized
 from Global_base import login
 
@@ -19,7 +19,7 @@ class RecordAdd(unittest.TestCase):
     ])
     def test_record_add(self, case, deviceId, productId, deviceType, targetId, channelId, actType,
                              versionName, versionNo, actSource):
-        values = login.LoginByPassWord().login_by_password(18127813601)
+        values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         token = values[1]
         accountId = values[0]
         code = "1234512dd"
