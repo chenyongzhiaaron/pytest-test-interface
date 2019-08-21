@@ -2,7 +2,7 @@
 import unittest
 import requests
 from parameterized import parameterized
-from db_fixture import test_db_idfa
+from db_fixture import test_db
 
 
 class ClickNotify(unittest.TestCase):
@@ -54,8 +54,8 @@ class ClickNotify(unittest.TestCase):
                 "callback": callback}
         self.result = requests.post(url=self.url, data=data).json()
         if case == '参数正确，点击成功':
-            sql = ("select '{}' from t_spread_general_idfainfo where appid = 1467866510 order by infoid desc limit 0,1;".format(str(idfa)))
-            db_idfa = test_db_idfa.T_DB().t_db2(sql, idfa)
+            sqlSelect = ("select '{}' from t_spread_general_idfainfo where appid = 1467866510 order by infoid desc limit 0,1;".format(str(idfa)))
+            db_idfa = test_db.T_DB.t_db_select(self, sqlSelect, idfa)
             self.assertEqual(idfa, str(db_idfa))
             self.assertEqual(self.result["msg"], msg)
         elif case == 'callback为空':

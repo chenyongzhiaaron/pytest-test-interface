@@ -20,7 +20,7 @@ user = cf.get("mysqlconf", "user")
 password = cf.get("mysqlconf", "password")
 
 
-class T_DB():
+class T_DB:
     def t_db2(self, sql, params):
         # 连接MySQL数据库
         connection = pymysql.connect(host=host,
@@ -45,8 +45,4 @@ class T_DB():
         connection.close()
         return str(value)
 #
-# test = T_DB()
-# sql1 = "select idfa from t_spread_general_idfainfo where appid = 1467866510 order by infoid desc limit 1"
-# idfa = test.t_db2(sql1,"idfa")
-# # print("api/user/address/" + str(address_id))
-# print(idfa)
+

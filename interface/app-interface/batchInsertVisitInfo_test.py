@@ -10,7 +10,7 @@ class CheckUpdate(unittest.TestCase):
 
     def tearDown(self):
         print(self.result)
-
+    @unittest.skip("pass")
     def test_batchInsertVisitInfo(self):
         '''监控埋点'''
         params = {"source": "monitor-h5",

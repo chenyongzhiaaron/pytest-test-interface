@@ -22,7 +22,7 @@ class QueryLoanProductByListId(unittest.TestCase):
         userId = values[0]
         token = values[1]
         pa = {"id": id, "tags": tags, "deviceId": deviceId,
-              "productId": productId, "userId": userId, "token": token, "clientType":clientType, "queryRecProduct":queryRecProduct, "versionName":versionName, "queryType":queryType, "dataType":dataType}
+              "productId": productId, "userId": userId, "token": token, "clientType": clientType, "queryRecProduct":queryRecProduct, "versionName":versionName, "queryType":queryType, "dataType":dataType}
         params = global_base.DefTool().payload(**pa)
         token = "2782e95b1cffcc59026cab695c2e86eb1"
         header = {"token": token}

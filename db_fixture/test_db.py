@@ -4,6 +4,7 @@ import pymysql.cursors
 import os
 import configparser as cparser
 import pymysql.cursors
+from Global_base import login
 
 # ======== Reading db_config.ini setting ===========
 base_dir = str(os.path.dirname(os.path.dirname(__file__)))
@@ -20,55 +21,60 @@ user = cf.get("mysqlconf", "user")
 password = cf.get("mysqlconf", "password")
 
 
-class T_DB():
-    #   通过数据库获取用户最新的一条验证码
-    # def t_db(self):
-    #     # 连接MySQL数据库
-    #     connection = pymysql.connect(host=host,
-    #                                  port=int(port),
-    #                                  user=user,
-    #                                  password=password,
-    #                                  db=db,
-    #                                  charset='utf8mb4',
-    #                                  cursorclass=pymysql.cursors.DictCursor)  # 测试数据库
-    #
-    #     # connection = pymysql.connect(
-    #     #     host='cb-test.c6g84obm21ye.us-west-1.rds.amazonaws.com',
-    #     #     port=3306,
-    #     #     user='crazybb_test',
-    #     #     password='crazybb_test',
-    #     #     db='crazybb_test',
-    #     #     charset='utf8mb4',
-    #     #     cursorclass=pymysql.cursors.DictCursor
-    #     # )                                                                         # 测试服数据库
-    #     # 通过cursor创建游标
-    #     cursor = connection.cursor()
-    #     # 创建sql 语句，并执行
-    #     sqlCaptcha = "select content from laravel_sms order by updated_at desc limit 1"  # 获取最新一条验证码记录
-    #     cursor.execute(sqlCaptcha)
-    #     # 查询单条数据
-    #     # result = cursor.fetchone()
-    #     # 查询多条数据
-    #     result = cursor.fetchall()
-    #     # 循环打印数据结果
-    #     #         for date in result:
-    #     #             print(date)
-    #
-    #     # 切割获取数据验证码部分
-    #     for item in result:
-    #         temp = item["content"].split("，请于5分钟")[0].split("【signature】您的验证码是")[1]
-    #         # print(temp)
-    #     # 提交SQL
-    #     # connection.commit()
-    #     # 关闭数据连接
-    #     connection.close()
-    #     return temp
+class T_DB:
 
-    #   ----------------------------------------------------------我是分割线--------------------------------------------
+    #  查询数据
+    def t_db_select(self, sql, params):
+        connection = pymysql.connect(host=host,
+                                          port=int(port),
+                                          user=user,
+                                          password=password,
+                                          db=db,
+                                          charset='utf8mb4',
+                                          cursorclass=pymysql.cursors.DictCursor)
+        # 通过cursor创建游标
+        cursor = connection.cursor()
+        sqlCaptcha = sql  # 编写sql
+        try:
+            cursor.execute(sqlCaptcha)
+            # 查询单条数据 并将结果返回给 result
+            result = cursor.fetchone()
+            # 查询多条数据 并将结果返回给 result
+            # result = cursor.fetchall()
+            connection.commit()
+        except:
+            print("Error: unable to fecth data")
+        values = result[params]
+        # 关闭数据连接
+        connection.close()
+        return str(values)
 
-    #   通过数据库获取用户最新的一条验证码
-    def t_db2(self, sql, params=None):
-        # 连接MySQL数据库
+    #   删除指定数据
+    def t_db_delete(self, sql):
+        connection = pymysql.connect(host=host,
+                                          port=int(port),
+                                          user=user,
+                                          password=password,
+                                          db=db,
+                                          charset='utf8mb4',
+                                          cursorclass=pymysql.cursors.DictCursor)
+        # 通过cursor创建游标
+        cursor = connection.cursor()
+        sqlCaptcha = sql  # 编写sql语句
+        try:
+            # 执行删除sql语句
+            cursor.execute(sqlCaptcha)
+            # 提交删除操作
+            connection.commit()
+        except:
+            # 发生错误时回滚
+            connection.rollback()
+        # 关闭数据连接
+        connection.close()
+        return print("删除成功")
+
+        #  更新数据
+    def t_db_update(self, sql):
         connection = pymysql.connect(host=host,
                                      port=int(port),
                                      user=user,
@@ -78,17 +84,32 @@ class T_DB():
                                      cursorclass=pymysql.cursors.DictCursor)
         # 通过cursor创建游标
         cursor = connection.cursor()
-        # 创建sql 语句，并执行
-        # sqlCaptcha = "select smscode from sinaif_easy.t_app_smsinfo where mobile = 18888888888 order by sendtime desc limit 1"  # 获取最新一条用户验证码
-        sqlCaptcha = sql  # 获取最新一条用户验证码
-        cursor.execute(sqlCaptcha)
-        # 查询单条数据 并将结果返回给 result
-        result = cursor.fetchone()
-        # 查询多条数据 并将结果返回给 result
-        # result = cursor.fetchall()
-        values = result[params]
+        sqlCaptcha = sql  # 编写更新sql语句
+        try:
+            # 执行删除sql语句
+            cursor.execute(sqlCaptcha)
+            # 提交更新操作
+            connection.commit()
+        except:
+            # 发生错误时回滚
+            connection.rollback()
         # 关闭数据连接
         connection.close()
-        return values
+        return print("更新成功")
 
 
+
+#
+# test = T_DB()
+# sql1 = "select idfa from t_spread_general_idfainfo where appid = 1467866510 order by infoid desc limit 1"
+# idfa = test.t_db_select(sql1,"idfa")
+# # print("api/user/address/" + str(address_id))
+# print(idfa)
+
+# value = login.LoginByPassWord()
+# phone = 18127813602
+# values = value.login_by_password(phone)
+# accountId = values[0]
+# test = T_DB()
+# sqlDelete = ("DELETE FROM sinaif_easy.t_user_attendance WHERE accountid = {};".format(accountId))
+# doSQL = test.t_db_delete(sqlDelete)

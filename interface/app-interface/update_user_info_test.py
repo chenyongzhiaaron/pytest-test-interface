@@ -10,12 +10,12 @@ class UpdateUserInfo(unittest.TestCase):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/updateUserInfo')
 
     @parameterized.expand([
-        ('身份证号信息已存在无法重新提交', "POST", "422201198811260900", "false", "request1565596327350", "赵冰冰",
+        ('参数正确，提交成功', "POST", "422201198811260900", "false", "request1565596327350", "赵冰冰",
          "c50e2b0f1b16429da5df10e601790ak3,", "2.6.0", "15", "867910035562539", "1", "1003", "sinaif",
-         "ef70fb3178dccde19df9295a68aca0a3", "qsj"),
+         "ef70fb3178dccde19df9295a68aca0a3", "qsj", 'ok', 200),
     ])
     def test_update_user_info(self, case, method, idcard, json, callbackName, username, tags, ver, verno,
-                              deviceId, deviceType, productId, channelId, deviceToken, mjbname):
+                              deviceId, deviceType, productId, channelId, deviceToken, mjbname, msg, code):
         mobile = 18127813601
         token = login.LoginByPassWord().login_by_password(mobile)[1]
         header = {"token": token}
@@ -25,8 +25,8 @@ class UpdateUserInfo(unittest.TestCase):
                   "mjbname": mjbname}
         params_new = global_base.DefTool().payload(**params)
         self.result = requests.post(url=self.url, headers=header,data=params_new).json()
-        self.assertEqual(self.result["msg"], "您填写的身份证号已存在，请重新输入")
-        self.assertEqual(self.result["code"], 2100001)
+        self.assertEqual(self.result["msg"], msg)
+        self.assertEqual(self.result["code"], code)
 
     def tearDown(self):
         print(self.result)

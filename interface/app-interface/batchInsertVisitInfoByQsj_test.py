@@ -11,7 +11,7 @@ class BatchInsertVisitInfoByQsj(unittest.TestCase):
 
     def tearDown(self):
         print(self.result)
-
+    @unittest.skip("pass")
     def test_batchInsertVisitInfoByQsj(self):
         params = {"productId": "1003",
                   "timeStr": "Mon Aug 12 2019 16:29:45 GMT+0800 (中国标准时间)",
