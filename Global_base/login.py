@@ -1,5 +1,6 @@
 import requests
 from Global_base import global_base
+import time
 
 
 class LoginByPassWord():
@@ -11,6 +12,7 @@ class LoginByPassWord():
               "username": username}
         param = global_base.DefTool.payload(self, **pa)
         result = requests.post(url=url, data=param).json()
+        time.sleep(1)
         try:
             if result['code'] == 200:
                 accountid = result['data']['accountid']
@@ -22,5 +24,5 @@ class LoginByPassWord():
 
 
 if __name__ == '__main__':
-    a = LoginByPassWord().login_by_password(18655557777)
+    a = LoginByPassWord().login_by_password(18999000000)
     print(a)

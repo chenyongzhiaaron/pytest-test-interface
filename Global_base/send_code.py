@@ -40,7 +40,19 @@ class SendPhoneCode():
         params.append(code)
         return params
 
-
-if __name__ == "__main__":
-    # SendPhoneCode().send_phone_code(18888888888)
-    SendPhoneCode().send_phone_code_token(18655557777)
+    def send_phone_find_code(self, phone):
+        url = global_base.DefTool.url(self, '/usercenter/sys/sendPhoneCode')
+        pa = {"type": "3", "verno": 15, "deviceId": "867910035562539", "ver": "2.6.0", "deviceType": "1",
+              "productId": "1003", "channelId": "sinaif", "deviceToken": "ef70fb3178dccde19df9295a68aca0a3",
+              "mjbname": "qsj", "phone": phone}
+        params = global_base.DefTool().payload(**pa)
+        time.sleep(5)
+        result = requests.post(url=url, data=params).json()
+        sql = 'SELECT mobile, smscode FROM sinaif_easy.t_app_smsinfo WHERE mobile= {} ORDER BY sendtime DESC LIMIT 0,1;'.format(
+            phone)
+        code = test_db.T_DB.t_db_select(self,sql, "smscode")
+        return code
+#
+# if __name__ == "__main__":
+#     # SendPhoneCode().send_phone_code(18888888888)
+#     SendPhoneCode().send_phone_code_token(18655557777)
