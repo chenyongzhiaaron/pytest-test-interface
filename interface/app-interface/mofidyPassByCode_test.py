@@ -23,6 +23,7 @@ class MofidyPassByCode(unittest.TestCase):
         ("参数正确修改密码成功", "867910035562539", "2.6.0", "15", "1003", "1", "sinaif", "ef70fb3178dccde19df9295a68aca0a3",
          "qsj", "8efcff439af7a0a972169905a3dd2f1e"),
     ])
+    @unittest.skip("pass")
     def test_mofidyPassByCode(self, name, deviceId, ver, verno,
                               productId, deviceType, channelId, deviceToken, mjbname, newpassword):
         phone = 18888888888
