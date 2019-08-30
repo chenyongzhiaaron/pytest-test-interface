@@ -1,6 +1,7 @@
 import sys, os
 import time
 import unittest
+import logging
 from HTMLTestRunner import HTMLTestRunner
 
 curPath = os.path.abspath(os.path.dirname(__file__))
@@ -26,7 +27,9 @@ if __name__ == "__main__":
     filename = "F:\/QSJ/report/" + 'TestReport.html'
     fp = open(filename, 'wb')
     runner = HTMLTestRunner(stream=fp,
-                            title='接口测试报告',
-                            description='Implementation Example with: 接口接口测试报告')
+                            title='APP&信息流&路由&导流接口预发布环境接口测试报告',
+                            description='Implementation Example with: APP&信息流&路由&导流接口预发布环境接口测试报告')
+    logging.info("------------自动化测试 action ---------------")
     runner.run(discover)
+    logging.info("------------自动化测试 end ---------------")
     fp.close()

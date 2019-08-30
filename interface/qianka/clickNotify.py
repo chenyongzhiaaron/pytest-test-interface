@@ -11,7 +11,8 @@ class ClickNotify(unittest.TestCase):
         self.url = "http://k8s-qsj-test-jie.iask.cn/spread/idfa/clickNotify"
 
     def tearDown(self):
-        print(self.result)
+        print("请求参数为：{}".format(self.params))
+        print("请求结果为：{}".format(self.result))
 
     @parameterized.expand([
         ("参数正确，点击成功", "1467866510", "03E8CBC9-D034-4E2F-BF3E-0A61A53765B4", "10101", "192.168.130.116", "1562234911895",
@@ -49,10 +50,11 @@ class ClickNotify(unittest.TestCase):
         ("callback为空", "1467866510", "auto_test_init09", "10101", "192.168.130.1", "1562234911895", "", "ok", 200),
 
     ])
+    @unittest.skip("pass")
     def test_clickNotify(self, case, appid, idfa, channel, ip, timestamp, callback, msg, code):
-        data = {"appid": appid, "idfa": idfa, "channel": channel, "ip": ip, "timestamp": timestamp,
+        self.params = {"appid": appid, "idfa": idfa, "channel": channel, "ip": ip, "timestamp": timestamp,
                 "callback": callback}
-        self.result = requests.post(url=self.url, data=data).json()
+        self.result = requests.post(url=self.url, data=self.params).json()
         if case == '参数正确，点击成功':
             sqlSelect = ("select '{}' from t_spread_general_idfainfo where appid = 1467866510 order by infoid desc limit 0,1;".format(str(idfa)))
             db_idfa = test_db.T_DB.t_db_select(self, sqlSelect, idfa)

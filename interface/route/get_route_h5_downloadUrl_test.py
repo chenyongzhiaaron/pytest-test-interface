@@ -21,30 +21,31 @@ class RouteH5DownLoadUrl(unittest.TestCase):
         self.deviceType = random.randint(1, 2)
 
     def tearDown(self):
-        print(self.result)
+        print("请求参数为：{}".format(self.params))
+        print("请求参数为：{}".format(self.result))
 
     def test_get_route_h5_downloadUrl_None(self):
         '''手机号正确，没有路由结果返回null'''
         phone = int(globa_phone.phone())
-        parms = {"phone": phone, "productId": 2001, "deviceType": self.deviceType,
+        self.params = {"phone": phone, "productId": 2001, "deviceType": self.deviceType,
                  "channelId": "qIHgiZmfgM3OxdMnur56Tehk5fW6-LusUYDiFAX7nkc"}
-        self.result = requests.get(url=self.url, params=parms).json()
+        self.result = requests.get(url=self.url, params=self.params).json()
         self.assertEqual(self.result["msg"], self.msg)
         self.assertEqual(self.result["code"], self.code)
 
     def test_get_route_h5_downloadUrl_android_success(self):
         '''验证安卓手机号输入正确手机号，有路由结果，返回路由链接'''
-        parms = {"phone": self.phone, "productId": 2001, "deviceType": 1,
+        self.params = {"phone": self.phone, "productId": 2001, "deviceType": 1,
                  "channelId": "qIHgiZmfgM3OxdMnur56Tehk5fW6-LusUYDiFAX7nkc"}
-        self.result = requests.get(url=self.url, params=parms).json()
+        self.result = requests.get(url=self.url, params=self.params).json()
         self.assertEqual(self.result["msg"], self.msg)
         self.assertEqual(self.result["code"], self.code)
 
     def test_get_route_h5_downloadUrl_ios_success(self):
         '''验证IOS手机号输入正确手机号，有路由结果，返回路由链接'''
-        parms = {"phone": self.phone, "productId": 2001, "deviceType": 2,
+        self.params = {"phone": self.phone, "productId": 2001, "deviceType": 2,
                  "channelId": "qIHgiZmfgM3OxdMnur56Tehk5fW6-LusUYDiFAX7nkc"}
-        self.result = requests.get(url=self.url, params=parms).json()
+        self.result = requests.get(url=self.url, params=self.params).json()
         self.assertEqual(self.result["msg"], self.msg)
         self.assertEqual(self.result["code"], self.code)
 
@@ -73,9 +74,9 @@ class RouteH5DownLoadUrl(unittest.TestCase):
     ])
     def test_get_route_h5_downloadUrl_error(self, case, phone, productId, deviceType, channelId, msg, code):
         ''''''
-        parms = {"phone": phone, "productId": productId, "deviceType": deviceType,
+        self.params = {"phone": phone, "productId": productId, "deviceType": deviceType,
                  "channelId": channelId}
-        self.result = requests.get(url=self.url, params=parms).json()
+        self.result = requests.get(url=self.url, params=self.params).json()
         self.assertEqual(self.result["msg"], msg)
         self.assertEqual(self.result["code"], code)
 

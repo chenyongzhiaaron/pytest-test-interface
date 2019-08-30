@@ -11,7 +11,9 @@ class SendPhoneCode(unittest.TestCase):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/sendPhoneCode')
 
     def tearDown(self):
-        print(self.result)
+        print("请求地址为{}".format(self.url))
+        print("请求参数为{}".format(self.params))
+        print("响应结果为{}".format(self.result))
 
     @parameterized.expand([
         ("发送短信验证码成功", "2", "15", "867910035562539", "2.6.0", "1", "1003", "sinaif",
@@ -23,8 +25,8 @@ class SendPhoneCode(unittest.TestCase):
         pa = {"phone": str(phone_new), "type": type, "verno": verno, "deviceId": deviceId, "ver": ver,
               "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
-        params = global_base.DefTool().payload(**pa)
-        self.result = requests.post(url=self.url, data=params).json()
+        self.params = global_base.DefTool().payload(**pa)
+        self.result = requests.post(url=self.url, data=self.params).json()
         self.assertEqual(self.result["msg"], "ok")
         self.assertEqual(self.result['code'], 200)
 

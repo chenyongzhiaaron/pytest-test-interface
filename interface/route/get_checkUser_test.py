@@ -24,8 +24,8 @@ class CheckUser(unittest.TestCase):
         self.msg = "ok"
 
     def tearDown(self):
-        print(self.result)
-        # print(int(phone_create.create_phone()))
+        print("请求参数为：{}".format(self.params))
+        print("请求结果为：{}".format(self.result))
 
     @parameterized.expand([
         ("验证安卓手机号输入正确手机号，有路由结果，返回路由链接", 1, "mdwdk001", 2001, int(phone_create.create_phone()), False),
@@ -34,8 +34,8 @@ class CheckUser(unittest.TestCase):
         ("验证IOS手机号输入正确手机号，有路由结果，返回路由链接", 2, "mdwdk001", 2001, int(phone_create.create_phone()), False),
     ])
     def test_cehckUser(self, case, deviceType, channelId, productId, phone, isRegisted):
-        params = {"deviceType": deviceType, "channelId": channelId, "productId": productId, "phone": phone}
-        self.result = requests.get(url=self.url, params=params).json()
+        self.params = {"deviceType": deviceType, "channelId": channelId, "productId": productId, "phone": phone}
+        self.result = requests.get(url=self.url, params=self.params).json()
         self.assertEqual(self.result["code"], self.code)
 
 

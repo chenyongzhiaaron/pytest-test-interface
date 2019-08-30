@@ -20,15 +20,17 @@ class LoginByPassWord(unittest.TestCase):
         pa = {"ver": ver, "password": password,
               "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "productId": productId,
               "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname, "username": username}
-        params = global_base.DefTool().payload(**pa)
-        self.result = requests.post(url=self.url, data=params).json()
+        self.params = global_base.DefTool().payload(**pa)
+        self.result = requests.post(url=self.url, data=self.params).json()
         self.assertEqual(self.result["msg"], "ok")
         self.assertEqual(self.result["code"], 200)
         self.assertEqual(self.result['data']['username'], str(username))
         self.assertEqual(self.result['data']['mobile'], str(username))
 
     def tearDown(self):
-        print(self.result)
+        print("请求地址为{}".format(self.url))
+        print("请求参数为{}".format(self.params))
+        print("响应结果为{}".format(self.result))
 
 
 if __name__ == '__main__':

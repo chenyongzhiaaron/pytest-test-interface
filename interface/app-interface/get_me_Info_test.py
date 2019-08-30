@@ -10,7 +10,9 @@ class GetMeInfo(unittest.TestCase):
         self.url = global_base.DefTool.url(self, '/app/profile/getMeInfo.do')
 
     def tearDown(self):
-        print(self.result)
+        print("请求地址为{}".format(self.url))
+        print("请求参数为{}".format(self.params))
+        print("响应结果为{}".format(self.result))
 
     @parameterized.expand([
         ("我的页面请求成功", "1", "5", "POST", "1", "false", "request1565592555859", "867910035562539", "2.6.0", "15",
@@ -22,8 +24,8 @@ class GetMeInfo(unittest.TestCase):
               "pageIndex": pageIndex, "json": json, "callbackName": callbackName, "deviceId": deviceId, "ver": ver,
               "verno": verno, "productId": productId,
               "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
-        params = global_base.DefTool().payload(**pa)
-        self.result = requests.post(url=self.url, data=params).json()
+        self.params = global_base.DefTool().payload(**pa)
+        self.result = requests.post(url=self.url, data=self.params).json()
         self.assertEqual(self.result['msg'], 'ok')
         self.assertEqual(self.result["code"], '200')
 

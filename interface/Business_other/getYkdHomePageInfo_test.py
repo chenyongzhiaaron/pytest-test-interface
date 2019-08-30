@@ -19,7 +19,8 @@ class GetYkdHomePageInfo(unittest.TestCase):
         self.url = global_base.DefTool.url(self, "/app/loan/getYkdHomePageInfo.do")
 
     def tearDown(self):
-        print(self.result)
+        print("请求参数为：{}".format(self.params))
+        print("请求结果为：{}".format(self.result))
 
     @parameterized.expand([
         ("获取有借首页成功", "NPL62420190509175804100", 2, 1, 101, 1001),
@@ -29,20 +30,20 @@ class GetYkdHomePageInfo(unittest.TestCase):
 
     ])
     def test_getYkdHomePageInfo(self, name, cfgId, cfgType, clientType, listType, productId):
-        params = {"cfgId": cfgId, "cfgType": cfgType, "clientType": clientType, "listType": listType,
+        self.params = {"cfgId": cfgId, "cfgType": cfgType, "clientType": clientType, "listType": listType,
                   "productId": productId}
-        self.result = requests.get(url=self.url, params=params).json()
+        self.result = requests.get(url=self.url, params=self.params).json()
         self.assertEqual(self.result['code'], '200')
         self.assertEqual(self.result['msg'], 'ok')
         if productId == 1001:
             self.assertEqual(self.result['data']['morePageUrl'],
-                             'http://k8s-qsj-test-jie.iask.cn/pg/qsj/modular/index.html?cfgId=NPL62420190509175804100&productId=1005')
+                             'https://jie.iask.cn/pg/product/yjAppV3/all.html?cfgId=NPL45020190523173506100&productId=1001')
         elif productId == 1002:
             self.assertEqual(self.result['data']['morePageUrl'],
-                             'http://k8s-qsj-test-jie.iask.cn/pg/yjAppV3/all.html?cfgId=NPL52220190520102424100&productId=1001')
+                             'https://jie.iask.cn/pg/product/yjAppV3/all.html?cfgId=NPL61320190528180453100&productId=1002&triangleColor=%2343A4FF&btnColor=%2343a4ff&productName=yh&a=1')
         elif productId == 1005:
             self.assertEqual(self.result['data']['morePageUrl'],
-                             'http://k8s-qsj-test-jie.iask.cn/pg/yjAppV3/all.html?cfgId=NPL52220190520102424100&productId=1001')
+                             'https://jie.iask.cn/pg/product/yjAppV3/all.html?cfgId=NPL70420190530194124100&productId=1005&productName=lzsd&triangleColor=rgb(255%2C%2066%2C%2081)&btnColor=rgb(255%2C%2066%2C%2081)&a=1')
 
 
 if __name__ == '__main__':

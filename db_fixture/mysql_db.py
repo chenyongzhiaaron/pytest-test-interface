@@ -12,11 +12,11 @@ file_path = base_dir + "/db_config.ini"
 cf = cparser.ConfigParser()
 
 cf.read(file_path)
-host = cf.get("mysqlconf", "host")
-port = cf.get("mysqlconf", "port")
-db = cf.get("mysqlconf", "db_name")
-user = cf.get("mysqlconf", "user")
-password = cf.get("mysqlconf", "password")
+host = cf.get("mysqltestconf", "host")
+port = cf.get("mysqltestconf", "port")
+db = cf.get("mysqltestconf", "db_name")
+user = cf.get("mysqltestconf", "user")
+password = cf.get("mysqltestconf", "password")
 
 
 # ======== MySql base operating ===================

@@ -11,7 +11,9 @@ class CheckUpdate(unittest.TestCase):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/checkUpdate')
 
     def tearDown(self):
-        print(self.result)
+        print("请求地址为{}".format(self.url))
+        print("请求参数为{}".format(self.params))
+        print("响应结果为{}".format(self.result))
 
     @parameterized.expand([
         ("IOS更新设备", "E9E6504B-CC17-4FEE-901A-643DDEE5F4BA", "Q001", "cpjz001", "12", 2, "2.5.2", "1003", "1565242903",
@@ -22,8 +24,8 @@ class CheckUpdate(unittest.TestCase):
         pa = {"source": source, "channelId": channelId,
               "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "ver": ver, "productId": productId,
               "timestamp": timestamp, "deviceToken": deviceToken, "mjbname": mjbname}
-        params = global_base.DefTool().payload(**pa)
-        self.result = requests.post(url=self.url, data=params).json()
+        self.params = global_base.DefTool().payload(**pa)
+        self.result = requests.post(url=self.url, data=self.params).json()
         self.assertEqual(self.result["msg"], "当前已是最新版本")
         self.assertEqual(self.result['code'], 1000013)
 

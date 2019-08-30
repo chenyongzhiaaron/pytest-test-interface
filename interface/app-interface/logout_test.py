@@ -10,21 +10,24 @@ class Logout(unittest.TestCase):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/logout')
 
     def tearDown(self):
-        print(self.result)
+        print("请求地址为{}".format(self.url))
+        print("请求参数为{}".format(self.params))
+        print("响应结果为{}".format(self.result))
 
     @parameterized.expand([
         ("退出登录", "868777047018746", "2.6.0", "15", "1003", "1", "sinaif",
          "ef70fb3178dccde19df9295a68aca0a3", "qsj")
     ])
+    @unittest.skip("pass")
     def test_logout(self, case, deviceId, ver, verno, productId, deviceType, channelId, deviceToken,
                     mjbname):
         pa = {"verno": verno, "deviceId": deviceId, "ver": ver,
               "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
-        params = global_base.DefTool().payload(**pa)
+        self.params = global_base.DefTool().payload(**pa)
         token = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))[1]
         header = {"token": token}
-        self.result = requests.post(url=self.url, headers=header, data=params).json()
+        self.result = requests.post(url=self.url, headers=header, data=self.params).json()
         self.assertEqual(self.result["msg"], "ok")
         self.assertEqual(self.result['code'], 200)
 

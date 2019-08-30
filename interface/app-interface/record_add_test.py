@@ -11,12 +11,15 @@ class RecordAdd(unittest.TestCase):
         self.url = global_base.DefTool.url(self, '/userrecord/record/add.do')
 
     def tearDown(self):
-        print(self.result)
+        print("请求地址为{}".format(self.url))
+        print("请求参数为{}".format(self.params))
+        print("响应结果为{}".format(self.result))
 
     @parameterized.expand([
         ("浏览记录上报", "867910035562539", "1003", "1", "154907325559300096", "sinaif",
          "1", "2.6.0", "15", "1234")
     ])
+    @unittest.skip("pass")
     def test_record_add(self, case, deviceId, productId, deviceType, targetId, channelId, actType,
                              versionName, versionNo, actSource):
         values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
@@ -25,8 +28,8 @@ class RecordAdd(unittest.TestCase):
         code = "1234512dd"
         pa = {"targetId": targetId, "code": code, "accountId": accountId, "deviceId": deviceId, "actType": actType, "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "versionName": versionName, "versionNo": versionNo, "actSource": actSource, "token": token}
-        params = global_base.DefTool().payload(**pa)
-        self.result = requests.post(url=self.url, data=params).json()
+        self.params = global_base.DefTool().payload(**pa)
+        self.result = requests.post(url=self.url, data=self.params).json()
         self.assertEqual(self.result["msg"], "ok")
         self.assertEqual(self.result['code'], 200)
 

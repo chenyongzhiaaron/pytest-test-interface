@@ -20,7 +20,8 @@ class GetYkdHomePageInfo(unittest.TestCase):
         self.url = global_base.DefTool.url(self, "/app/loan/getYkdLoanCollection.do")
 
     def tearDown(self):
-        print(self.result)
+        print("请求参数为：{}".format(self.params))
+        print("请求结果为：{}".format(self.result))
 
     @parameterized.expand([
         ("获取有借首页成功", "NPL62420190509175804100", 2, 1, 101, 1001,
@@ -33,12 +34,11 @@ class GetYkdHomePageInfo(unittest.TestCase):
 
     ])
     def test_getYkdHomePageInfo(self, name, cfgId, cfgType, clientType, listType, productId, searchmaps):
-        params = {"cfgId": cfgId, "cfgType": cfgType, "clientType": clientType, "listType": listType,
+        self.params = {"cfgId": cfgId, "cfgType": cfgType, "clientType": clientType, "listType": listType,
                   "productId": productId, "searchmaps": searchmaps}
-        self.result = requests.get(url=self.url, params=params).json()
+        self.result = requests.get(url=self.url, params=self.params).json()
         self.assertEqual(self.result['code'], '200')
         self.assertEqual(self.result['msg'], 'ok')
-
 
 
 if __name__ == '__main__':

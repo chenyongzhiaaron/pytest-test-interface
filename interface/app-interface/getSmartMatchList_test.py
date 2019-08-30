@@ -10,17 +10,20 @@ class GetSmartMatchList(unittest.TestCase):
         self.url = global_base.DefTool.url(self, '/app/loan/getSmartMatchList.do')
 
     def tearDown(self):
-        print(self.result)
+        print("请求地址为{}".format(self.url))
+        print("请求参数为{}".format(self.params))
+        print("响应结果为{}".format(self.result))
 
     @parameterized.expand([
         ("智能推荐", "16", "1003", 1)
     ])
+    @unittest.skip("pass")
     def test_getSmartMatchList(self, case, id, productId, clientType):
         values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         accountid = values[0]
-        params = {"id": id, "clientType": clientType,
+        self.params = {"id": id, "clientType": clientType,
                   "productId": productId, "accountid": accountid}
-        self.result = requests.post(url=self.url, data=params).json()
+        self.result = requests.post(url=self.url, data=self.params).json()
         self.assertEqual(self.result["msg"], "ok")
         self.assertEqual(self.result['code'], '200')
 
