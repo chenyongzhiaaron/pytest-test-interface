@@ -1,7 +1,7 @@
 # coding=utf-8
 import unittest
 import requests
-import random
+import json
 from Global_base import global_base
 from Global_base import phone_create
 from parameterized import parameterized
@@ -24,8 +24,9 @@ class CheckUser(unittest.TestCase):
         self.msg = "ok"
 
     def tearDown(self):
+        print("请求URL：{}".format(self.url))
         print("请求参数为：{}".format(self.params))
-        print("请求结果为：{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     @parameterized.expand([
         ("验证安卓手机号输入正确手机号，有路由结果，返回路由链接", 1, "mdwdk001", 2001, int(phone_create.create_phone()), False),

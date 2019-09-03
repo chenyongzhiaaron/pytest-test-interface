@@ -13,11 +13,11 @@ file_path = base_dir + "/db_config.ini"
 cf = cparser.ConfigParser()
 
 cf.read(file_path)
-host = cf.get("mysqlconf", "host")
-port = cf.get("mysqlconf", "port")
-db = cf.get("mysqlconf", "db_name")
-user = cf.get("mysqlconf", "user")
-password = cf.get("mysqlconf", "password")
+host = cf.get("mysqlproconf", "host")
+port = cf.get("mysqlproconf", "port")
+db = cf.get("mysqlproconf", "db_name")
+user = cf.get("mysqlproconf", "user")
+password = cf.get("mysqlproconf", "password")
 
 
 class T_DB:

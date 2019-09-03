@@ -1,5 +1,6 @@
 import requests
 import unittest
+import json
 from Global_base import global_base,login,globa_phone
 from parameterized import parameterized
 
@@ -12,12 +13,12 @@ class GetSmartMatchList(unittest.TestCase):
     def tearDown(self):
         print("请求地址为{}".format(self.url))
         print("请求参数为{}".format(self.params))
-        print("响应结果为{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     @parameterized.expand([
         ("智能推荐", "16", "1003", 1)
     ])
-    @unittest.skip("pass")
+    # @unittest.skip("pass")
     def test_getSmartMatchList(self, case, id, productId, clientType):
         values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         accountid = values[0]

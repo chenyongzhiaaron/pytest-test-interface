@@ -1,5 +1,6 @@
 import requests
 import unittest
+import json
 from Global_base import global_base
 from parameterized import parameterized
 
@@ -13,7 +14,7 @@ class CheckUpdate(unittest.TestCase):
     def tearDown(self):
         print("请求地址为{}".format(self.url))
         print("请求参数为{}".format(self.params))
-        print("响应结果为{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     @parameterized.expand([
         ("IOS更新设备", "E9E6504B-CC17-4FEE-901A-643DDEE5F4BA", "Q001", "cpjz001", "12", 2, "2.5.2", "1003", "1565242903",

@@ -52,7 +52,7 @@ class DefTool:
 class RunMain:
     """"封装各类请求：get,post,put,deleter,options,head"""
     def __init__(self, method, url, params=None, header=None,  params_json=None):
-        self.re = self.http_request(method, url, params, header, params_json)
+        self.re = self.http_request(method, url, params, header, params_json).json()
     def http_request(self, method, url, params=None, header=None, params_json=None):
         result = None
         if method == "get":
@@ -75,5 +75,5 @@ if __name__ == "__main__":
     new_url = DefTool()
     url = new_url.url('/app/loan/getHomeProductListV3.do')
     print(url)
-    test = RunMain("get", url)
-    print(test.re)
+    test = RunMain("get", url).re
+    print(test)

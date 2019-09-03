@@ -2,6 +2,7 @@
 import unittest
 import requests
 import random
+import json
 from Global_base import global_base,globa_phone
 from parameterized import parameterized
 from Global_base import phone_create
@@ -21,8 +22,9 @@ class RouteH5DownLoadUrl(unittest.TestCase):
         self.deviceType = random.randint(1, 2)
 
     def tearDown(self):
+        print("请求URL：{}".format(self.url))
         print("请求参数为：{}".format(self.params))
-        print("请求参数为：{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     def test_get_route_h5_downloadUrl_None(self):
         '''手机号正确，没有路由结果返回null'''

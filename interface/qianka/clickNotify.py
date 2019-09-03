@@ -1,6 +1,7 @@
 # coding=utf-8
 import unittest
 import requests
+import json
 from parameterized import parameterized
 from db_fixture import test_db
 
@@ -11,8 +12,9 @@ class ClickNotify(unittest.TestCase):
         self.url = "http://k8s-qsj-test-jie.iask.cn/spread/idfa/clickNotify"
 
     def tearDown(self):
+        print("请求URL：{}".format(self.url))
         print("请求参数为：{}".format(self.params))
-        print("请求结果为：{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     @parameterized.expand([
         ("参数正确，点击成功", "1467866510", "03E8CBC9-D034-4E2F-BF3E-0A61A53765B4", "10101", "192.168.130.116", "1562234911895",
@@ -52,6 +54,7 @@ class ClickNotify(unittest.TestCase):
     ])
     @unittest.skip("pass")
     def test_clickNotify(self, case, appid, idfa, channel, ip, timestamp, callback, msg, code):
+        ''' 对接信息流点击下载接口测试 '''
         self.params = {"appid": appid, "idfa": idfa, "channel": channel, "ip": ip, "timestamp": timestamp,
                 "callback": callback}
         self.result = requests.post(url=self.url, data=self.params).json()

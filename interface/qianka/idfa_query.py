@@ -1,6 +1,7 @@
 # coding=utf-8
 import unittest
 import requests
+import json
 from parameterized import parameterized
 
 
@@ -10,8 +11,9 @@ class IdfaQuery(unittest.TestCase):
         self.url = "http://k8s-qsj-test-jie.iask.cn/spread/idfa/query"
 
     def tearDown(self):
+        print("请求URL：{}".format(self.url))
         print("请求参数为：{}".format(self.params))
-        print("请求结果为：{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     @parameterized.expand([
         ("appid为空", "", "test", "10101", "1562234911895", "appid错误", 100002),
@@ -28,6 +30,7 @@ class IdfaQuery(unittest.TestCase):
     ])
     @unittest.skip("pass")
     def test_idfaQuery_fault(self, case, appid, idfa, channel, timestamp, msg, code):
+        ''' 对接信息流查询接口 '''
         self.params = {"appid": appid, "idfa": idfa, "channel": channel, "timestamp": timestamp}
         self.result = requests.post(url=self.url, data=self.params).json()
         self.assertEqual(self.result["msg"], msg)

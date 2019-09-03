@@ -1,5 +1,6 @@
 import requests
 import unittest
+import json
 from Global_base import global_base,globa_phone
 from parameterized import parameterized
 from Global_base import login
@@ -13,13 +14,13 @@ class QueryLoanProductByListIdV2(unittest.TestCase):
     def tearDown(self):
         print("请求地址为{}".format(self.url))
         print("请求参数为{}".format(self.params))
-        print("响应结果为{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     @parameterized.expand([
         ("用户未登陆查询贷款大全成功", "1003", "16", 1, "sinaif", "867910035562539", 1, 8, ""),
         ("用户登陆查询贷款大全成功", "1003", "16", 1, "sinaif", "867910035562539", 1, 8, ""),
     ])
-    @unittest.skip("pass")
+    # @unittest.skip("pass")
     def test_queryLoanProductByListIdV2(self, case, productId, id, clientType, channelId, deviceId, dataType,
                                         hotProductSize, searchKey):
         userId_null = ""

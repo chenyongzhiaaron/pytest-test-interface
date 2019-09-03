@@ -1,5 +1,6 @@
 import requests
 import unittest
+import json
 from Global_base import global_base, login, globa_phone
 from parameterized import parameterized
 
@@ -13,12 +14,13 @@ class QueryLoanProductByListId(unittest.TestCase):
     def tearDown(self):
         print("请求地址为{}".format(self.url))
         print("请求参数为{}".format(self.params))
-        print("响应结果为{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     @parameterized.expand([
         ("查询模块列表", "NPL6320190619171559100", "", "1003", "1", "true",
-         "2.6.0", 1, 1, "867910035562539")
+         "2.6.0", 1, 1, "867910035562539"),
     ])
+    # @unittest.skip("pass")
     def test_queryLoanProductByListId(self, case, id, tags, productId, clientType, queryRecProduct, versionName,
                                       queryType, dataType, deviceId):
         values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
@@ -29,7 +31,6 @@ class QueryLoanProductByListId(unittest.TestCase):
               "queryRecProduct": queryRecProduct, "versionName": versionName, "queryType": queryType,
               "dataType": dataType}
         self.params = global_base.DefTool().payload(**pa)
-        token = "2782e95b1cffcc59026cab695c2e86eb1"
         header = {"token": token}
         self.result = requests.post(url=self.url, headers=header, data=self.params).json()
         self.assertEqual(self.result["msg"], "ok")

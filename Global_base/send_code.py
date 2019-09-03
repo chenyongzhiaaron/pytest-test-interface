@@ -41,6 +41,7 @@ class SendPhoneCode():
         return params
 
     def send_phone_find_code(self, phone):
+        ''' 找回密码，发送验证码'''
         url = global_base.DefTool.url(self, '/usercenter/sys/sendPhoneCode')
         pa = {"type": "3", "verno": 15, "deviceId": "867910035562539", "ver": "2.6.0", "deviceType": "1",
               "productId": "1003", "channelId": "sinaif", "deviceToken": "ef70fb3178dccde19df9295a68aca0a3",

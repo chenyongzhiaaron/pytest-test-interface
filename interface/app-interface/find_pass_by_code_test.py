@@ -1,5 +1,6 @@
 import requests
 import unittest
+import json
 from Global_base import global_base, globa_phone
 from Global_base import phone_create
 from parameterized import parameterized
@@ -14,7 +15,7 @@ class FindPassByCode(unittest.TestCase):
     def tearDown(self):
         print("请求地址为{}".format(self.url))
         print("请求参数为{}".format(self.params))
-        print("响应结果为{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     @parameterized.expand([
         ("输入错误验证码提示验证码错误", "8ff15b24341602becdf011679ec383c1", "2.6.0", "15", "867910035562539", "1", "1003",

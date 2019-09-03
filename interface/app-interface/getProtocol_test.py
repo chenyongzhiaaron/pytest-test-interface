@@ -1,24 +1,27 @@
 import requests
 import unittest
-from Global_base import global_base,globa_phone
+import json
+from Global_base import global_base, globa_phone
 from Global_base import login
 from parameterized import parameterized
 
 
 class GetProtocol(unittest.TestCase):
     '''关于我们接口'''
+
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/h5/getProtocol')
 
     def tearDown(self):
         print("请求地址为{}".format(self.url))
         print("请求参数为{}".format(self.params))
-        print("响应结果为{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
+
     @parameterized.expand([
         ("关于我们", "1003", "MJBIOS006", "3", "0", "1.0", "26F1ED6A-B927-461B-AEB2-203459A3CEFC", "Q001",
          "sinaifeasy2303", "1565324192")
     ])
-    @unittest.skip("pass")
+    # @unittest.skip("pass")
     def test_getProtocol(self, case, productId, channelId, type, auditStatus, appVersion, deviceId, source, mjbname,
                          timestamp):
         values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))

@@ -1,5 +1,6 @@
 import unittest
 import requests
+import json
 from Global_base import global_base
 from parameterized import parameterized
 
@@ -13,8 +14,9 @@ class GetModelInfoByStrategy(unittest.TestCase):
         self.msg = "ok"
 
     def tearDown(self):
+        print("请求URL：{}".format(self.url))
         print("请求参数为:{}".format(self.params))
-        print("响应结果为:{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     @parameterized.expand([
         ("查询页面模板信息接口(下载页)", 1003, 100020101, 2, 1),

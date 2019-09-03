@@ -14,11 +14,11 @@ file_path = base_dir + "/db_config.ini"
 cf = cparser.ConfigParser()
 
 cf.read(file_path)
-host = cf.get("mysqlconf", "host")
-port = cf.get("mysqlconf", "port")
-db = cf.get("mysqlconf", "db_name")
-user = cf.get("mysqlconf", "user")
-password = cf.get("mysqlconf", "password")
+host = cf.get("mysqlproconf", "host")
+port = cf.get("mysqlproconf", "port")
+db = cf.get("mysqlproconf", "db_name")
+user = cf.get("mysqlproconf", "user")
+password = cf.get("mysqlproconf", "password")
 
 
 class T_DB:
@@ -99,11 +99,11 @@ class T_DB:
 
 
 
-#
+
 # test = T_DB()
 # sql1 = "select idfa from t_spread_general_idfainfo where appid = 1467866510 order by infoid desc limit 1"
 # idfa = test.t_db_select(sql1,"idfa")
-# # print("api/user/address/" + str(address_id))
+# print("api/user/address/" + str(address_id))
 # print(idfa)
 
 # value = login.LoginByPassWord()

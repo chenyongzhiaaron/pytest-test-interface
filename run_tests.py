@@ -23,11 +23,11 @@ if __name__ == "__main__":
     # test_data.init_data()  # 初始化接口测试数据
     now = time.strftime("%Y-%m-%d %H_%M_%S")
     # filename = "F:\/QSJ/report/" + now + '_result.html'
-    # filename = "./report/" + now + '_TestReportResult.html'
-    filename = "F:\/QSJ/report/" + 'TestReport.html'
+    filename = "./report/" + now + '_TestReportResult.html'
+    # filename = "F:\/QSJ/report/" + 'TestReport.html'
     fp = open(filename, 'wb')
     runner = HTMLTestRunner(stream=fp,
-                            title='APP&信息流&路由&导流接口预发布环境接口测试报告',
+                            title='APP&信息流&路由&导流接口容器环境接口测试报告',
                             description='Implementation Example with: APP&信息流&路由&导流接口预发布环境接口测试报告')
     logging.info("------------自动化测试 action ---------------")
     runner.run(discover)

@@ -1,7 +1,8 @@
 import requests
 import unittest
 import time
-from Global_base import global_base, send_code
+import json
+from Global_base import global_base, send_code,globa_phone
 from db_fixture import test_db
 from parameterized import parameterized
 from Global_base import login
@@ -16,7 +17,7 @@ class MofidyPassByCode(unittest.TestCase):
     def tearDown(self):
         print("请求地址为{}".format(self.url))
         print("请求参数为{}".format(self.params))
-        print("响应结果为{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     @parameterized.expand([
         ("参数正确修改密码成功", "867910035562539", "2.6.0", "15", "1003", "1", "sinaif", "ef70fb3178dccde19df9295a68aca0a3",
@@ -25,7 +26,7 @@ class MofidyPassByCode(unittest.TestCase):
     @unittest.skip("pass")
     def test_mofidyPassByCode(self, name, deviceId, ver, verno,
                               productId, deviceType, channelId, deviceToken, mjbname, newpassword):
-        phone = 18127813600
+        phone = globa_phone.phone()
         time.sleep(120)
         value = send_code.SendPhoneCode().send_phone_code_token(phone)
         token = value[0]

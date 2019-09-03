@@ -1,5 +1,6 @@
 import unittest
 import requests
+import json
 from Global_base import global_base
 from parameterized import parameterized
 
@@ -15,28 +16,30 @@ searchmaps	搜索类型集合，json格式，默认状态下可不传	object	jso
 
 class GetYkdHomePageInfo(unittest.TestCase):
     '''有借、卡贷、闪贷 贷款大全列表'''
-
     def setUp(self):
         self.url = global_base.DefTool.url(self, "/app/loan/getYkdLoanCollection.do")
 
     def tearDown(self):
+        print("请求地址为{}".format(self.url))
         print("请求参数为：{}".format(self.params))
-        print("请求结果为：{}".format(self.result))
+        print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     @parameterized.expand([
         ("获取有借首页成功", "NPL62420190509175804100", 2, 1, 101, 1001,
          {"cycleList": "", "moneyList": "", "sortList": "106024"}),
-        ("获取卡贷首页成功", "NPL62420190509175804100", 2, 1, 101, 1002,
-         {"cycleList": "", "moneyList": "", "sortList": "106024"}),
-        ("获取闪贷首页成功", "NPL62420190509175804100", 2, 1, 101, 1005,
-         {"cycleList": "", "moneyList": "", "sortList": "106024"}),
+        # ("获取卡贷首页成功", "NPL62420190509175804100", 2, 1, 101, 1002,
+         # {"cycleList": "", "moneyList": "", "sortList": "106024"}),
+        # ("获取闪贷首页成功", "NPL62420190509175804100", 2, 1, 101, 1005,
+         # {"cycleList": "", "moneyList": "", "sortList": "106024"}),
         # ("产品类型错误,返回400", "NPL62420190509175804100", "12d3", 1, 101, 1005),
 
     ])
     def test_getYkdHomePageInfo(self, name, cfgId, cfgType, clientType, listType, productId, searchmaps):
+        '''有借、卡贷、闪贷 贷款大全列表'''
         self.params = {"cfgId": cfgId, "cfgType": cfgType, "clientType": clientType, "listType": listType,
                   "productId": productId, "searchmaps": searchmaps}
-        self.result = requests.get(url=self.url, params=self.params).json()
+        result = requests.get(url=self.url, params=self.params)
+        self.result = result.json()
         self.assertEqual(self.result['code'], '200')
         self.assertEqual(self.result['msg'], 'ok')
 
