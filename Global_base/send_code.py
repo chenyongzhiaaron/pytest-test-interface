@@ -3,8 +3,9 @@ from Global_base import global_base, login
 from db_fixture import test_db
 import time
 
+
 class SendPhoneCode():
-    '''未登录发送短信验证码'''
+    '''未登录发送短信验证码,type=2 验证码登录，type=4 修改密码，type=3 忘记密码'''
 
     def send_phone_code(self, phone):
         url = global_base.DefTool.url(self, '/usercenter/sys/sendPhoneCode')
@@ -16,7 +17,7 @@ class SendPhoneCode():
         result = requests.post(url=url, data=params).json()
         sql = 'SELECT mobile, smscode FROM sinaif_easy.t_app_smsinfo WHERE mobile= {} ORDER BY sendtime DESC LIMIT 0,1;'.format(
             phone)
-        code = test_db.T_DB.t_db_select(self,sql, "smscode")
+        code = test_db.T_DB.t_db_select(self, sql, "smscode")
         return code
 
     def send_phone_code_token(self, phone):
@@ -34,7 +35,7 @@ class SendPhoneCode():
         sql = 'SELECT mobile, smscode FROM sinaif_easy.t_app_smsinfo WHERE mobile= {} ORDER BY sendtime DESC LIMIT 0,1;'.format(
             phone)
         time.sleep(5)
-        code = test_db.T_DB.t_db_select(self,sql, "smscode")
+        code = test_db.T_DB.t_db_select(self, sql, "smscode")
         params = []
         params.append(token)
         params.append(code)
@@ -51,7 +52,7 @@ class SendPhoneCode():
         result = requests.post(url=url, data=params).json()
         sql = 'SELECT mobile, smscode FROM sinaif_easy.t_app_smsinfo WHERE mobile= {} ORDER BY sendtime DESC LIMIT 0,1;'.format(
             phone)
-        code = test_db.T_DB.t_db_select(self,sql, "smscode")
+        code = test_db.T_DB.t_db_select(self, sql, "smscode")
         return code
 #
 # if __name__ == "__main__":

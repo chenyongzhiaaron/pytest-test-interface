@@ -5,6 +5,7 @@ from parameterized import parameterized
 
 
 class UserAction(unittest.TestCase):
+    """代运营获取列表产品信息接口(微聚)'"""
     def setUp(self):
         self.url = global_base.DefTool.url(self, "/apph5/partner/loan/userAction.do")
 
@@ -15,7 +16,7 @@ class UserAction(unittest.TestCase):
          "1", "webh5_wj", "getList", "1539073086805")
     ])
     def test_userAction_success(self, name, bizData, bizKey, enVerNo, mchId, reqName, time):
-        '''代运营获取列表产品信息接口(微聚)'''
+        """{}""".format(name)
         self.params = {
             "bizData": bizData,
             "bizKey": bizKey,
@@ -26,7 +27,7 @@ class UserAction(unittest.TestCase):
 
     def tearDown(self):
         print("请求URL：{}".format(self.url))
-        print("请求参数为：{}".format(self.params))
+        print("请求参数为{}".format(json.dumps(self.params, indent=2, sort_keys=False, ensure_ascii=False)))
         print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
 

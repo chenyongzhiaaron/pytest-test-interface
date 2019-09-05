@@ -29,7 +29,7 @@ if __name__ == "__main__":
     runner = HTMLTestRunner(stream=fp,
                             title='APP&信息流&路由&导流接口容器环境接口测试报告',
                             description='Implementation Example with: APP&信息流&路由&导流接口预发布环境接口测试报告')
-    logging.info("------------自动化测试 action ---------------")
+    print(logging.info("------------自动化测试 action ---------------"))
     runner.run(discover)
-    logging.info("------------自动化测试 end ---------------")
+    print(logging.info("------------自动化测试 end ---------------"))
     fp.close()

@@ -9,10 +9,7 @@ from Global_base import phone_create
 
 
 class RouteH5DownLoadUrl(unittest.TestCase):
-    '''
-    大王贷款接轻松借路由需求，查询轻松借路由下载地址
-    '''
-
+    """大王贷款接轻松借路由需求，查询轻松借路由下载地址"""
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/route/h5/getDownloadUrl')
         self.msg = "ok"
@@ -23,11 +20,11 @@ class RouteH5DownLoadUrl(unittest.TestCase):
 
     def tearDown(self):
         print("请求URL：{}".format(self.url))
-        print("请求参数为：{}".format(self.params))
+        print("请求参数为：{}".format(json.dumps(self.params, indent=2, sort_keys=False, ensure_ascii=False)))
         print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     def test_get_route_h5_downloadUrl_None(self):
-        '''手机号正确，没有路由结果返回null'''
+        """手机号正确，没有路由结果返回null"""
         phone = int(globa_phone.phone())
         self.params = {"phone": phone, "productId": 2001, "deviceType": self.deviceType,
                  "channelId": "qIHgiZmfgM3OxdMnur56Tehk5fW6-LusUYDiFAX7nkc"}
@@ -36,7 +33,7 @@ class RouteH5DownLoadUrl(unittest.TestCase):
         self.assertEqual(self.result["code"], self.code)
 
     def test_get_route_h5_downloadUrl_android_success(self):
-        '''验证安卓手机号输入正确手机号，有路由结果，返回路由链接'''
+        """验证安卓手机号输入正确手机号，有路由结果，返回路由链接"""
         self.params = {"phone": self.phone, "productId": 2001, "deviceType": 1,
                  "channelId": "qIHgiZmfgM3OxdMnur56Tehk5fW6-LusUYDiFAX7nkc"}
         self.result = requests.get(url=self.url, params=self.params).json()
@@ -44,7 +41,7 @@ class RouteH5DownLoadUrl(unittest.TestCase):
         self.assertEqual(self.result["code"], self.code)
 
     def test_get_route_h5_downloadUrl_ios_success(self):
-        '''验证IOS手机号输入正确手机号，有路由结果，返回路由链接'''
+        """验证IOS手机号输入正确手机号，有路由结果，返回路由链接"""
         self.params = {"phone": self.phone, "productId": 2001, "deviceType": 2,
                  "channelId": "qIHgiZmfgM3OxdMnur56Tehk5fW6-LusUYDiFAX7nkc"}
         self.result = requests.get(url=self.url, params=self.params).json()
@@ -74,8 +71,8 @@ class RouteH5DownLoadUrl(unittest.TestCase):
         ("所有参数为空，提示请输入手机号", "", "", "", "", "请输入手机号码",
          100002),
     ])
-    def test_get_route_h5_downloadUrl_error(self, case, phone, productId, deviceType, channelId, msg, code):
-        ''''''
+    def test_get_route_h5_downloadUrl_error(self, name, phone, productId, deviceType, channelId, msg, code):
+        """{}""".format(name)
         self.params = {"phone": phone, "productId": productId, "deviceType": deviceType,
                  "channelId": channelId}
         self.result = requests.get(url=self.url, params=self.params).json()

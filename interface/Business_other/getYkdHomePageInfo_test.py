@@ -14,13 +14,13 @@ productId	产品ID(有借/1001,卡贷/1002,闪贷/1005)	string
 
 
 class GetYkdHomePageInfo(unittest.TestCase):
-    '''有借、卡贷、闪贷 APP改版首页请求'''
+    """有借、卡贷、闪贷 APP改版首页请求"""
     def setUp(self):
         self.url = global_base.DefTool.url(self, "/app/loan/getYkdHomePageInfo.do")
 
     def tearDown(self):
         print("请求地址为{}".format(self.url))
-        print("请求参数为：{}".format(self.params))
+        print("请求参数为{}".format(json.dumps(self.params, indent=2, sort_keys=False, ensure_ascii=False)))
         print("请求结果为：{}".format(json.dumps(self.result, indent=2, sort_keys=False, ensure_ascii=False)))
 
     @parameterized.expand([
@@ -31,7 +31,7 @@ class GetYkdHomePageInfo(unittest.TestCase):
 
     ])
     def test_getYkdHomePageInfo(self, name, cfgId, cfgType, clientType, listType, productId):
-        '''有借、卡贷、闪贷 APP改版首页请求'''
+        """{}""".format(name)
         self.params = {"cfgId": cfgId, "cfgType": cfgType, "clientType": clientType, "listType": listType,
                   "productId": productId}
         self.result = requests.get(url=self.url, params=self.params).json()

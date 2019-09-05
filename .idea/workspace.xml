@@ -1,83 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/interface/app-interface/checkUpdate_test.py" description="    def tearDown(self):&#10;        print(self.result)" line="13" />
+    <bookmark url="file://$PROJECT_DIR$/interface/app/checkUpdate_test.py" description="    def tearDown(self):&#10;        print(self.result)" line="13" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c6f9c80-bfa5-40cc-9e84-39cc42d46577" name="Default" comment="update all">
-      <change afterPath="$PROJECT_DIR$/interface/dyy_app/loanUserAction_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interface/dyy_app/userAction_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/2019-09-02 14_20_26_TestReportResult.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/2019-09-02 17_38_49_TestReportResult.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ts/descecb.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface/infomation/idfa_query.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface/web_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface/web_app/init.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Global_base/global_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Global_base/global_base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Global_base/send_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/Global_base/send_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/db_config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_fixture/mysql_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_fixture/mysql_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_fixture/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_fixture/test_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_fixture/test_db_idfa.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_fixture/test_db_idfa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_fixture/test_db_idfa.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/Business_other/getYkdHomePageInfo_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/Business_other/getYkdHomePageInfo_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/Business_other/getYkdLoanCollection_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/Business_other/getYkdLoanCollection_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/Business_other/get_business_product_list_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/Business_other/get_business_product_list_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/Business_other/get_plist_productList_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/Business_other/get_plist_productList_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/Business_other/get_yjkd_home_product_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/Business_other/get_yjkd_home_product_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/attendance_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/attendance_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/batchInsertVisitInfoByQsj_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/batchInsertVisitInfoByQsj_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/batchInsertVisitInfo_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/batchInsertVisitInfo_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/checkUpdate_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/checkUpdate_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/find_pass_by_code_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/find_pass_by_code_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/getCreditHelper_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/getCreditHelper_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/getMainLinkBySublink_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/getMainLinkBySublink_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/getMsgList_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/getMsgList_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/getProtocol_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/getProtocol_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/getSmartMatchList_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/getSmartMatchList_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/getUserInfo_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/getUserInfo_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/get_history_by_userId_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/get_history_by_userId_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/get_home_product_listV3_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/get_home_product_listV3_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/get_me_Info_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/get_me_Info_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/get_module_read_status_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/get_module_read_status_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/get_msg_read_status_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/get_msg_read_status_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/get_new_loan_product_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/get_new_loan_product_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/init_test_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/init_test_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/login_by_code_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/login_by_code_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/login_by_pass_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/login_by_pass_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/logout_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/logout_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/mofidyPassByCode_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/mofidyPassByCode_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/queryLoanProductByListIdV2_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/queryLoanProductByListIdV2_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/queryLoanProductByListId_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/queryLoanProductByListId_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/record_add_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/record_add_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/saveGps_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/saveGps_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/send_phone_code_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/send_phone_code_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/suggest_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/suggest_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/updateDeviceToken_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/updateDeviceToken_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/app-interface/update_user_info_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app-interface/update_user_info_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/qianka/clickNotify.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/qianka/clickNotify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/qianka/idfa_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/qianka/idfa_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/attendance_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/attendance_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/batchInsertVisitInfoByQsj_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/batchInsertVisitInfoByQsj_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/batchInsertVisitInfo_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/batchInsertVisitInfo_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/checkUpdate_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/checkUpdate_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/find_pass_by_code_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/find_pass_by_code_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/getCreditHelper_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/getCreditHelper_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/getMainLinkBySublink_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/getMainLinkBySublink_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/getMsgList_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/getMsgList_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/getProtocol_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/getProtocol_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/getSmartMatchList_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/getSmartMatchList_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/getUserInfo_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/getUserInfo_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/get_history_by_userId_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/get_history_by_userId_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/get_home_product_listV3_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/get_home_product_listV3_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/get_me_Info_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/get_me_Info_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/get_module_read_status_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/get_module_read_status_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/get_msg_read_status_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/get_msg_read_status_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/get_new_loan_product_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/get_new_loan_product_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/init_test_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/init_test_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/login_by_code_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/login_by_code_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/login_by_pass_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/login_by_pass_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/logout_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/logout_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/mofidyPassByCode_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/mofidyPassByCode_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/queryLoanProductByListIdV2_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/queryLoanProductByListIdV2_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/queryLoanProductByListId_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/queryLoanProductByListId_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/record_add_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/record_add_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/saveGps_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/saveGps_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/send_phone_code_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/send_phone_code_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/suggest_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/suggest_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/updateDeviceToken_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/updateDeviceToken_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/app-interface/update_user_info_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/app/update_user_info_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dyy_app/loanUserAction_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/dyy_app/loanUserAction_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/dyy_app/userAction_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/dyy_app/userAction_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/qianka/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/infomation/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/qianka/clickNotify.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/infomation/clickNotify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/qianka/idfa_query.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/route/getModelInfoByStrategy_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/route/getModelInfoByStrategy_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/route/get_checkUser_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/route/get_checkUser_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/route/get_route_h5_downloadUrl_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/route/get_route_h5_downloadUrl_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-20 13_42_47_result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-20 21_00_50_result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-20 21_18_29_result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-21 14_36_01_result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-21 16_02_53_TestReportResult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-21 16_27_13_TestReportResult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-21 21_32_25_TestReportResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/ts/__inti__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-21 21_50_58_TestReportResult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-21 21_54_58_TestReportResult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-21 21_56_25_TestReportResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/ts/aecs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-21 21_57_48_TestReportResult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-21 22_00_03_TestReportResult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-21 22_02_31_TestReportResult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-21 22_06_04_TestReportResult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-22 10_01_42_TestReportResult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-22 20_48_45_TestReportResult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-22 21_04_08_TestReportResult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/2019-08-23 12_05_17_TestReportResult.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_linux_cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/ts/test_linux_cmd.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,42 +66,42 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_t.coverage" NAME="Unittests in t Coverage Results" MODIFIED="1538193438730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_address_list_test_py.coverage" NAME="Unittests in address_list_test.py Coverage Results" MODIFIED="1545274261832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_plist_productList_test_py.coverage" NAME="Unittests in get_plist_productList_test.py Coverage Results" MODIFIED="1567150842171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Business_other" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_plist_productList_test_py.coverage" NAME="Unittests in get_plist_productList_test.py Coverage Results" MODIFIED="1567517890396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Business_other" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_auth_me_py.coverage" NAME="Unittests in auth_me.py Coverage Results" MODIFIED="1545102414499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Administrator" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getYkdHomePageInfo_test_py.coverage" NAME="Unittests in getYkdHomePageInfo_test.py Coverage Results" MODIFIED="1567395064481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Business_other" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getYkdHomePageInfo_test_py.coverage" NAME="Unittests in getYkdHomePageInfo_test.py Coverage Results" MODIFIED="1567517881769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Business_other" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_find_pass_by_code_test_py.coverage" NAME="Unittests in find_pass_by_code_test.py Coverage Results" MODIFIED="1567155151997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
     <SUITE FILE_PATH="coverage/Funcl$t.coverage" NAME="t Coverage Results" MODIFIED="1538193031272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
     <SUITE FILE_PATH="coverage/Funcl$global_base.coverage" NAME="global_base Coverage Results" MODIFIED="1543394750816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_TokenClass__1_.coverage" NAME="Unittests in TokenClass (1) Coverage Results" MODIFIED="1538191571373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_funCode_getProductInfo_test_py.coverage" NAME="Unittests in funCode_getProductInfo_test.py Coverage Results" MODIFIED="1545288955767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/FunCode" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_idfa_query_py.coverage" NAME="Unittests in idfa_query.py Coverage Results" MODIFIED="1567148945978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qianka" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_idfa_query_py.coverage" NAME="Unittests in idfa_query.py Coverage Results" MODIFIED="1567664701699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/infomation" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_funCode_getInfo_test_py.coverage" NAME="Unittests in funCode_getInfo_test.py Coverage Results" MODIFIED="1545296285095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/FunCode" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_suggest_test_py.coverage" NAME="Unittests in suggest_test.py Coverage Results" MODIFIED="1566357845752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getModelInfoByStrategy_test_py.coverage" NAME="Unittests in getModelInfoByStrategy_test.py Coverage Results" MODIFIED="1567494034733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/route" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getModelInfoByStrategy_test_py.coverage" NAME="Unittests in getModelInfoByStrategy_test.py Coverage Results" MODIFIED="1567664857815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/route" />
     <SUITE FILE_PATH="coverage/Funcl$execute_db.coverage" NAME="execute_db Coverage Results" MODIFIED="1536724537091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_fixture" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_checkUser_test_py.coverage" NAME="Unittests in get_checkUser_test.py Coverage Results" MODIFIED="1567150643165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/route" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_userAction_test_py.coverage" NAME="Unittests in userAction_test.py Coverage Results" MODIFIED="1567475140526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/dyy_app" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_checkUser_test_py.coverage" NAME="Unittests in get_checkUser_test.py Coverage Results" MODIFIED="1567664874490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/route" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_userAction_test_py.coverage" NAME="Unittests in userAction_test.py Coverage Results" MODIFIED="1567570399913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/dyy_app" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_credit_helper_test_py.coverage" NAME="Unittests in get_credit_helper_test.py Coverage Results" MODIFIED="1566213916365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qsj" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_home_product_list_py.coverage" NAME="Unittests in get_home_product_list.py Coverage Results" MODIFIED="1549000572499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Business" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_new_loan_product_test_py.coverage" NAME="Unittests in get_new_loan_product_test.py Coverage Results" MODIFIED="1566372094824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_send_code_py.coverage" NAME="Unittests in send_code.py Coverage Results" MODIFIED="1565667079256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_productInfo.coverage" NAME="Unittests in productInfo Coverage Results" MODIFIED="1540894103135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProductsManagement" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_module_read_status_py.coverage" NAME="Unittests in get_module_read_status.py Coverage Results" MODIFIED="1565613302125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_login_by_pass_test_py.coverage" NAME="Unittests in login_by_pass_test.py Coverage Results" MODIFIED="1567165274336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_login_by_pass_test_py.coverage" NAME="Unittests in login_by_pass_test.py Coverage Results" MODIFIED="1567663422434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_auth_logout.coverage" NAME="Unittests in auth_logout Coverage Results" MODIFIED="1542346619837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Administrator" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_create_order_py.coverage" NAME="Unittests in create_order.py Coverage Results" MODIFIED="1545112965670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/OrderManagement" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_address_one_py.coverage" NAME="Unittests in address one.py Coverage Results" MODIFIED="1545198247626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
     <SUITE FILE_PATH="coverage/Funcl$Unittest_User_login_test_login_success.coverage" NAME="Unittest User_login.test_login_success Coverage Results" MODIFIED="1536905781694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Administrator" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_clickNotify_py.coverage" NAME="Unittests in clickNotify.py Coverage Results" MODIFIED="1566560166678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qianka" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_clickNotify_py.coverage" NAME="Unittests in clickNotify.py Coverage Results" MODIFIED="1567664709438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/infomation" />
     <SUITE FILE_PATH="coverage/qsjInterface$Unittests_in_init_test_py.coverage" NAME="Unittests in init_test.py Coverage Results" MODIFIED="1548827616370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Administrator" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_queryLoanProductByListIdV2_test_py.coverage" NAME="Unittests in queryLoanProductByListIdV2_test.py Coverage Results" MODIFIED="1566357824223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_queryLoanProductByListIdV2_test_py.coverage" NAME="Unittests in queryLoanProductByListIdV2_test.py Coverage Results" MODIFIED="1567663716756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
     <SUITE FILE_PATH="coverage/untitled$get_captcha.coverage" NAME="get_captcha Coverage Results" MODIFIED="1536657009525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Administrator" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_city_py.coverage" NAME="Unittests in city.py Coverage Results" MODIFIED="1543574893121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Public_address" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_user_login_py.coverage" NAME="Unittests in user_login.py Coverage Results" MODIFIED="1545031074759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Administrator" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_yjkd_product_list_test_py.coverage" NAME="Unittests in get_plist_productList_test.py Coverage Results" MODIFIED="1566280535501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Business_other" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_TokenClass.coverage" NAME="Unittests in TokenClass Coverage Results" MODIFIED="1538191495338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getCreditHelper_test_py.coverage" NAME="Unittests in getCreditHelper_test.py Coverage Results" MODIFIED="1567154741340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
     <SUITE FILE_PATH="coverage/QSJ$descecb.coverage" NAME="descecb Coverage Results" MODIFIED="1567419256787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ts" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getCreditHelper_test_py.coverage" NAME="Unittests in getCreditHelper_test.py Coverage Results" MODIFIED="1567662370505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_logout_test_py.coverage" NAME="Unittests in logout_test.py Coverage Results" MODIFIED="1566357746790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_for_get_route_h5_downloadUrl_RouteH5DownLoadUrl.coverage" NAME="Unittests for get_route_h5_downloadUrl.RouteH5DownLoadUrl Coverage Results" MODIFIED="1557304799076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/route" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_delete_address_test_py.coverage" NAME="Unittests in delete_address_test.py Coverage Results" MODIFIED="1545209590967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
@@ -133,28 +111,28 @@
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_update_address_test_py.coverage" NAME="Unittests in update_address_test.py Coverage Results" MODIFIED="1545210191208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_order_getNumber_py.coverage" NAME="Unittests in order_getNumber.py Coverage Results" MODIFIED="1545119443289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/OrderManagement" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_defUH__1_.coverage" NAME="Unittests in defUH (1) Coverage Results" MODIFIED="1538205402443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getMainLinkBySublink_test_py.coverage" NAME="Unittests in getMainLinkBySublink_test.py Coverage Results" MODIFIED="1567154714537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getMainLinkBySublink_test_py.coverage" NAME="Unittests in getMainLinkBySublink_test.py Coverage Results" MODIFIED="1567662993010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
     <SUITE FILE_PATH="coverage/QSJ$phone_create.coverage" NAME="phone_create Coverage Results" MODIFIED="1565614597171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_send_phone_code_py.coverage" NAME="Unittests in send_phone_code.py Coverage Results" MODIFIED="1565614806624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_checkUpdate_test_py.coverage" NAME="Unittests in checkUpdate_test.py Coverage Results" MODIFIED="1567155060521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_checkUpdate_test_py.coverage" NAME="Unittests in checkUpdate_test.py Coverage Results" MODIFIED="1567518563824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
     <SUITE FILE_PATH="coverage/untitled$run_tests.coverage" NAME="run_tests Coverage Results" MODIFIED="1536657537983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/report" />
     <SUITE FILE_PATH="coverage/Funcl$Unittest_Get_captcha_test_get_captcha.coverage" NAME="Unittest Get_captcha.test_get_captcha Coverage Results" MODIFIED="1538187409689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Administrator" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_route_h5_downloadUrl_py.coverage" NAME="Unittests in get_route_h5_downloadUrl.py Coverage Results" MODIFIED="1557237828852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/route" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_subscribe.coverage" NAME="Unittests in subscribe Coverage Results" MODIFIED="1540964689684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Newsletter" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_getOne.coverage" NAME="Unittests in getOne Coverage Results" MODIFIED="1542266115001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AppSerials" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_route_h5_downloadUrl_test_py.coverage" NAME="Unittests in get_route_h5_downloadUrl_test.py Coverage Results" MODIFIED="1567150404074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/route" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getYkdLoanCollection_test_py.coverage" NAME="Unittests in getYkdLoanCollection_test.py Coverage Results" MODIFIED="1567404689698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Business_other" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getYkdLoanCollection_test_py.coverage" NAME="Unittests in getYkdLoanCollection_test.py Coverage Results" MODIFIED="1567517876515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Business_other" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_route_h5_downloadUrl_test_py.coverage" NAME="Unittests in get_route_h5_downloadUrl_test.py Coverage Results" MODIFIED="1567664861714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/route" />
     <SUITE FILE_PATH="coverage/QSJ$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1548830974155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_auth_captcha.coverage" NAME="Unittests in auth_captcha Coverage Results" MODIFIED="1543386990070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Administrator" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_attendance_test_py.coverage" NAME="Unittests in attendance_test.py Coverage Results" MODIFIED="1567489132512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_attendance_test_py.coverage" NAME="Unittests in attendance_test.py Coverage Results" MODIFIED="1567525701809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_funCode_py.coverage" NAME="Unittests in funCode.py Coverage Results" MODIFIED="1545112639303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/FunCode" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_update_address_py.coverage" NAME="Unittests in update address.py Coverage Results" MODIFIED="1545191667582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getUserInfo_test_py.coverage" NAME="Unittests in getUserInfo_test.py Coverage Results" MODIFIED="1567405498131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_business_product_list_test_py.coverage" NAME="Unittests in get_business_product_list_test.py Coverage Results" MODIFIED="1567150893868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Business_other" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getUserInfo_test_py.coverage" NAME="Unittests in getUserInfo_test.py Coverage Results" MODIFIED="1567663211153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_business_product_list_test_py.coverage" NAME="Unittests in get_business_product_list_test.py Coverage Results" MODIFIED="1567517894066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Business_other" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_tttttt.coverage" NAME="Unittests in tttttt Coverage Results" MODIFIED="1538193128405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
     <SUITE FILE_PATH="coverage/Funcl$test_data.coverage" NAME="test_data Coverage Results" MODIFIED="1545295200220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_fixture" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_query_loan_product_test_py.coverage" NAME="Unittests in query_loan_product_test.py Coverage Results" MODIFIED="1549009488105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/QSJ" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_me_Info_test_py.coverage" NAME="Unittests in get_me_Info_test.py Coverage Results" MODIFIED="1567154843601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_me_Info_test_py.coverage" NAME="Unittests in get_me_Info_test.py Coverage Results" MODIFIED="1567662234790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_address_list.coverage" NAME="Unittests in address list Coverage Results" MODIFIED="1543483772252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
     <SUITE FILE_PATH="coverage/Funcl$mysql_db.coverage" NAME="mysql_db Coverage Results" MODIFIED="1545124462591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_fixture" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_update_address.coverage" NAME="Unittests in update address Coverage Results" MODIFIED="1543489940498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
@@ -164,12 +142,12 @@
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_history_by_userId_test_py.coverage" NAME="Unittests in get_history_by_userId_test.py Coverage Results" MODIFIED="1566374128946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
     <SUITE FILE_PATH="coverage/Funcl$subscribe.coverage" NAME="subscribe Coverage Results" MODIFIED="1540961190413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Newsletter" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_index_test_py.coverage" NAME="Unittests in index_test.py Coverage Results" MODIFIED="1565612274011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
-    <SUITE FILE_PATH="coverage/QSJ$run_tests.coverage" NAME="run_tests Coverage Results" MODIFIED="1567417127975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/QSJ$run_tests.coverage" NAME="run_tests Coverage Results" MODIFIED="1567649013160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_order_getList_test_py.coverage" NAME="Unittests in order_getList_test.py Coverage Results" MODIFIED="1545297756510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/OrderManagement" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_msg_read_status_test_py.coverage" NAME="Unittests in get_msg_read_status_test.py Coverage Results" MODIFIED="1566374162688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
     <SUITE FILE_PATH="coverage/Funcl$auth_captcha.coverage" NAME="auth_captcha Coverage Results" MODIFIED="1538278537887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Administrator" />
     <SUITE FILE_PATH="coverage/QSJ$login.coverage" NAME="login Coverage Results" MODIFIED="1567403745204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getSmartMatchList_test_py.coverage" NAME="Unittests in getSmartMatchList_test.py Coverage Results" MODIFIED="1566357666533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getSmartMatchList_test_py.coverage" NAME="Unittests in getSmartMatchList_test.py Coverage Results" MODIFIED="1567663165266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_auth_captcha_py.coverage" NAME="Unittests in auth_captcha.py Coverage Results" MODIFIED="1545034566190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Administrator" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_1234_py.coverage" NAME="Unittests in 1234.py Coverage Results" MODIFIED="1557034825652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_for_order_checkout_OrderCheckout_test_order_checkout_success.coverage" NAME="Unittests for order_checkout.OrderCheckout.test_order_checkout_success Coverage Results" MODIFIED="1545116165142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/OrderManagement" />
@@ -184,9 +162,9 @@
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_default_address.coverage" NAME="Unittests in default address Coverage Results" MODIFIED="1543482901177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_getNumber.coverage" NAME="Unittests in getNumber Coverage Results" MODIFIED="1541387184313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OrderManagement" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_default_address_py.coverage" NAME="Unittests in default address.py Coverage Results" MODIFIED="1545188540421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_saveGps_test_py.coverage" NAME="Unittests in saveGps_test.py Coverage Results" MODIFIED="1566357835295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_saveGps_test_py.coverage" NAME="Unittests in saveGps_test.py Coverage Results" MODIFIED="1567663801813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
     <SUITE FILE_PATH="coverage/Funcl$productInfo.coverage" NAME="productInfo Coverage Results" MODIFIED="1543400290168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/ProductsManagement" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_yjkd_home_product_list_py.coverage" NAME="Unittests in get_yjkd_home_product_list.py Coverage Results" MODIFIED="1567150831319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Business_other" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_yjkd_home_product_list_py.coverage" NAME="Unittests in get_yjkd_home_product_list.py Coverage Results" MODIFIED="1567517886146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Business_other" />
     <SUITE FILE_PATH="coverage/Funcl$get_captcha.coverage" NAME="get_captcha Coverage Results" MODIFIED="1536751149293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Administrator" />
     <SUITE FILE_PATH="coverage/Funcl$funCodeProductInfo.coverage" NAME="funCodeProductInfo Coverage Results" MODIFIED="1540976665851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FunCode" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_getAllSerials.coverage" NAME="Unittests in getAllSerials Coverage Results" MODIFIED="1543484616974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/AppSerials" />
@@ -196,7 +174,7 @@
     <SUITE FILE_PATH="coverage/Funcl$address_one.coverage" NAME="address one Coverage Results" MODIFIED="1543400039927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
     <SUITE FILE_PATH="coverage/Funcl$Unittest_Subscribe_test_subscribe_fail.coverage" NAME="Unittest Subscribe.test_subscribe_fail Coverage Results" MODIFIED="1540960958077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Newsletter" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_global_base.coverage" NAME="Unittests in global_base Coverage Results" MODIFIED="1538279293770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_init_test_test_py.coverage" NAME="Unittests in init_test_test.py Coverage Results" MODIFIED="1567153504821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_init_test_test_py.coverage" NAME="Unittests in init_test_test.py Coverage Results" MODIFIED="1567663266486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_delete_address_py.coverage" NAME="Unittests in delete address.py Coverage Results" MODIFIED="1545200126488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_productInfo_py.coverage" NAME="Unittests in productInfo.py Coverage Results" MODIFIED="1543560633352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/ProductsManagement" />
     <SUITE FILE_PATH="coverage/QSJ$test_db_idfa.coverage" NAME="test_db_idfa Coverage Results" MODIFIED="1566210285318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/db_fixture" />
@@ -217,23 +195,23 @@
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_QueryLoanProductByListId_py.coverage" NAME="Unittests in QueryLoanProductByListId.py Coverage Results" MODIFIED="1565577106965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/qsj" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_serialsStore.coverage" NAME="Unittests in serialsStore Coverage Results" MODIFIED="1542264049796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AppSerials" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_address_one_test_py.coverage" NAME="Unittests in address_one_test.py Coverage Results" MODIFIED="1545207998914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_home_product_listV3_test_py.coverage" NAME="Unittests in get_home_product_listV3_test.py Coverage Results" MODIFIED="1567154895924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_home_product_listV3_test_py.coverage" NAME="Unittests in get_home_product_listV3_test.py Coverage Results" MODIFIED="1567656673566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_init_test_py.coverage" NAME="Unittests in init_test.py Coverage Results" MODIFIED="1565612149354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
     <SUITE FILE_PATH="coverage/QSJ$testt.coverage" NAME="testt Coverage Results" MODIFIED="1566200343364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_queryLoanProductByListId_test_py.coverage" NAME="Unittests in queryLoanProductByListId_test.py Coverage Results" MODIFIED="1567404490763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
     <SUITE FILE_PATH="coverage/Funcl$test_urlHeaders.coverage" NAME="test_urlHeaders Coverage Results" MODIFIED="1538192068428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Global_base" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_address_one.coverage" NAME="Unittests in address one Coverage Results" MODIFIED="1543490065960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/Address" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_mofidyPassByCode_test_py.coverage" NAME="Unittests in mofidyPassByCode_test.py Coverage Results" MODIFIED="1567156750208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_login_by_code_test_py.coverage" NAME="Unittests in login_by_code_test.py Coverage Results" MODIFIED="1566559785535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_record_add_test_py.coverage" NAME="Unittests in record_add_test.py Coverage Results" MODIFIED="1567151517817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_mofidyPassByCode_test_py.coverage" NAME="Unittests in mofidyPassByCode_test.py Coverage Results" MODIFIED="1567586756207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_login_by_code_test_py.coverage" NAME="Unittests in login_by_code_test.py Coverage Results" MODIFIED="1567663324274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_record_add_test_py.coverage" NAME="Unittests in record_add_test.py Coverage Results" MODIFIED="1567663766872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_update_user_info_test_py.coverage" NAME="Unittests in update_user_info_test.py Coverage Results" MODIFIED="1567151152103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
     <SUITE FILE_PATH="coverage/Funcl$run_tests__1_.coverage" NAME="run_tests (1) Coverage Results" MODIFIED="1536661547223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Funcl$user_login.coverage" NAME="user_login Coverage Results" MODIFIED="1538215930296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Administrator" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_module_read_status_test_py.coverage" NAME="Unittests in get_module_read_status_test.py Coverage Results" MODIFIED="1567154817011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_send_phone_code_test_py.coverage" NAME="Unittests in send_phone_code_test.py Coverage Results" MODIFIED="1567151276556" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_module_read_status_test_py.coverage" NAME="Unittests in get_module_read_status_test.py Coverage Results" MODIFIED="1567662249255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_send_phone_code_test_py.coverage" NAME="Unittests in send_phone_code_test.py Coverage Results" MODIFIED="1567664014733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
     <SUITE FILE_PATH="coverage/Funcl$create_order.coverage" NAME="create_order Coverage Results" MODIFIED="1541385922827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OrderManagement" />
     <SUITE FILE_PATH="coverage/QSJ$test_linux.coverage" NAME="test_linux Coverage Results" MODIFIED="1566283252524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getMsgList_test_py.coverage" NAME="Unittests in getMsgList_test.py Coverage Results" MODIFIED="1566357655783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app-interface" />
+    <SUITE FILE_PATH="coverage/QSJ$Unittests_in_getMsgList_test_py.coverage" NAME="Unittests in getMsgList_test.py Coverage Results" MODIFIED="1567663072005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/app" />
     <SUITE FILE_PATH="coverage/Funcl$auth_refresh.coverage" NAME="auth_refresh Coverage Results" MODIFIED="1542348565173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Administrator" />
     <SUITE FILE_PATH="coverage/Funcl$Unittests_in_create_order_test_py.coverage" NAME="Unittests in create_order_test.py Coverage Results" MODIFIED="1545216135981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/OrderManagement" />
     <SUITE FILE_PATH="coverage/QSJ$Unittests_in_get_checkUser_py.coverage" NAME="Unittests in get_checkUser.py Coverage Results" MODIFIED="1566216550409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface/route" />
@@ -253,10 +231,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/Business_other/getYkdHomePageInfo_test.py">
+        <entry file="file://$PROJECT_DIR$/interface/Business_other/getYkdLoanCollection_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="247">
+              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="29" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -265,77 +243,75 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/Business_other/get_business_product_list_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/interface/dyy_app/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/qianka/clickNotify.py">
+        <entry file="file://$PROJECT_DIR$/interface/dyy_app/loanUserAction_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-              <folding>
-                <element signature="e#15#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/qianka/idfa_query.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-              <folding>
-                <element signature="e#15#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/route/get_route_h5_downloadUrl_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
-              <folding>
-                <element signature="e#15#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/route/getModelInfoByStrategy_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="228">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/dyy_app/userAction_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="832">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/infomation/clickNotify.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/infomation/idfa_query.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interface/route/get_checkUser_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="44" column="19" lean-forward="true" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/log/logger.py">
+        <entry file="file://$PROJECT_DIR$/interface/route/get_route_h5_downloadUrl_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-399" />
+            <state relative-caret-position="380">
+              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/app-interface/attendance_test.py">
+        <entry file="file://$PROJECT_DIR$/interface/Business_other/get_yjkd_home_product_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="399">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -344,10 +320,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interface/Business_other/get_plist_productList_test.py">
+        <entry file="file://$PROJECT_DIR$/interface/Business_other/getYkdHomePageInfo_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="456">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="29" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -376,57 +352,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Global_base/send_code.py" />
-        <option value="$PROJECT_DIR$/ts/__inti__.py" />
-        <option value="$PROJECT_DIR$/Global_base/global_base.py" />
-        <option value="$PROJECT_DIR$/db_config.ini" />
-        <option value="$PROJECT_DIR$/db_fixture/test_db.py" />
-        <option value="$PROJECT_DIR$/Global_base/login.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/record_add_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/queryLoanProductByListIdV2_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/queryLoanProductByListId_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/mofidyPassByCode_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/logout_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/login_by_pass_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/login_by_code_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/init_test_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/getSmartMatchList_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/getProtocol_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/getMsgList_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/getMainLinkBySublink_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/getCreditHelper_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/get_new_loan_product_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/get_msg_read_status_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/get_module_read_status_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/get_me_Info_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/get_home_product_listV3_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/get_history_by_userId_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/find_pass_by_code_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/checkUpdate_test.py" />
-        <option value="$PROJECT_DIR$/interface/route/get_checkUser_test.py" />
-        <option value="$PROJECT_DIR$/interface/route/get_route_h5_downloadUrl_test.py" />
-        <option value="$PROJECT_DIR$/interface/route/getModelInfoByStrategy_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/getUserInfo_test.py" />
-        <option value="$PROJECT_DIR$/ts/aecs.py" />
-        <option value="$PROJECT_DIR$/ts/descecb.py" />
-        <option value="$PROJECT_DIR$/interface/Business_other/get_yjkd_home_product_list.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/updateDeviceToken_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/update_user_info_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/suggest_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/send_phone_code_test.py" />
         <option value="$PROJECT_DIR$/interface/app-interface/saveGps_test.py" />
+        <option value="$PROJECT_DIR$/interface/app-interface/send_phone_code_test.py" />
+        <option value="$PROJECT_DIR$/interface/app-interface/suggest_test.py" />
+        <option value="$PROJECT_DIR$/interface/app-interface/update_user_info_test.py" />
+        <option value="$PROJECT_DIR$/interface/app-interface/updateDeviceToken_test.py" />
+        <option value="$PROJECT_DIR$/interface/qianka/idfa_query.py" />
+        <option value="$PROJECT_DIR$/interface/route/getModelInfoByStrategy_test.py" />
         <option value="$PROJECT_DIR$/run_tests.py" />
+        <option value="$PROJECT_DIR$/interface/app-interface/getMsgList_test.py" />
+        <option value="$PROJECT_DIR$/interface/web_app/init.py" />
+        <option value="$PROJECT_DIR$/Global_base/send_code.py" />
+        <option value="$PROJECT_DIR$/ts/MongoConn.py" />
+        <option value="$PROJECT_DIR$/interface/app/updateDeviceToken_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/update_user_info_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/suggest_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/send_phone_code_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/saveGps_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/record_add_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/queryLoanProductByListIdV2_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/queryLoanProductByListId_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/mofidyPassByCode_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/logout_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/login_by_pass_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/login_by_code_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/init_test_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/getUserInfo_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/getSmartMatchList_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/getProtocol_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/getMsgList_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/getMainLinkBySublink_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/getCreditHelper_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/get_new_loan_product_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/get_msg_read_status_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/get_module_read_status_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/get_me_Info_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/get_home_product_listV3_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/get_history_by_userId_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/find_pass_by_code_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/checkUpdate_test.py" />
+        <option value="$PROJECT_DIR$/interface/app/attendance_test.py" />
+        <option value="$PROJECT_DIR$/interface/Business_other/get_business_product_list_test.py" />
+        <option value="$PROJECT_DIR$/interface/Business_other/get_plist_productList_test.py" />
+        <option value="$PROJECT_DIR$/interface/Business_other/get_yjkd_home_product_list.py" />
+        <option value="$PROJECT_DIR$/interface/Business_other/getYkdHomePageInfo_test.py" />
+        <option value="$PROJECT_DIR$/interface/Business_other/getYkdLoanCollection_test.py" />
         <option value="$PROJECT_DIR$/interface/dyy_app/loanUserAction_test.py" />
         <option value="$PROJECT_DIR$/interface/dyy_app/userAction_test.py" />
-        <option value="$PROJECT_DIR$/interface/Business_other/getYkdLoanCollection_test.py" />
-        <option value="$PROJECT_DIR$/interface/Business_other/getYkdHomePageInfo_test.py" />
-        <option value="$PROJECT_DIR$/interface/Business_other/get_plist_productList_test.py" />
-        <option value="$PROJECT_DIR$/interface/Business_other/get_business_product_list_test.py" />
-        <option value="$PROJECT_DIR$/interface/qianka/clickNotify.py" />
-        <option value="$PROJECT_DIR$/interface/qianka/idfa_query.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/attendance_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/batchInsertVisitInfoByQsj_test.py" />
-        <option value="$PROJECT_DIR$/interface/app-interface/batchInsertVisitInfo_test.py" />
+        <option value="$PROJECT_DIR$/interface/infomation/clickNotify.py" />
+        <option value="$PROJECT_DIR$/interface/infomation/idfa_query.py" />
+        <option value="$PROJECT_DIR$/interface/route/get_checkUser_test.py" />
+        <option value="$PROJECT_DIR$/interface/route/get_route_h5_downloadUrl_test.py" />
       </list>
     </option>
   </component>
@@ -442,17 +418,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="QSJ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSJ" type="462c0819:PsiDirectoryNode" />
-              <item name="db_fixture" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
@@ -468,7 +440,7 @@
               <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="QSJ" type="462c0819:PsiDirectoryNode" />
               <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="app-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
@@ -486,7 +458,7 @@
               <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
               <item name="QSJ" type="462c0819:PsiDirectoryNode" />
               <item name="interface" type="462c0819:PsiDirectoryNode" />
-              <item name="qianka" type="462c0819:PsiDirectoryNode" />
+              <item name="infomation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
@@ -494,28 +466,17 @@
               <item name="interface" type="462c0819:PsiDirectoryNode" />
               <item name="route" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSJ" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QSJ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QSJ" type="462c0819:PsiDirectoryNode" />
-              <item name="ts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../InterfaceTest" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -525,19 +486,19 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\QSJ" />
-      <recent name="F:\QSJ\db_fixture" />
-      <recent name="E:\Funcl" />
-      <recent name="F:\pydj\Funcl\db_fixture" />
-      <recent name="F:\pydj\untitled\report" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\QSJ\ts" />
       <recent name="F:\QSJ\interface\app-interface" />
       <recent name="F:\auto\qsjInterface\interface\Administrator" />
       <recent name="E:\Funcl\interface\Address" />
       <recent name="E:\Funcl\interface" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\QSJ" />
+      <recent name="F:\QSJ\db_fixture" />
+      <recent name="E:\Funcl" />
+      <recent name="F:\pydj\Funcl\db_fixture" />
+      <recent name="F:\pydj\untitled\report" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -552,7 +513,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in getModelInfoByStrategy_test.py">
+  <component name="RunManager" selected="Python tests.Unittests in get_checkUser_test.py">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -662,48 +623,18 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in attendance_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in clickNotify.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="QSJ" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/app-interface" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/infomation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/interface/app-interface/attendance_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in batchInsertVisitInfoByQsj_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="QSJ" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/app-interface" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/interface/app-interface/batchInsertVisitInfoByQsj_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in batchInsertVisitInfo_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="QSJ" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/app-interface" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/interface/app-interface/batchInsertVisitInfo_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/interface/infomation/clickNotify.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -722,18 +653,48 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in loanUserAction_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in get_checkUser_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="QSJ" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/dyy_app" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/route" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/interface/dyy_app/loanUserAction_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/interface/route/get_checkUser_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in get_route_h5_downloadUrl_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="QSJ" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/route" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/interface/route/get_route_h5_downloadUrl_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in idfa_query.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="QSJ" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface/infomation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/interface/infomation/idfa_query.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -804,19 +765,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in loanUserAction_test.py" />
-      <item itemvalue="Python tests.Unittests in batchInsertVisitInfoByQsj_test.py" />
-      <item itemvalue="Python tests.Unittests in batchInsertVisitInfo_test.py" />
-      <item itemvalue="Python tests.Unittests in attendance_test.py" />
+      <item itemvalue="Python tests.Unittests in idfa_query.py" />
+      <item itemvalue="Python tests.Unittests in clickNotify.py" />
+      <item itemvalue="Python tests.Unittests in get_checkUser_test.py" />
       <item itemvalue="Python tests.Unittests in getModelInfoByStrategy_test.py" />
+      <item itemvalue="Python tests.Unittests in get_route_h5_downloadUrl_test.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in get_checkUser_test.py" />
+        <item itemvalue="Python tests.Unittests in get_route_h5_downloadUrl_test.py" />
         <item itemvalue="Python tests.Unittests in getModelInfoByStrategy_test.py" />
-        <item itemvalue="Python tests.Unittests in batchInsertVisitInfo_test.py" />
-        <item itemvalue="Python tests.Unittests in batchInsertVisitInfoByQsj_test.py" />
-        <item itemvalue="Python tests.Unittests in attendance_test.py" />
-        <item itemvalue="Python tests.Unittests in loanUserAction_test.py" />
+        <item itemvalue="Python tests.Unittests in clickNotify.py" />
+        <item itemvalue="Python tests.Unittests in idfa_query.py" />
       </list>
     </recent_temporary>
   </component>
@@ -879,7 +840,8 @@
       <workItem from="1566893352721" duration="2497000" />
       <workItem from="1566930237842" duration="735000" />
       <workItem from="1567058889976" duration="56960000" />
-      <workItem from="1567432720225" duration="6482000" />
+      <workItem from="1567432720225" duration="25338000" />
+      <workItem from="1567648968158" duration="5304000" />
     </task>
     <task id="LOCAL-00001" summary="first commmit">
       <created>1538289967373</created>
@@ -1203,43 +1165,50 @@
       <option name="project" value="LOCAL" />
       <updated>1567155483125</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="update all">
+      <created>1567494178661</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1567494178664</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_attendance_test_py - 2019.09.03 at 12h 12m 38s.xml">
-      <configuration name="Unittests in attendance_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_login_by_pass_test_py - 2019.09.05 at 14h 03m 43s.xml">
+      <configuration name="Unittests in login_by_pass_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_attendance_test_py - 2019.09.03 at 13h 38m 52s.xml">
-      <configuration name="Unittests in attendance_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_queryLoanProductByListIdV2_test_py - 2019.09.05 at 14h 08m 40s.xml">
+      <configuration name="Unittests in queryLoanProductByListIdV2_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_batchInsertVisitInfo_test_py - 2019.09.03 at 13h 39m 16s.xml">
-      <configuration name="Unittests in batchInsertVisitInfo_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_record_add_test_py - 2019.09.05 at 14h 09m 28s.xml">
+      <configuration name="Unittests in record_add_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_batchInsertVisitInfo_test_py - 2019.09.03 at 13h 41m 40s.xml">
-      <configuration name="Unittests in batchInsertVisitInfo_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_saveGps_test_py - 2019.09.05 at 14h 10m 03s.xml">
+      <configuration name="Unittests in saveGps_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_batchInsertVisitInfoByQsj_test_py - 2019.09.03 at 13h 41m 49s.xml">
-      <configuration name="Unittests in batchInsertVisitInfoByQsj_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_send_phone_code_test_py - 2019.09.05 at 14h 11m 23s.xml">
+      <configuration name="Unittests in send_phone_code_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_batchInsertVisitInfoByQsj_test_py - 2019.09.03 at 14h 58m 11s.xml">
-      <configuration name="Unittests in batchInsertVisitInfoByQsj_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_send_phone_code_test_py - 2019.09.05 at 14h 12m 28s.xml">
+      <configuration name="Unittests in send_phone_code_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_batchInsertVisitInfoByQsj_test_py - 2019.09.03 at 14h 59m 30s.xml">
-      <configuration name="Unittests in batchInsertVisitInfoByQsj_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_send_phone_code_test_py - 2019.09.05 at 14h 22m 36s.xml">
+      <configuration name="Unittests in send_phone_code_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_batchInsertVisitInfoByQsj_test_py - 2019.09.03 at 15h 00m 08s.xml">
-      <configuration name="Unittests in batchInsertVisitInfoByQsj_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_idfa_query_py - 2019.09.05 at 14h 25m 03s.xml">
+      <configuration name="Unittests in idfa_query.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_batchInsertVisitInfo_test_py - 2019.09.03 at 15h 00m 21s.xml">
-      <configuration name="Unittests in batchInsertVisitInfo_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_clickNotify_py - 2019.09.05 at 14h 25m 11s.xml">
+      <configuration name="Unittests in clickNotify.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_getModelInfoByStrategy_test_py - 2019.09.03 at 15h 00m 35s.xml">
-      <configuration name="Unittests in getModelInfoByStrategy_test.py" configurationId="tests" />
+    <history-entry file="Unittests_in_get_checkUser_test_py - 2019.09.05 at 14h 25m 47s.xml">
+      <configuration name="Unittests in get_checkUser_test.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="438049000" />
+    <option name="totallyTimeSpent" value="462209000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1252,8 +1221,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17004265" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1716418" />
       <window_info id="Structure" order="1" weight="0.2494382" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1268,7 +1238,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4968383" weight="0.3264642" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" x="23" y="704" width="1876" height="294" id="Run" order="12" visible="true" weight="0.3449024" />
+      <window_info anchor="bottom" x="23" y="704" width="1876" height="294" id="Run" order="12" visible="true" weight="0.3373102" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24953446" />
@@ -1350,69 +1320,81 @@
     <option name="LAST_COMMIT_MESSAGE" value="update all" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ts/__inti__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ts/test_linux_cmd.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ts/descecb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Global_base/send_code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        <state relative-caret-position="247">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/checkUpdate_test.py">
+    <entry file="file://$PROJECT_DIR$/Global_base/global_base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="298">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="e#17#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ts/MongoConn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/url.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/app/update_user_info_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/find_pass_by_code_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/suggest_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/get_history_by_userId_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/get_module_read_status_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/get_msg_read_status_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/get_new_loan_product_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="228">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -1420,214 +1402,298 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/getCreditHelper_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/send_phone_code_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="181">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-end-line="30" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/getMainLinkBySublink_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/saveGps_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="276">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/getMsgList_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/record_add_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="209">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/getProtocol_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/queryLoanProductByListIdV2_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="656">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/getSmartMatchList_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/init_test_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="30" column="17" selection-start-line="30" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/login_by_code_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/queryLoanProductByListId_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/login_by_pass_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/mofidyPassByCode_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="428">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/logout_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/logout_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="276">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/mofidyPassByCode_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/login_by_pass_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="257">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/queryLoanProductByListId_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/login_by_code_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="224">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/record_add_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/route/get_checkUser_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/init_test_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/url.ini">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/get_me_Info_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/getUserInfo_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/getUserInfo_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        <state relative-caret-position="200">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/queryLoanProductByListIdV2_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/getSmartMatchList_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        <state relative-caret-position="228">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/get_home_product_listV3_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/getProtocol_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="171">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="35" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ts/test_linux_cmd.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Global_base/login.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/getMsgList_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="200">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ts/aecs.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ts/descecb.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/getMainLinkBySublink_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="162">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/send_phone_code_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/getCreditHelper_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state relative-caret-position="304">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/saveGps_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/get_new_loan_product_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="304">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/suggest_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/app/get_msg_read_status_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="257">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/app/get_module_read_status_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/app/get_me_Info_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/app/get_home_product_listV3_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/app/get_history_by_userId_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/app/find_pass_by_code_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/app/checkUpdate_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/app/batchInsertVisitInfoByQsj_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/app/batchInsertVisitInfo_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/app/attendance_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/app/updateDeviceToken_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="22" column="29" selection-start-line="22" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/Business_other/get_business_product_list_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/Business_other/get_plist_productList_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -1637,77 +1703,7 @@
     <entry file="file://$PROJECT_DIR$/interface/Business_other/get_yjkd_home_product_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/update_user_info_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/updateDeviceToken_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Global_base/global_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="53" column="74" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="74" />
-          <folding>
-            <element signature="e#17#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/dyy_app/loanUserAction_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/dyy_app/userAction_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/Business_other/getYkdLoanCollection_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -1716,107 +1712,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interface/Business_other/getYkdHomePageInfo_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="456">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="29" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/Business_other/get_plist_productList_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/dyy_app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/Business_other/getYkdLoanCollection_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="247">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="29" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/Business_other/get_business_product_list_test.py">
+    <entry file="file://$PROJECT_DIR$/interface/dyy_app/loanUserAction_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="228">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qianka/clickNotify.py">
+    <entry file="file://$PROJECT_DIR$/interface/dyy_app/userAction_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+        <state relative-caret-position="832">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
-            <element signature="e#15#30#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interface/qianka/idfa_query.py">
+    <entry file="file://$PROJECT_DIR$/interface/infomation/clickNotify.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="143">
+          <caret line="56" column="26" lean-forward="true" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/infomation/idfa_query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/route/get_checkUser_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="44" column="19" lean-forward="true" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interface/route/get_route_h5_downloadUrl_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="77" column="11" selection-start-line="77" selection-start-column="11" selection-end-line="77" selection-end-column="11" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="380">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/attendance_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/batchInsertVisitInfoByQsj_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="108" column="19" lean-forward="true" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/app-interface/batchInsertVisitInfo_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="33" column="19" lean-forward="true" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interface/route/getModelInfoByStrategy_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399" />
       </provider>
     </entry>
   </component>
