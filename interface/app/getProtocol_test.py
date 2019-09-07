@@ -24,7 +24,7 @@ class GetProtocol(unittest.TestCase):
     # @unittest.skip("pass")
     def test_getProtocol(self, name, productId, channelId, type, auditStatus, appVersion, deviceId, source, mjbname,
                          timestamp):
-        """{}""".format(name)
+        """关于我们接口"""
         values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         fromUserId = values[0]
         token = values[1]

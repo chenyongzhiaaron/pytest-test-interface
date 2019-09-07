@@ -71,8 +71,9 @@ class RouteH5DownLoadUrl(unittest.TestCase):
         ("所有参数为空，提示请输入手机号", "", "", "", "", "请输入手机号码",
          100002),
     ])
+    @unittest.skip("pass")
     def test_get_route_h5_downloadUrl_error(self, name, phone, productId, deviceType, channelId, msg, code):
-        """{}""".format(name)
+        """大王贷款接轻松借路由需求，查询轻松借路由下载地址,异常用例"""
         self.params = {"phone": phone, "productId": productId, "deviceType": deviceType,
                  "channelId": channelId}
         self.result = requests.get(url=self.url, params=self.params).json()

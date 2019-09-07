@@ -21,7 +21,7 @@ class Logout(unittest.TestCase):
     ])
     # @unittest.skip("pass")
     def test_logout(self, name, deviceId, ver, verno, productId, deviceType, channelId, deviceToken, mjbname):
-        """{}""".format(name)
+        """退出登陆接口"""
         pa = {"verno": verno, "deviceId": deviceId, "ver": ver, "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
         self.params = global_base.DefTool().payload(**pa)

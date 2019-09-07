@@ -22,7 +22,7 @@ class QueryLoanProductByListId(unittest.TestCase):
     # @unittest.skip("pass")
     def test_queryLoanProductByListId(self, name, id, tags, productId, clientType, queryRecProduct, versionName,
                                       queryType, dataType, deviceId):
-        """{}""".format(name)
+        """轻松借模块列表接口"""
         values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         userId = values[0]
         token = values[1]

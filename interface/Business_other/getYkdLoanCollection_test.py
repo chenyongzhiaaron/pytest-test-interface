@@ -35,7 +35,7 @@ class GetYkdLoanCollection(unittest.TestCase):
 
     ])
     def test_getYkdLoanCollection(self, name, cfgId, cfgType, clientType, listType, productId, searchmaps, code, msg):
-        """{}""".format(name)
+        """有借、卡贷、闪贷 贷款大全列表"""
         self.params = {"cfgId": cfgId, "cfgType": cfgType, "clientType": clientType, "listType": listType,
                   "productId": productId, "searchmaps": searchmaps}
         result = requests.get(url=self.url, params=self.params)

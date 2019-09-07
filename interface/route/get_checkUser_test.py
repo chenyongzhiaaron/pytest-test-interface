@@ -35,10 +35,11 @@ class CheckUser(unittest.TestCase):
         ("验证IOS手机号输入正确手机号，有路由结果，返回路由链接", 2, "mdwdk001", 2001, int(phone_create.create_phone()), False),
     ])
     def test_cehckUser(self, name, deviceType, channelId, productId, phone, isRegisted):
-        """{}""".format(name)
+        """查询路由用户注册状态及下载地址"""
         self.params = {"deviceType": deviceType, "channelId": channelId, "productId": productId, "phone": phone}
         self.result = requests.get(url=self.url, params=self.params).json()
         self.assertEqual(self.result["code"], self.code)
+        # self.assertEqual(self.result["data"]["isRegisted"], isRegisted)
 
 
 if __name__ == "__main__":

@@ -26,7 +26,7 @@ class UserAction(unittest.TestCase):
          "1", "webh5_wj", "getList", "1539073086805")
     ])
     def test_userAction_success(self, name, bizData, bizKey, enVerNo, mchId, reqName, time):
-        """{}""".format(name)
+        """代运营获取初始化信息接口"""
         code = 200
         msg = "ok"
         self.params = {

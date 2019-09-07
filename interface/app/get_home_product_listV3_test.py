@@ -19,7 +19,7 @@ class IndexInterface(unittest.TestCase):
         ('未登录访问首页接口', "1", "1003", "", "15", "1", "sinaif", "867910035562539"),
     ])
     def test_index_interfacec(self, name, clientType, productId, token, recommendSize, dataType, channelId, deviceId):
-        """{}""".format(name)
+        """首页接口"""
         pa = {"clientType": clientType, "productId": productId, "token": token, "recommendSize": recommendSize,
               "dataType": dataType, "channelId": channelId, "deviceId": deviceId}
         self.params = global_base.DefTool().payload(**pa)

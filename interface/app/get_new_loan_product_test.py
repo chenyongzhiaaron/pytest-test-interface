@@ -15,7 +15,7 @@ class NewLoanProduct(unittest.TestCase):
     ])
     # @unittest.skip("pass")
     def test_get_new_loan_product(self, name, productId, clientType, pageIndex, pageSize,dataType, deviceId):
-        """{}""".format(name)
+        """最新口子接口"""
         token = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))[1]
         self.params = {"deviceId": deviceId, "productId": productId, "token": token, "pageIndex": pageIndex, "pageSize": pageSize, "clientType": clientType}
         self.result = requests.post(url=self.url, data=self.params).json()

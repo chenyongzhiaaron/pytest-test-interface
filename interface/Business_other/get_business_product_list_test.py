@@ -20,7 +20,7 @@ class GetBusinessProductList(unittest.TestCase):
         ("参数正确，查询大王贷款列表成功", "", 2001, 1, "NPL81820181011105344100"),
     ])
     def test_get_business_product_list_success(self, name, userId, productId, clientType, cfgId):
-        """{}""".format(name)
+        """查询大王贷款列表接口"""
         self.params = {"cfgId": cfgId, "userId": userId, "productId": productId, "clientType": clientType}
         self.result = requests.get(url=self.url, params=self.params).json()
         self.assertEqual(self.result['code'], '200')

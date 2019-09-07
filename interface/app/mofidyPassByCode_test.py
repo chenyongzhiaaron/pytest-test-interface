@@ -9,7 +9,7 @@ from Global_base import login
 
 
 class MofidyPassByCode(unittest.TestCase):
-    "修改密码提交"
+    """修改密码提交"""
 
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/user/mofidyPassByCode')
@@ -26,7 +26,7 @@ class MofidyPassByCode(unittest.TestCase):
     @unittest.skip("pass")
     def test_mofidyPassByCode(self, name, deviceId, ver, verno,
                               productId, deviceType, channelId, deviceToken, mjbname, newpassword):
-        """{}""".format(name)
+        """修改密码提交"""
         phone = globa_phone.phone()
         time.sleep(120)
         value = send_code.SendPhoneCode().send_phone_code_token(phone)

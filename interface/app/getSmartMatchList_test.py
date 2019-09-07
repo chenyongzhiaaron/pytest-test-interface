@@ -21,11 +21,10 @@ class GetSmartMatchList(unittest.TestCase):
     ])
     # @unittest.skip("pass")
     def test_getSmartMatchList(self, name, id, productId, clientType):
-        """{}""".format(name)
+        """智能推荐接口"""
         values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         accountid = values[0]
         self.params = {"id": id, "clientType": clientType, "productId": productId, "accountid": accountid}
-        """"""
         self.result = requests.post(url=self.url, data=self.params).json()
         self.assertEqual(self.result["msg"], "ok")
         self.assertEqual(self.result['code'], '200')

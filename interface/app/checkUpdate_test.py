@@ -6,8 +6,7 @@ from parameterized import parameterized
 
 
 class CheckUpdate(unittest.TestCase):
-    '''检查更新版本'''
-
+    """检查更新版本"""
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/checkUpdate')
 
@@ -22,7 +21,7 @@ class CheckUpdate(unittest.TestCase):
     ])
     def test_checkUpdate(self, name, deviceId, source, channelId, verno, deviceType, ver, productId, timestamp,
                          deviceToken, mjbname):
-        """{}""".format(name)
+        """检查更新版本"""
         pa = {"source": source, "channelId": channelId,
               "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "ver": ver, "productId": productId,
               "timestamp": timestamp, "deviceToken": deviceToken, "mjbname": mjbname}

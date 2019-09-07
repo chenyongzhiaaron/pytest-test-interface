@@ -18,7 +18,7 @@ class LoginByPassWord(unittest.TestCase):
     ])
     def test_login_by_password(self, name, ver, verno, deviceId, deviceType, productId, channelId, deviceToken,
                                mjbname):
-        """{}""".format(name)
+        """密码登陆接口"""
         username = int(globa_phone.phone())
         password = "8ff15b24341602becdf011679ec383c1"
         pa = {"ver": ver, "password": password,

@@ -24,7 +24,7 @@ class GetModelInfoByStrategy(unittest.TestCase):
     ])
     # @unittest.skip("pass")
     def test_getModelInfoByStrategy(self, name, productId, abconfigsid, type, deviceType):
-        """{}""".format(name)
+        """查询路由模板信息接口"""
         self.params = {"productId": productId, "abconfigsid": abconfigsid, "type": type, "deviceType": deviceType}
         self.result = requests.get(url=self.url, params=self.params).json()
         self.assertEqual(self.result['msg'], self.msg)

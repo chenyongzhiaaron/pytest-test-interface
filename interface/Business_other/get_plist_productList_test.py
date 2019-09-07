@@ -20,7 +20,7 @@ class PlistProductList(unittest.TestCase):
         ("参数正确，获取有借卡贷列表成功", "NPL94820190117201810100", "101", 2, 1003, 1, ""),
     ])
     def test_get_plist_product_list(self, name, cfgId, listType, cfgType, productId, clientType, userId):
-        """{}""".format(name)
+        """查询有借卡贷列表接口"""
         self.params = {"cfgId": cfgId, "listType": listType, "cfgType": cfgType, "productId": productId,
                  "clientType": clientType, "userId": userId}
         r = requests.get(url=self.url, params=self.params)

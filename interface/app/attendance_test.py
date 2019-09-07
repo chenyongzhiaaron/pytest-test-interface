@@ -18,9 +18,9 @@ class Attendance(unittest.TestCase):
         # ('重复签到', "1", "867910035562539", "重复签到", "100101", ""),
         # ('签到7次后再签返回签到失败', "1", "867910035562539", "签到异常", "100102", ""),
     ])
-    # @unittest.skip("pass")
+    @unittest.skip("pass")
     def test_attendance(self, name, deviceType, deviceId, msg, code, continueDay):
-        """{}""".format(name)
+        """签到接口"""
         if name == "首签成功":
             value = login.LoginByPassWord()
             self.phone = int(globa_phone.phone())

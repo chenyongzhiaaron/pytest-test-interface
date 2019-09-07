@@ -23,7 +23,7 @@ class RecordAdd(unittest.TestCase):
     # @unittest.skip("pass")
     def test_record_add(self, name, deviceId, productId, deviceType, targetId, channelId, actType,
                              versionName, versionNo, actSource):
-        """{}""".format(name)
+        """排重接口"""
         values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         token = values[1]
         accountId = values[0]

@@ -55,7 +55,7 @@ class ClickNotify(unittest.TestCase):
     ])
     @unittest.skip("pass")
     def test_clickNotify(self, name, appid, idfa, channel, ip, timestamp, callback, msg, code):
-        """{}""".format(name)
+        """对接信息流点击下载接口测试"""
         self.params = {"appid": appid, "idfa": idfa, "channel": channel, "ip": ip, "timestamp": timestamp,
                 "callback": callback}
         self.result = requests.post(url=self.url, data=self.params).json()

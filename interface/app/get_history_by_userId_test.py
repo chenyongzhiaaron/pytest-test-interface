@@ -21,7 +21,7 @@ class HistoryByUserId(unittest.TestCase):
     ])
     # @unittest.skip("pass")
     def test_get_history_by_userId(self, name, deviceId, productId, deviceType, actType, pageIndex, pageSize):
-        """{}""".format(name)
+        """查询历史纪录接口"""
         value = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         token = value[1]
         accountId = value[0]

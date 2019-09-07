@@ -16,7 +16,7 @@ class GetUserInfo(unittest.TestCase):
     ])
     # @unittest.skip("pass")
     def test_getUserInfo(self, name, ver, verno, deviceId, deviceType, productId, channelId, deviceToken, mjbname):
-        """{}""".format(name)
+        """获取用户信息接口"""
         params = {"ver": ver, "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "productId": productId,
                   "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
         token = login.LoginByPassWord.login_by_password(self, int(globa_phone.phone()))[1]

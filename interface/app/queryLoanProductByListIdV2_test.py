@@ -23,7 +23,7 @@ class QueryLoanProductByListIdV2(unittest.TestCase):
     # @unittest.skip("pass")
     def test_queryLoanProductByListIdV2(self, name, productId, id, clientType, channelId, deviceId, dataType,
                                         hotProductSize, searchKey):
-        """{}""".format(name)
+        """贷款大全"""
         userId_null = ""
         token_null = ""
         values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))

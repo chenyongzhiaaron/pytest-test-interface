@@ -20,7 +20,7 @@ class RecordAdd(unittest.TestCase):
         ("获取助贷工具接口成功", "1003", "1")
     ])
     def test_record_add(self, name, productId, clientType):
-        """{}""".format(name)
+        """助贷工具接口"""
         self.params = {"productId": productId, "clientType": clientType}
         self.result = requests.post(url=self.url, data=self.params).json()
         self.assertEqual(self.result["msg"], "ok")

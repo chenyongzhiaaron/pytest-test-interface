@@ -20,7 +20,7 @@ class UpdateDeviceToken(unittest.TestCase):
          "63edacc63684d3566ec3ebf3e9939732", "qsj")
     ])
     def test_updateDeviceToken(self, name, source, channelId, verno, deviceId, deviceType, ver, productId, timestamp, deviceToken, mjbname):
-        """{}""".format(name)
+        """跟新IOS设备接口"""
         pa = {"source": source, "channelId": channelId,
               "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "ver": ver,
               "productId": productId, "timestamp": timestamp, "deviceToken": deviceToken, "mjbname": mjbname}

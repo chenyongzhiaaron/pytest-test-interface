@@ -20,9 +20,9 @@ class DefTool:
         file_path = base_dir + "/url.ini"
         cf = cparser.ConfigParser()
         cf.read(file_path)
-        # baseUrl = cf.get("urlTestconf", "url_test")
+        baseUrl = cf.get("urlTestconf", "url_test")
         # baseUrl = cf.get("urlPreconf", "url_pre")
-        baseUrl = cf.get("urlProconf", "url_pro")
+        # baseUrl = cf.get("urlProconf", "url_pro")
         url = baseUrl + patch
         return url
 

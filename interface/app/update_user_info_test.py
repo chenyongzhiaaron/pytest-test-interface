@@ -18,7 +18,7 @@ class UpdateUserInfo(unittest.TestCase):
     # @unittest.skip("pass")
     def test_update_user_info(self, name, method, idcard, json, callbackName, username, tags, ver, verno,
                               deviceId, deviceType, productId, channelId, deviceToken, mjbname, msg, code):
-        """{}""".format(name)
+        """更新用户信息接口"""
         mobile = int(globa_phone.phone())
         token = login.LoginByPassWord().login_by_password(mobile)[1]
         header = {"token": token}

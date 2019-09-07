@@ -18,7 +18,7 @@ class LoginByCode(unittest.TestCase):
     @unittest.skip("pass")
     def test_login_by_code(self, name, productId, channelId, timestamp, deviceToken, deviceId, source, deviceType,
                            mjbname, ver, verno):
-        """{}""".format(name)
+        """通过验证码登陆接口"""
         phone = globa_phone.phone()
         code = send_code.SendPhoneCode().send_phone_code(phone)
         payload = {'username': phone, "code": code, "productId": productId, "channelId": channelId,

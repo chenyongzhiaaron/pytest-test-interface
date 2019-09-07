@@ -35,7 +35,7 @@ class IdfaQuery(unittest.TestCase):
     ])
     @unittest.skip("pass")
     def test_idfaQuery_fault(self, name, appid, idfa, channel, timestamp, msg, code):
-        """{}""".format(name)
+        """对接信息流查询接口"""
         if name == "idfa 不在数据库，返回0;idfa 存在数据库，返回1":
             self.params = {"appid": appid, "idfa": idfa, "channel": channel, "timestamp": timestamp}
             self.result = requests.post(url=self.url, data=self.params).json()

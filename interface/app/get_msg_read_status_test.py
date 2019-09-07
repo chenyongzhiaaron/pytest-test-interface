@@ -17,7 +17,7 @@ class MsgReadStatus(unittest.TestCase):
     # @unittest.skip("pass")
     def test_getMsgReadStatus(self, name, method, json, callbackName, ver, verno, deviceId, deviceType, productId,
                                   channelId, deviceToken, mjbname):
-        """{}""".format(name)
+        """获取消息状态"""
         params = {"method": method, "json": json, "callbackName": callbackName, "ver": ver, "verno": verno,
                   "deviceId": deviceId, "deviceType": deviceType, "productId": productId, "channelId": channelId,
                   "deviceToken": deviceToken, "mjbname": mjbname}

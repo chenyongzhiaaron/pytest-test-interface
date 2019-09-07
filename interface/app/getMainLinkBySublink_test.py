@@ -22,7 +22,7 @@ class GetMainLinkBySublink(unittest.TestCase):
     ])
     def test_getMainLinkBySublink(self, name, subLink, mobileSystem, appVersion, deviceId, referUrl, linkName,
                                       random,out, s, code, msg, data):
-        """{}""".format(name)
+        """获取子链接"""
         pa = {"subLink": subLink, "mobileSystem": mobileSystem, "appVersion": appVersion, "referUrl": referUrl, "linkName": linkName,
               "deviceId": deviceId, "random": random, "out": out, "s": s}
         self.params = global_base.DefTool().payload(**pa)

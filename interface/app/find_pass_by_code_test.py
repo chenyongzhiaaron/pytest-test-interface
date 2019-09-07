@@ -6,7 +6,7 @@ from parameterized import parameterized
 
 
 class FindPassByCode(unittest.TestCase):
-    '''找回密码接口'''
+    """找回密码接口"""
 
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/usercenter/sys/findPassByCode')
@@ -22,7 +22,7 @@ class FindPassByCode(unittest.TestCase):
     ])
     def test_find_pass_by_code(self, name, password, ver, verno, deviceId, deviceType, productId, channelId,
                                deviceToken, mjbname):
-        """{}""".format(name)
+        """找回密码接口"""
         phone_new = int(globa_phone.phone())
         code = "1234512dd"
         pa = {"username": str(phone_new), "password": password, "code": code, "verno": verno, "deviceId": deviceId,

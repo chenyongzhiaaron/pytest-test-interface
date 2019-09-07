@@ -24,7 +24,7 @@ class GetMainLinkBySublink(unittest.TestCase):
     # @unittest.skip("pass")
     def test_getMainLinkBySublink(self, name, suggestcontent, contactway, deviceId, ver, verno,
                                   productId, deviceType, channelId, deviceToken, mjbname):
-        """{}""".format(name)
+        """我的建议接口"""
         values = login.LoginByPassWord().login_by_password(int(globa_phone.phone()))
         token = values[1]
         header = {"token": token}

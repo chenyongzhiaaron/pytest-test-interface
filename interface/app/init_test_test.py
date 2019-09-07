@@ -18,7 +18,7 @@ class Init(unittest.TestCase):
     ])
     def test_init(self, name, imsi, serialnumber, androidid, mac, brand, memory, totalspace, availablespace, ver,
                   verno, deviceId, deviceType, productId, channelId, deviceToken, mjbname):
-        """{}""".format(name)
+        """初始化接口"""
         pa = {"imsi": imsi, "serialnumber": serialnumber, "androidid": androidid, "mac": mac, "brand": brand,
               "memory": memory, "totalspace": totalspace, "availablespace": availablespace, "ver": ver,
               "verno": verno, "deviceId": deviceId, "deviceType": deviceType, "productId": productId,

@@ -16,7 +16,7 @@ class UserAction(unittest.TestCase):
          "1", "webh5_wj", "getList", "1539073086805")
     ])
     def test_userAction_success(self, name, bizData, bizKey, enVerNo, mchId, reqName, time):
-        """{}""".format(name)
+        """代运营获取列表产品信息接口(微聚)'"""
         self.params = {
             "bizData": bizData,
             "bizKey": bizKey,

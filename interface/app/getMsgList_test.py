@@ -23,7 +23,7 @@ class GetMsgList(unittest.TestCase):
     # @unittest.skip("pass")
     def test_getMsgList(self, name, callbackName, deviceId, ver, verno, productId, deviceType, channelId, deviceToken,
                              mjbname):
-        """{}""".format(name)
+        """消息接口"""
         pa = {"callbackName": callbackName,  "verno": verno, "deviceId": deviceId, "ver": ver,
               "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}

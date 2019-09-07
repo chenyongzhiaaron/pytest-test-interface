@@ -21,7 +21,7 @@ class GetMeInfo(unittest.TestCase):
     ])
     def test_getMeInfo(self, name, deviceType, recommendSize, method, pageIndex, json, callbackName,
                        deviceId, ver, verno, productId, channelId, deviceToken, mjbname):
-        """{}""".format(name)
+        """我的页面接口"""
         pa = {"deviceType": deviceType, "recommendSize": recommendSize, "method": method,
               "pageIndex": pageIndex, "json": json, "callbackName": callbackName, "deviceId": deviceId, "ver": ver,
               "verno": verno, "productId": productId,

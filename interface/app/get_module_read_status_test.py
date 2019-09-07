@@ -6,7 +6,7 @@ from parameterized import parameterized
 
 
 class GetModuleReadStatus(unittest.TestCase):
-    '''获取模块状态接口'''
+    """获取模块状态接口"""
     def setUp(self):
         self.url = global_base.DefTool.url(self, '/app/loan/getHomeProductListV3.do')
 
@@ -20,7 +20,7 @@ class GetModuleReadStatus(unittest.TestCase):
     ])
     def test_get_module_read_status(self, name, type, ver, verno, deviceId, deviceType, productId, channelId,
                                     deviceToken, mjbname):
-        """{}""".format(name)
+        """获取模块状态接口"""
         pa = {"type": type, "ver": ver, "verno": verno, "deviceId": deviceId, "deviceType": deviceType,
               "productId": productId, "channelId": channelId, "deviceToken": deviceToken, "mjbname": mjbname}
         self.params = global_base.DefTool().payload(**pa)

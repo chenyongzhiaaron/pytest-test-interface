@@ -22,7 +22,7 @@ class SaveGps(unittest.TestCase):
     # @unittest.skip("pass")
     def test_saveGps(self, name, productId, channelId, strJson, timestamp, deviceToken, deviceId, source, deviceType,
                          mjbname, ver, verno):
-        """{}""".format(name)
+        """保存GPS接口"""
         pa = {"productId": productId, "channelId": channelId, "strJson": strJson, "timestamp": timestamp,
               "deviceToken": deviceToken,
               "deviceId": deviceId, "source": source, "deviceType": deviceType, "mjbname": mjbname, "ver": ver, "verno": verno}
